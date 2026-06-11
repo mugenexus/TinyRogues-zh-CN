@@ -1,0 +1,289 @@
+﻿The Hero=英雄
+THE HERO=英雄
+A hot blooded young hero on a quest to vanquish humanity's\nbiggest adversary. \nCan they defeat Death?=一位热血青年英雄，踏上征途挑战全人类最大的敌人。\n他们能击败死神吗？
+A hot blooded young hero on a quest to vanquish humanity's=一位热血青年英雄，踏上征途挑战全人类
+biggest adversary.=最大的敌人。
+Can they defeat Death?=他们能击败死神吗？
+Lucky Star=幸运星
+LUCKY STAR=幸运星
+Heroic Flag=英雄旗帜
+HEROIC FLAG=英雄旗帜
+Raise a flag that grants an Attack Speed Buff to you and your Companions<Companion> for a short duration.=升起一面旗帜，在短时间内为你和同伴<Companion>提供攻击速度增益。
+Hero Cape=英雄披风
+Amethyst Ring=紫水晶戒指
+PLAY GAME=开始游戏
+Play Game=开始游戏
+Wins\:=胜场：
+WINS\:=胜场：
+Mastery Level=精通等级
+MASTERY LEVEL=精通等级
+MASTERY SYSTEM=精通系统
+ALLOCATE/DEALLOCATE=分配/取消分配
+ZOOM=缩放
+RESET=重置
+EXIT=退出
+GAMEPLAY=游戏
+VIDEO=视频
+UI=界面
+AUDIO=音频
+CONTROLS=控制
+KEYBOARD=键盘
+GAMEPAD=手柄
+GAME RULES=游戏规则
+GIRO OPACITY DURING COMBAT\:=战斗中陀螺透明度：
+GYRO OPACITY DURING COMBAT\:=战斗中陀螺透明度：
+COMPANION OPACITY DURING COMBAT\:=战斗中同伴透明度：
+ORBITAL OPACITY DURING COMBAT\:=战斗中环绕物透明度：
+AUTO EQUIP ITEMS\:=自动装备物品：
+VISUALIZE PLAYER HITBOX\:=显示玩家碰撞箱：
+SPEEDRUN MODE=速通模式
+RESET ACHIEVEMENTS\:=重置成就：
+RESET ACHIEVEMENTS=重置成就
+DEBUG CONSOLE [SHIFT + ENTER]\:=调试控制台 [SHIFT + ENTER]：
+ON=开
+OFF=关
+RETURN=返回
+Credits=制作人员
+CREDITS=制作人员
+Exit=退出
+Gameplay=游戏
+Video=视频
+Audio=音频
+Controls=控制
+Keyboard=键盘
+gamepad=手柄
+game rules=游戏规则
+Orbital Opacity During Combat\:=战斗中环绕物透明度：
+Aura Opacity During Combat\:=战斗中光环透明度：
+Companion Opacity During Combat\:=战斗中同伴透明度：
+Interpolate Player Rigidbody\:=玩家刚体插值：
+Speedrun Mode=速通模式
+Camera Dampening\:=镜头阻尼：
+Camera Aim Strength\:=镜头瞄准强度：
+Limit Bonfire Chatter\:=限制篝火闲聊：
+Show timer\:=显示计时器：
+Confine cursor\:=限制光标范围：
+Auto=自动
+Equip Load Penalties\:=装备负重惩罚：
+Show aim assist target\:=显示辅助瞄准目标：
+FIXED UPDATE=固定更新
+Mouse Aim Assist=鼠标辅助瞄准
+Always Show Tooltips\:=始终显示提示：
+Sound volume\:=音效音量：
+Show error notifications\:=显示错误通知：
+Use System cursor\:=使用系统光标：
+Camera Update Method\:=镜头更新方式：
+Mute In Background\:=后台静音：
+Small mouse\:=小号鼠标指针：
+Auto equip items\:=自动装备物品：
+Instruments Volume\:=乐器音量：
+Reset Achievements=重置成就
+Reset Achievements\:=重置成就：
+HOLD=按住
+Reset Keyboard Bindings\:=重置键盘绑定：
+Anti flashbang mode\:=防闪光模式：
+Movement Stick Deadzone\:=移动摇杆死区：
+"Blink" Into Movement Direction\:=“闪现”朝移动方向：
+Windowed=窗口化
+Reset Gamepad Bindings\:=重置手柄绑定：
+Game saved!=游戏已保存！
+Aim Assist Angle\:=辅助瞄准角度：
+Aim Stick Deadzone\:=瞄准摇杆死区：
+TV Noise volume\:=电视噪点音量：
+Always Show Cursor=始终显示光标
+Reset=重置
+Master volume\:=主音量：
+Input Icons=输入图标
+Play Flask Reminder Alarm\:=播放药瓶提醒：
+Show Enchantments As Prefix\:=将附魔显示为前缀：
+360° Movement=360° 移动
+font\:=字体：
+Camera Shake\:=镜头震动：
+CRT\:=CRT：
+Target frame rate\:=目标帧率：
+resolution\:=分辨率：
+VSYNC\:=垂直同步：
+display\:=显示模式：
+Invincibility Display=无敌状态显示
+Visualize Player Hitbox\:=显示玩家碰撞箱：
+HUD库存显示不透明：=HUD 物品栏显示透明度：
+Music volume\:=音乐音量：
+Show Controls in HUD\:=在 HUD 中显示操作提示：
+Force Turn Off Mouse\:=强制关闭鼠标：
+Random=随机
+OBJECTIVE COMPLETED=目标已完成
+STARTING GIFT=初始赠礼
+Objective Title=目标标题
+Last played=上次游玩
+MASTERY=精通
+Runs=局数
+Play time=游玩时间
+Select a class to play!=选择一个职业开始游戏！
+Empty=空
+Resetting tree...=正在重置天赋树……
+Game resumes in=游戏将在以下时间后继续
+continue=继续
+Allocate/Deallocate=分配/取消分配
+Zoom=缩放
+Reset\n=重置\n
+Decline<color=#26FF66>*</color>=拒绝<color=#26FF66>*</color>
+Confirm<color=#26FF66>*</color>=确认<color=#26FF66>*</color>
+Compare<color=#FF2666>*</color>=比较<color=#FF2666>*</color>
+Show Details<color=#FF2666>*</color>=显示详情<color=#FF2666>*</color>
+Cancel Menu Action<color=#FF73B5>*</color>=取消菜单操作<color=#FF73B5>*</color>
+Use Menu Action<color=#FF73B5>*</color>=执行菜单操作<color=#FF73B5>*</color>
+Interact<color=#A61FFF>*</color>=互动<color=#A61FFF>*</color>
+Toggle Aim Assist<color=#00E61A>*</color>=切换辅助瞄准<color=#00E61A>*</color>
+Radial Menu<color=#00E61A>*</color>=环形菜单<color=#00E61A>*</color>
+Heal<color=#00E61A>*</color>=治疗<color=#00E61A>*</color>
+Weapon Swap<color=#00E61A>*</color>=切换武器<color=#00E61A>*</color>
+Toggle Pause Menu<color=#00E61A>*</color>=切换暂停菜单<color=#00E61A>*</color>
+切换库存<color=#00E61A>*</color>=切换物品栏<color=#00E61A>*</color>
+Toggle Character Panel<color=#00E61A>*</color>=切换角色面板<color=#00E61A>*</color>
+Dash<color=#00E61A>*</color>=冲刺<color=#00E61A>*</color>
+Drop Bomb<color=#00E61A>*</color>=放置炸弹<color=#00E61A>*</color>
+使用技巧<color=#00E61A>*</color>=使用技能<color=#00E61A>*</color>
+Attack<color=#00E61A>*</color>=攻击<color=#00E61A>*</color>
+Cancel Skill<color=#26B0FF>*</color>=取消技能<color=#26B0FF>*</color>
+Scroll Down<color=#FFFFFF>*</color>=向下滚动<color=#FFFFFF>*</color>
+Scroll Up<color=#FFFFFF>*</color>=向上滚动<color=#FFFFFF>*</color>
+Show Base Values<color=#FF2666>*</color>=显示基础数值<color=#FF2666>*</color>
+Show Details<color=#FF2666>*</color>=显示详情<color=#FF2666>*</color>
+Cancel Menu Action<color=#FF73B5>*</color>=取消菜单操作<color=#FF73B5>*</color>
+Use Menu Action<color=#FF73B5>*</color>=执行菜单操作<color=#FF73B5>*</color>
+Reroll Traits<color=#FF008C>*</color>=重掷特质<color=#FF008C>*</color>
+Navigate Menu Right<color=#FF008C>*</color>=菜单向右<color=#FF008C>*</color>
+Navigate Menu Left<color=#FF008C>*</color>=菜单向左<color=#FF008C>*</color>
+Navigate Menu Down<color=#FF008C>*</color>=菜单向下<color=#FF008C>*</color>
+Navigate Menu Up<color=#FF008C>*</color>=菜单向上<color=#FF008C>*</color>
+Toggle Aim Assist<color=#00E61A>*</color>=切换辅助瞄准<color=#00E61A>*</color>
+Toggle Dice Bag<color=#00E61A>*</color>=切换骰子袋<color=#00E61A>*</color>
+Aim Right<color=#00E61A>*</color>=向右瞄准<color=#00E61A>*</color>
+Aim Left<color=#00E61A>*</color>=向左瞄准<color=#00E61A>*</color>
+Aim Down<color=#00E61A>*</color>=向下瞄准<color=#00E61A>*</color>
+Aim Up<color=#00E61A>*</color>=向上瞄准<color=#00E61A>*</color>
+Use Item In Slot8<color=#00E61A>*</color>=使用栏位 8 物品<color=#00E61A>*</color>
+Use Item In Slot7<color=#00E61A>*</color>=使用栏位 7 物品<color=#00E61A>*</color>
+Use Item In Slot6<color=#00E61A>*</color>=使用栏位 6 物品<color=#00E61A>*</color>
+Use Item In Slot5<color=#00E61A>*</color>=使用栏位 5 物品<color=#00E61A>*</color>
+Use Item In Slot4<color=#00E61A>*</color>=使用栏位 4 物品<color=#00E61A>*</color>
+Use Item In Slot3<color=#00E61A>*</color>=使用栏位 3 物品<color=#00E61A>*</color>
+Use Item In Slot2<color=#00E61A>*</color>=使用栏位 2 物品<color=#00E61A>*</color>
+Use Item In Slot1<color=#00E61A>*</color>=使用栏位 1 物品<color=#00E61A>*</color>
+Radial Menu<color=#00E61A>*</color>=环形菜单<color=#00E61A>*</color>
+Move Right<color=#00E61A>*</color>=向右移动<color=#00E61A>*</color>
+Move Left<color=#00E61A>*</color>=向左移动<color=#00E61A>*</color>
+Move Down<color=#00E61A>*</color>=向下移动<color=#00E61A>*</color>
+Move Up<color=#00E61A>*</color>=向上移动<color=#00E61A>*</color>
+Weapon Swap<color=#00E61A>*</color>=切换武器<color=#00E61A>*</color>
+Toggle Pause Menu<color=#00E61A>*</color>=切换暂停菜单<color=#00E61A>*</color>
+Toggle Inventory<color=#00E61A>*</color>=切换物品栏<color=#00E61A>*</color>
+Toggle Character Panel<color=#00E61A>*</color>=切换角色面板<color=#00E61A>*</color>
+Drop Bomb<color=#00E61A>*</color>=放置炸弹<color=#00E61A>*</color>
+Use Skill<color=#00E61A>*</color>=使用技能<color=#00E61A>*</color>
+Right Stick Press=按下右摇杆
+Select=选择
+Page Down=向下翻页
+Page Up=向上翻页
+Space=空格
+Caps=大写锁定
+Tab=Tab
+Shift=Shift
+Right Arrow=右方向键
+Left Arrow=左方向键
+Down Arrow=下方向键
+Up Arrow=上方向键
+Mouse Middle=鼠标中键
+Esc=Esc
+Mouse Right=鼠标右键
+Mouse Left=鼠标左键
+to cancel=取消
+to confirm=确认
+press=按下
+XBone Controller 360 connected=已连接 Xbox 360 控制器
+You can disable error notifications in the options menu. | Version: | Branch:=可在选项菜单中关闭错误通知。| 版本：| 分支：
+FEEL ASHAMED FOR THIS!=请为此感到羞愧！
+Please don't do this again!\n:(=请不要再这样做了！\n:(
+The Missile knows where it is at all times.=导弹始终知道自己在哪里。
+GOMAD!=疯狂起来！
+We need more overlords.=我们需要更多霸主。
+Lucky Star=幸运星
+Heroic Flag=英雄旗帜
+Hero Cape=英雄披风
+Amethyst Ring=紫水晶戒指
+Cinder High Score=余烬最高纪录
+CINDER=余烬
+STREAK=连胜
+HIGHSCORE=最高纪录
+Locked=未解锁
+Mastery EXP Bonus=精通经验加成
+Brave the Unknown=勇闯未知
+Class Unlocks=职业解锁
+Coin Bag=钱袋
+Bomb Pouch=炸弹袋
+Sacramental Bread=圣餐面包
+Key Ring=钥匙环
+Hero Class=英雄
+Knight Class=骑士
+Mystic Class=秘术师
+Ranger Class=游侠
+Pyromancer Class=火焰术士
+Thief Class=盗贼
+Wizard Class=法师
+Warrior Class=战士
+Bandit Class=强盗
+Bard Class=吟游诗人
+Cleric Class=牧师
+Deprived Class=一无所有者
+Doppelganger Class=分身者
+Gunslinger Class=枪手
+Santa Class=圣诞老人
+Soldier Class=士兵
+Sorcerer Class=术士
+Wanderer Class=流浪者
+Alchemist Class=炼金术士
+Barbarian Class=野蛮人
+Chaos Class=混沌使者
+Cyborg Class=赛博人
+Dancer Class=舞者
+Demon Hunter Class=恶魔猎手
+Dragoon Class=龙骑士
+Druid Class=德鲁伊
+Esper Class=超能力者
+Jester Class=小丑
+Monk Class=武僧
+Necromancer Class=死灵法师
+Ninja Class=忍者
+Paladin Class=圣骑士
+Pirate Class=海盗
+Samurai Class=武士
+Super Hero Class=超级英雄
+Go, go and plunder!=去吧，尽情掠夺！
+Go, go and plunder!.=去吧，尽情掠夺！
+Echoes of the Forgotten=遗忘回响
+Tier 1 Gift=第 1 阶赠礼
+Tier 2 Gift=第 2 阶赠礼
+Tier 3 Gift=第 3 阶赠礼
+Spend 750 gold.=花费 750 金币。
+Defeat Death while having 5 or more curse<sprite name="Curse">.=诅咒<sprite name="Curse">达到 5 层或以上时击败死神。
+Defeat Death with 10 different classes.=使用 10 个不同职业击败死神。
+Upgrade a cannon or gun to level 4 without help from equipment items.=不借助装备物品，将火炮或枪械升级至 4 级。
+Requires it being the month of December and having defeated Death at least once.=需要在十二月，并且至少击败过一次死神。
+Upgrade a polearm or spear to level 4 without help from equipment items.=不借助装备物品，将长柄武器或长矛升级至 4 级。
+Defeat Eden in the High Heavens as the Wizard.=使用法师在至高天堂击败伊甸。
+Defeat Amon in the Burning Hells as the Warrior.=使用战士在燃烧地狱击败阿蒙。
+Defeat Primal Death in the Shadow Planes as the Doppelganger.=使用分身者在暗影位面击败原初死神。
+Defeat Bahamut in the High Heavens as the Gunslinger.=使用枪手在至高天堂击败巴哈姆特。
+Defeat Bahamut in the High Heavens with the Mystic.=使用秘术师在至高天堂击败巴哈姆特。
+Defeat Amon in the Burning Hells as the Ranger.=使用游侠在燃烧地狱击败阿蒙。
+Defeat Tiamat in the Burning Hells as the Soldier.=使用士兵在燃烧地狱击败提亚马特。
+Defeat Eden in the High Heavens as the Pyromancer.=使用火焰术士在至高天堂击败伊甸。
+Defeat Primal Death in the Shadow Planes as the Deprived.=使用一无所有者在暗影位面击败原初死神。
+Defeat Amon in the Burning Hells as the Bard.=使用吟游诗人在燃烧地狱击败阿蒙。
+Defeat Eden in the High Heavens as the Cleric.=使用牧师在至高天堂击败伊甸。
+Defeat Geryon in the Shadow Planes as the Sorcerer.=使用术士在暗影位面击败革律翁。
+Defeat Amon in the Burning Hells as the Thief.=使用盗贼在燃烧地狱击败阿蒙。
+Defeat Eden in the High Heavens as the Knight.=使用骑士在至高天堂击败伊甸。
+Defeat Tiamat in the Burning Hells as the Bandit.=使用强盗在燃烧地狱击败提亚马特。
+Defeat Primal Death in the Shadow Planes as the Wanderer.=使用流浪者在暗影位面击败原初死神。
+Defeat Eden in the High Heavens as the Hero.=使用英雄在至高天堂击败伊甸。

@@ -1,0 +1,13 @@
+// 仅用于运行时富文本和拼接文本的受控片段替换，按最长片段优先匹配。
+After each run you gain mastery =每轮结束后，你都会获得精通
+ depending on how many bosses you have defeated.=，数量取决于你击败的首领数。
+Per level you can allocate one perk.=每提升一级即可分配一个天赋点。
+These perks are =这些天赋
+not required=并非必要
+ to succeed on your journey but they surely help.=，但肯定会对冒险有所帮助。
+Unlock and activate =解锁并启用
+ modifiers to level up faster.=修正，以更快提升等级。
+MASTERY EXP=精通经验
+Mastery EXP=精通经验
+Cinder=余烬
+EXP=经验

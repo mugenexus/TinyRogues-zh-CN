@@ -1,0 +1,33 @@
+// 插件专用动态文本正则，不交给 XUnity 解析，避免重复替换。
+r:"^(?i:Mastery Level)\s*([0-9]+)$"=精通等级 $1
+r:"^(?i:Wins):\s*([0-9]+)$"=胜场：$1
+r:"^You gain ([+\-]?[0-9]+) Luck(?<icon><sprite[^>]*>)? at Level ([0-9]+), ([0-9]+) and ([0-9]+)\.$"=你在 $3、$4 和 $5 级时各获得 $1 点幸运${icon}。
+r:"^([0-9]+)/([0-9]+) Points$"=$1/$2 点
+r:"^([0-9]+)/([0-9]+) EXP$"=$1/$2 经验
+r:"^<color=(#[0-9A-Fa-f]{6})>([0-9]+)</color>/<color=#[0-9A-Fa-f]{6}>([0-9]+)</color> Points$"=<color=$1>$2</color>/<color=$1>$3</color> 点
+r:"^Mastery\n([0-9]+)/([0-9]+)$"=精通\n$1/$2
+r:"^([0-9]+)/([0-9]+) <color=(#[0-9A-Fa-f]{6})>EXP</color>$"=$1/$2 <color=$3>经验</color>
+r:"^WINS: <color=(#[0-9A-Fa-f]{6})>([0-9]+)</color>$"=胜场：<color=$1>$2</color>
+r:"^<color=(#[0-9A-Fa-f]{6})>Cinder ([0-9]+)</color>$"=<color=$1>余烬 $2</color>
+r:"^<color=(#[0-9A-Fa-f]{6})>\+([0-9]+)% MASTERY EXP</color>$"=<color=$1>+$2% 精通经验</color>
+r:"^Defeat Death once at <color=(#[0-9A-Fa-f]{6})>Cinder ([0-9]+)</color> to unlock Tier ([0-9]+) Cinder modifiers\.$"=在 <color=$1>余烬 $2</color> 难度下击败一次死神，以解锁第 $3 阶余烬修正。
+r:"^Highest Cinder Win Ever: ([0-9]+)\nCinder Sum High Score: ([0-9]+)\nAverage: (.+)\nAverage Of Last 5: (.+)$"=历史最高余烬胜利：$1\n余烬总和最高纪录：$2\n平均值：$3\n最近 5 局平均值：$4
+r:"^Progress beyond floor ([0-9]+)\.\nHigh Score: Floor ([0-9]+)$"=突破第 $1 层。\n最高纪录：第 $2 层
+r:"^Progress beyond floor ([0-9]+)\.$"=突破第 $1 层。
+r:"^High Score: Floor ([0-9]+)$"=最高纪录：第 $1 层
+r:"^Have ([0-9]+) charms equipped at the same time\.\nHigh Score: ([0-9]+)/([0-9]+) Charms Equipped$"=同时装备 $1 个护符。\n最高纪录：已装备 $2/$3 个护符
+r:"^Have ([0-9]+) charms equipped at the same time\.$"=同时装备 $1 个护符。
+r:"^High Score: ([0-9]+)/([0-9]+) Charms Equipped$"=最高纪录：已装备 $1/$2 个护符
+r:"^Use ([0-9]+) keys\.\nProgress: ([0-9]+)/([0-9]+) Keys Used$"=使用 $1 把钥匙。\n进度：已使用 $2/$3 把钥匙
+r:"^Use ([0-9]+) keys\.$"=使用 $1 把钥匙。
+r:"^Progress: ([0-9]+)/([0-9]+) Keys Used$"=进度：已使用 $1/$2 把钥匙
+r:"^Have at least ([0-9]+) intelligence\.\nHigh Score: ([0-9]+)/([0-9]+) Intelligence$"=智力至少达到 $1 点。\n最高纪录：$2/$3 点智力
+r:"^Have at least ([0-9]+) intelligence\.$"=智力至少达到 $1 点。
+r:"^High Score: ([0-9]+)/([0-9]+) Intelligence$"=最高纪录：$1/$2 点智力
+r:"^This gift unlocks at mastery level ([0-9]+)\.$"=此赠礼将在精通等级 $1 时解锁。
+r:"^Defeat Death while having ([0-9]+) or more curse(<sprite[^>]+>)\.\nHigh Score: ([0-9]+)/([0-9]+) Curse(<sprite[^>]+>)$"=诅咒$2达到 $1 层或以上时击败死神。\n最高纪录：$3/$4 层诅咒$5
+r:"^Spend ([0-9]+) gold\.\nProgress: ([0-9]+)/([0-9]+) Gold Spent$"=累计花费 $1 金币。\n进度：已花费 $2/$3 金币
+r:"^Defeat Death with ([0-9]+) different classes\.\nProgress: ([0-9]+)/([0-9]+)$"=使用 $1 个不同职业击败死神。\n进度：$2/$3
+r:"^Upgrade a polearm or spear to level ([0-9]+) without help from equipment items\.\nHigh Score: Upgrade Level ([0-9]+)$"=不借助装备物品，将长柄武器或长矛升级至 $1 级。\n最高纪录：升级等级 $2
+r:"^Upgrade a cannon or gun to level ([0-9]+) without help from equipment items\.\nHigh Score: Upgrade Level ([0-9]+)$"=不借助装备物品，将火炮或枪械升级至 $1 级。\n最高纪录：升级等级 $2
+r:"^Defeat Death\.\nProgress: ([0-9]+)/([0-9]+)$"=击败死神。\n进度：$1/$2

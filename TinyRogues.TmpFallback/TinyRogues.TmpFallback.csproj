@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>TinyRogues.TmpFallback</AssemblyName>
+    <RootNamespace>TinyRogues.TmpFallback</RootNamespace>
+    <DebugType>none</DebugType>
+    <TinyRoguesDir Condition="'$(TinyRoguesDir)' == ''">D:\SteamLibrary\steamapps\common\Tiny Rogues</TinyRoguesDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx.Core">
+      <HintPath>$(TinyRoguesDir)\BepInEx\core\BepInEx.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="BepInEx.Unity.IL2CPP">
+      <HintPath>$(TinyRoguesDir)\BepInEx\core\BepInEx.Unity.IL2CPP.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>$(TinyRoguesDir)\BepInEx\core\Il2CppInterop.Runtime.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>$(TinyRoguesDir)\BepInEx\interop\Il2Cppmscorlib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(TinyRoguesDir)\BepInEx\interop\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(TinyRoguesDir)\BepInEx\interop\UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>$(TinyRoguesDir)\BepInEx\interop\Unity.TextMeshPro.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="CheckTinyRoguesReferences" BeforeTargets="ResolveReferences">
+    <Error
+      Condition="!Exists('$(TinyRoguesDir)\BepInEx\core\BepInEx.Core.dll')"
+      Text="找不到 Tiny Rogues 的 BepInEx 引用。请先初始化 BepInEx，并通过 -p:TinyRoguesDir=&quot;游戏目录&quot; 指定路径。" />
+  </Target>
+</Project>

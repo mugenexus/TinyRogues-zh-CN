@@ -1,0 +1,6 @@
+*.ps1 text eol=crlf
+*.cs text eol=lf
+*.csproj text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.csv text eol=lf

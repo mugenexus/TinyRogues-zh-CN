@@ -1,0 +1,7 @@
+// 教程文本采用打字机效果，触发后直接显示完整中文。
+Welcome young traveller!\nI am here to help you\nget going on your journey.=欢迎你，年轻的旅行者！\n我会帮助你\n踏上这段旅程。
+Move with <color=#A61FFF>W</color>, <color=#A61FFF>A</color>,\n<color=#A61FFF>S</color> and <color=#A61FFF>D</color>.=使用 <color=#A61FFF>W</color>、<color=#A61FFF>A</color>、<color=#A61FFF>S</color> 和 <color=#A61FFF>D</color> 移动。
+You can dash, with <color=#A61FFF>Space</color>.\nWhile dashing, you are\ninvincible.\nDashing costs 1 <color=#6BBD30>Stamina</color><sprite index=3 > !=按 <color=#A61FFF>Space</color> 可以冲刺。\n冲刺期间你将处于无敌状态。\n冲刺会消耗 1 点<color=#6BBD30>耐力</color><sprite index=3 >！
+You can use Bombs<sprite name=Bomb>, with <color=#A61FFF>Q</color>.\nHere are some for later!=按 <color=#A61FFF>Q</color> 可以使用炸弹<sprite name=Bomb>。\n这些留给你之后使用！
+Splendid!\nNow attack the target dummy\nwith <color=#A61FFF>Mouse Left</color>!\nShow it who's boss!=太棒了！\n现在用<color=#A61FFF>鼠标左键</color>攻击目标假人！\n让它看看谁才是老大！
++1 <color=#3B3B7A>BOMBS</color>=+1 <color=#3B3B7A>炸弹</color>
