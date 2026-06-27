@@ -13,7 +13,7 @@ public sealed class Plugin : BasePlugin
 {
     public const string PluginGuid = "mugen.tinyrogues.tmpfallback";
     public const string PluginName = "Tiny Rogues TMP Translation Fallback";
-    public const string PluginVersion = "1.3.1";
+    public const string PluginVersion = "1.5.14";
 
     internal static ManualLogSource PluginLog { get; private set; } = null!;
 
@@ -31,10 +31,13 @@ public sealed class TmpTranslationFallback : MonoBehaviour
     private const int MaximumDialoguePrefixLength = 12;
     private readonly Dictionary<string, string> _translations = new(StringComparer.Ordinal);
     private readonly List<KeyValuePair<string, string>> _fragments = [];
+    private readonly List<KeyValuePair<string, string>> _itemFragments = [];
     private readonly List<KeyValuePair<Regex, string>> _regexTranslations = [];
     private readonly Dictionary<string, List<DialogueEntry>> _dialogueEntries = new(StringComparer.OrdinalIgnoreCase);
     private readonly HashSet<string> _dumpedUntranslated = new(StringComparer.Ordinal);
+    private readonly HashSet<string> _dumpedResidualTranslations = new(StringComparer.Ordinal);
     private string _untranslatedDumpPath = string.Empty;
+    private string _residualDumpPath = string.Empty;
     private float _nextScanTime;
     private int _lastLoggedReplacementCount = -1;
     private int _dialogueEntryCount;
@@ -49,15 +52,18 @@ public sealed class TmpTranslationFallback : MonoBehaviour
         LoadDictionary("RuntimeOverrides_zh.txt", loadRegex: false);
         LoadPluginDictionary("RuntimePluginOverrides_zh.txt");
         LoadRegexFile();
-        LoadPluginFragments("RuntimeFragments_zh.txt");
+        LoadPluginFragments("RuntimeFragments_zh.txt", _fragments);
+        LoadPluginFragments("RuntimeItemFragments_zh.txt", _itemFragments);
         LoadDialogueDictionary("RuntimeDialogue_zh.txt");
 
         var textDirectory = Path.Combine(Paths.BepInExRootPath, "Translation", "zh", "Text");
         _untranslatedDumpPath = Path.Combine(textDirectory, "_TmpUntranslated.txt");
+        _residualDumpPath = Path.Combine(textDirectory, "_TmpResidualEnglish.txt");
         Directory.CreateDirectory(textDirectory);
 
         Plugin.PluginLog.LogInfo(
-            $"Loaded {_translations.Count} exact, {_regexTranslations.Count} regex, {_fragments.Count} fragment and " +
+            $"Loaded {_translations.Count} exact, {_regexTranslations.Count} regex, {_fragments.Count} general fragment, " +
+            $"{_itemFragments.Count} item fragment and " +
             $"{_dialogueEntryCount} dialogue TMP translations.");
     }
 
@@ -70,7 +76,6 @@ public sealed class TmpTranslationFallback : MonoBehaviour
 
         _nextScanTime = Time.unscaledTime + 0.1f;
         var replacements = 0;
-
         foreach (var textComponent in Resources.FindObjectsOfTypeAll<TMP_Text>())
         {
             if (textComponent == null || textComponent.gameObject == null ||
@@ -86,10 +91,12 @@ public sealed class TmpTranslationFallback : MonoBehaviour
             }
 
             var normalizedSource = NormalizeNewlines(source);
-            var translated = Translate(normalizedSource);
+            var translated = Translate(textComponent, normalizedSource);
             if (translated != null && !string.Equals(normalizedSource, translated, StringComparison.Ordinal))
             {
-                textComponent.text = translated;
+                var finalText = ApplyLayout(textComponent.gameObject.name, normalizedSource, translated);
+                textComponent.text = finalText;
+                DumpResidualTranslation(textComponent, normalizedSource, finalText);
                 replacements++;
                 continue;
             }
@@ -104,8 +111,10 @@ public sealed class TmpTranslationFallback : MonoBehaviour
         }
     }
 
-    private string? Translate(string source)
+    private string? Translate(TMP_Text textComponent, string source)
     {
+        var objectName = textComponent.gameObject.name;
+
         if (_translations.TryGetValue(source, out var exact))
         {
             return exact;
@@ -129,20 +138,29 @@ public sealed class TmpTranslationFallback : MonoBehaviour
             }
         }
 
+        if (IsStructuredRichText(objectName, source))
+        {
+            var itemResult = ApplyFragments(source, _itemFragments)
+                .Replace('\u00A0', ' ');
+            itemResult = ApplyFragments(itemResult, _fragments);
+            if (!string.Equals(itemResult, source, StringComparison.Ordinal))
+            {
+                return itemResult;
+            }
+        }
+
         var dialogue = TranslateDialogue(source);
         if (dialogue != null)
         {
             return dialogue;
         }
 
-        var result = source;
-        foreach (var pair in _fragments)
+        if (!ShouldApplyGeneralFragments(objectName, source))
         {
-            if (result.Contains(pair.Key, StringComparison.Ordinal))
-            {
-                result = result.Replace(pair.Key, pair.Value, StringComparison.Ordinal);
-            }
+            return null;
         }
+
+        var result = ApplyFragments(source, _fragments);
 
         return string.Equals(result, source, StringComparison.Ordinal) ? null : result;
     }
@@ -155,6 +173,17 @@ public sealed class TmpTranslationFallback : MonoBehaviour
         }
 
         var visibleText = Regex.Replace(source, "<[^>]+>", string.Empty);
+        if (ShouldIgnoreUntranslated(textComponent.gameObject.name, visibleText))
+        {
+            return;
+        }
+
+        if (string.Equals(textComponent.gameObject.name, "Text", StringComparison.Ordinal) &&
+            IsKnownDialoguePrefix(visibleText))
+        {
+            return;
+        }
+
         var englishWords = Regex.Matches(visibleText, "[A-Za-z]{2,}");
         if (_untranslatedDumpPath.Length == 0 || englishWords.Count == 0 ||
             source.StartsWith("<sprite", StringComparison.OrdinalIgnoreCase) ||
@@ -171,6 +200,99 @@ public sealed class TmpTranslationFallback : MonoBehaviour
             _untranslatedDumpPath,
             $"{DateTime.Now:yyyy-MM-dd HH:mm:ss}\t{objectName}\t{escaped}{Environment.NewLine}",
             Encoding.UTF8);
+    }
+
+    private void DumpResidualTranslation(TMP_Text textComponent, string source, string translated)
+    {
+        var visibleTranslation = GetVisibleText(translated);
+        if (_residualDumpPath.Length == 0 ||
+            !HasActionableEnglish(visibleTranslation) ||
+            ShouldIgnoreUntranslated(textComponent.gameObject.name, visibleTranslation))
+        {
+            return;
+        }
+
+        var signature = $"{textComponent.gameObject.name}\n{source}\n{translated}";
+        if (!_dumpedResidualTranslations.Add(signature))
+        {
+            return;
+        }
+
+        var objectName = textComponent.gameObject.name.Replace('\t', ' ');
+        File.AppendAllText(
+            _residualDumpPath,
+            $"{DateTime.Now:yyyy-MM-dd HH:mm:ss}\t{objectName}\t{Escape(source)}\t{Escape(translated)}{Environment.NewLine}",
+            Encoding.UTF8);
+    }
+
+    private static bool HasActionableEnglish(string visibleText)
+    {
+        if (Regex.IsMatch(
+                visibleText.Trim(),
+                "^(?:Tiny Rogues|BepInEx|XUnity|Steam|Discord|PC Senior \\(Retro\\)|CRT)$",
+                RegexOptions.CultureInvariant | RegexOptions.IgnoreCase))
+        {
+            return false;
+        }
+
+        foreach (Match match in Regex.Matches(
+                     visibleText,
+                     "[A-Za-z][A-Za-z'-]*",
+                     RegexOptions.CultureInvariant))
+        {
+            var word = match.Value;
+            if (word.Length <= 1 ||
+                word is "EXP" or "STR" or "DEX" or "INT" or "RNG" or "DPS" or "HP" or "MP" or "HUD" or
+                    "FPS" or "TMP" or "UI" or "CRT")
+            {
+                continue;
+            }
+
+            return true;
+        }
+
+        return false;
+    }
+
+    private static bool ShouldIgnoreUntranslated(string objectName, string visibleText)
+    {
+        if (objectName is "Error Message" or "Description Part 1" or "Description Part 2")
+        {
+            return true;
+        }
+
+        if (objectName == "Label: \"CRT\"")
+        {
+            return true;
+        }
+
+        if (objectName is "Text (TMP)" &&
+            visibleText is "Tab" or "Shift" or "Esc")
+        {
+            return true;
+        }
+
+        if (objectName == "Text" &&
+            (Regex.IsMatch(visibleText, "^[A-Za-z]{1,3}$", RegexOptions.CultureInvariant) ||
+             Regex.IsMatch(visibleText, "^(?:asdasd)+", RegexOptions.CultureInvariant | RegexOptions.IgnoreCase)))
+        {
+            return true;
+        }
+
+        if (objectName is "Title" && visibleText == "TITLE")
+        {
+            return true;
+        }
+
+        if (Regex.IsMatch(visibleText, "[\u4e00-\u9fff]") &&
+            (visibleText.Contains("Shift + Enter", StringComparison.Ordinal) ||
+             visibleText.Trim() == "CRT："))
+        {
+            return true;
+        }
+
+        return visibleText is "ayaya?" or "PC Senior (Retro)" ||
+               visibleText.EndsWith("Beefy Enemies", StringComparison.Ordinal);
     }
 
     private void LoadDictionary(string fileName, bool loadRegex)
@@ -358,7 +480,37 @@ public sealed class TmpTranslationFallback : MonoBehaviour
         return match?.Translation;
     }
 
-    private void LoadPluginFragments(string fileName)
+    private bool IsKnownDialoguePrefix(string visibleSource)
+    {
+        if (visibleSource.Length < MinimumDialoguePrefixLength)
+        {
+            return false;
+        }
+
+        var maximumPrefixLength = Math.Min(MaximumDialoguePrefixLength, visibleSource.Length);
+        for (var prefixLength = MinimumDialoguePrefixLength;
+             prefixLength <= maximumPrefixLength;
+             prefixLength++)
+        {
+            var prefix = visibleSource[..prefixLength];
+            if (!_dialogueEntries.TryGetValue(prefix, out var entries))
+            {
+                continue;
+            }
+
+            if (entries.Any(entry =>
+                    entry.Source.StartsWith(visibleSource, StringComparison.OrdinalIgnoreCase)))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private void LoadPluginFragments(
+        string fileName,
+        List<KeyValuePair<string, string>> fragments)
     {
         var path = Path.Combine(Paths.PluginPath, "TinyRogues.TmpFallback", fileName);
         if (!File.Exists(path))
@@ -384,11 +536,184 @@ public sealed class TmpTranslationFallback : MonoBehaviour
             var translated = Unescape(rawLine[(separator + 1)..]);
             if (source.Length >= 3 && translated.Length > 0)
             {
-                _fragments.Add(new KeyValuePair<string, string>(source, translated));
+                fragments.Add(new KeyValuePair<string, string>(source, translated));
             }
         }
 
-        _fragments.Sort((left, right) => right.Key.Length.CompareTo(left.Key.Length));
+        fragments.Sort((left, right) => right.Key.Length.CompareTo(left.Key.Length));
+    }
+
+    private static bool IsItemPanel(string objectName, string source)
+    {
+        if (objectName is not ("Description Text" or "Text"))
+        {
+            return false;
+        }
+
+        var signals = 0;
+        if (source.Contains("Weapon Type:", StringComparison.Ordinal)) signals++;
+        if (source.Contains("Weapon Range:", StringComparison.Ordinal)) signals++;
+        if (source.Contains("Attack Damage:", StringComparison.Ordinal)) signals++;
+        if (source.Contains("Equip Load", StringComparison.Ordinal)) signals++;
+        if (source.Contains("Attunement:", StringComparison.Ordinal)) signals++;
+        if (source.Contains("Damage Scaling:", StringComparison.Ordinal)) signals++;
+        if (source.Contains("Body Armor", StringComparison.Ordinal)) signals++;
+        if (source.Contains("装备负重", StringComparison.Ordinal)) signals++;
+        if (source.Contains("调谐", StringComparison.Ordinal)) signals++;
+        return signals >= 2 ||
+               source.Contains("Equip Load", StringComparison.Ordinal) ||
+               source.Contains("装备负重", StringComparison.Ordinal);
+    }
+
+    private static bool IsItemDetailPanel(string objectName, string source)
+    {
+        if (IsItemPanel(objectName, source))
+        {
+            return true;
+        }
+
+        return objectName == "Text" &&
+               (source.Contains("<color=#808080>Consumable</color>", StringComparison.Ordinal) ||
+                source.Contains("<color=#808080>消耗品</color>", StringComparison.Ordinal) ||
+                source.Contains("Gift Box", StringComparison.Ordinal) ||
+                source.Contains("礼物盒", StringComparison.Ordinal));
+    }
+
+    private static bool IsStructuredRichText(string objectName, string source)
+    {
+        if (IsItemDetailPanel(objectName, source))
+        {
+            return true;
+        }
+
+        if (objectName is not ("Description Text" or "Text"))
+        {
+            return false;
+        }
+
+        return source.Contains("\n•", StringComparison.Ordinal) ||
+               source.Contains("<color=#808080>Consumable</color>", StringComparison.Ordinal) ||
+               source.Contains("Maximum Stacks:", StringComparison.Ordinal) ||
+               source.Contains("Reward choices", StringComparison.Ordinal) ||
+               source.StartsWith("Grants", StringComparison.Ordinal) ||
+               source.StartsWith("Drops Rewards", StringComparison.Ordinal) ||
+               source.Contains("Lucky Hits", StringComparison.Ordinal) ||
+               source.Contains("Cursed Hits", StringComparison.Ordinal) ||
+               source.StartsWith("<color=#00E61A>+", StringComparison.Ordinal);
+    }
+
+    private static bool ShouldApplyGeneralFragments(string objectName, string source)
+    {
+        if (objectName is "Character Title Text" or "General Stats" or "Tab Label (TMP)" or
+            "Label" or "Value" or "Trait Title" or "Trait Description" or "Title Text" or
+            "Input Alias" or "Elite Enchantment Text" or "Main Header" or "Equipment Name" or
+            "Collection Item Title" or "Collection Item Description" or
+            "Class Ability Title" or "Class Stats Text" or
+            "Selected Gift Name" or "Selected Gift Description" or
+            "Cinder Modifier Title" or "Cinder Modifier Description" or
+            "Button Text" or "Boss Name Text" or "Objective Header" or "Objective Text" or
+            "Info Text" or "Skill Description" ||
+            objectName.StartsWith("Choice ", StringComparison.Ordinal) ||
+            objectName.EndsWith(" (Text)", StringComparison.Ordinal))
+        {
+            return true;
+        }
+
+        return source.Contains("After each run you gain mastery", StringComparison.Ordinal) ||
+               source.Contains("Per level you can allocate one perk", StringComparison.Ordinal) ||
+               source.Contains("The Bonfire beckons you", StringComparison.Ordinal) ||
+               (source.Contains("Effect of", StringComparison.Ordinal) &&
+                source.Contains("Ailments", StringComparison.Ordinal) &&
+                source.Contains("Soul Heart", StringComparison.Ordinal));
+    }
+
+    private static string ApplyLayout(string objectName, string source, string translated)
+    {
+        translated = NormalizePotentiallyUnsupportedGlyphs(translated);
+
+        if (IsItemDetailPanel(objectName, source))
+        {
+            var sizedItem = Regex.Match(
+                translated,
+                "^<size=[^>]+>(?<body>.*)</size>$",
+                RegexOptions.CultureInvariant | RegexOptions.Singleline);
+            var itemBody = sizedItem.Success ? sizedItem.Groups["body"].Value : translated;
+            return $"<size=92%>{itemBody}</size>";
+        }
+
+        if (string.Equals(objectName, "Trait Description", StringComparison.Ordinal))
+        {
+            var sizedTrait = Regex.Match(
+                translated,
+                "^<size=[^>]+>(?<body>.*)</size>$",
+                RegexOptions.CultureInvariant | RegexOptions.Singleline);
+            var traitBody = sizedTrait.Success ? sizedTrait.Groups["body"].Value : translated;
+            return $"<size=100%>{traitBody}</size>";
+        }
+
+        if (translated.StartsWith("<size=", StringComparison.Ordinal))
+        {
+            return translated;
+        }
+
+        return translated;
+    }
+
+    private static string NormalizePotentiallyUnsupportedGlyphs(string value)
+    {
+        return value
+            .Replace("\u200B", string.Empty)
+            .Replace("\u200C", string.Empty)
+            .Replace("\u200D", string.Empty)
+            .Replace("\uFEFF", string.Empty)
+            .Replace('，', ',')
+            .Replace('。', '.')
+            .Replace('：', ':')
+            .Replace('；', ';')
+            .Replace('！', '!')
+            .Replace('？', '?')
+            .Replace('（', '(')
+            .Replace('）', ')')
+            .Replace('、', ',')
+            .Replace('“', '"')
+            .Replace('”', '"')
+            .Replace('【', '[')
+            .Replace('】', ']')
+            .Replace('《', '"')
+            .Replace('》', '"')
+            .Replace('·', '.')
+            .Replace('—', '-');
+    }
+
+    private static string ApplyFragments(
+        string source,
+        List<KeyValuePair<string, string>> fragments)
+    {
+        // 安全替换：跳过 <...> 富文本标签内部，只对可见文本做替换
+        return Regex.Replace(
+            source,
+            "(<[^>]+>)|([^<]+)",
+            match =>
+            {
+                // Group 1 匹配到的是标签，原样返回
+                if (match.Groups[1].Success)
+                {
+                    return match.Value;
+                }
+
+                // Group 2 匹配到的是可见文本，做片段替换
+                var result = match.Value;
+                foreach (var pair in fragments)
+                {
+                    if (result.Contains(pair.Key, StringComparison.Ordinal))
+                    {
+                        result = result.Replace(pair.Key, pair.Value, StringComparison.Ordinal);
+                    }
+                }
+
+                return result;
+            },
+            RegexOptions.CultureInvariant);
     }
 
     private static int FindSeparator(string line)

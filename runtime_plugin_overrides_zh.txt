@@ -1,4 +1,105 @@
 // 插件独占富文本词典。保留颜色、图标、换行和动态占位符。
+Connected Gamepad: No gamepad detected=手柄连接状态：未检测到手柄
+Fishing!=钓鱼！
+Beef=牛肉
+<color=#FF3326><color=#FF3326>Burn</color></color>\n<color=#808080>•Damage: </color><color=#00E61A>65 to 145 </color><color=#FF591C><color=#FF591C>Fire</color></color> <color=#808080>\n•Damage Scaling: </color><color=#FF2666>+5%</color><color=#808080> | </color><color=#26FF66>+5%</color><color=#808080> | </color><color=#26B0FF>+5%</color><color=#808080>\n•Tick Rate: </color><color=#00E61A>2</color>\n<color=#808080>•Duration: </color><color=#00E61A>8</color> <color=#00E61A>seconds</color><color=#808080>\n•Maximum Stacks: </color><color=#00E61A>1</color>\n<color=#808080>[<color=#A61FFF>Damage Over Time</color>] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>Ailment</color></color>] </color>=<color=#FF3326><color=#FF3326>燃烧</color></color>\n<color=#808080>•伤害：</color><color=#00E61A>65 至 145 </color><color=#FF591C><color=#FF591C>火焰</color></color><color=#808080>\n•伤害补正：</color><color=#FF2666>+5%</color><color=#808080> | </color><color=#26FF66>+5%</color><color=#808080> | </color><color=#26B0FF>+5%</color><color=#808080>\n•触发速度：</color><color=#00E61A>2</color>\n<color=#808080>•持续时间：</color><color=#00E61A>8</color> <color=#00E61A>秒</color><color=#808080>\n•最大层数：</color><color=#00E61A>1</color>\n<color=#808080>[<color=#A61FFF>持续伤害</color>] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>异常状态</color></color>] </color>
+<color=#00E61A>+1</color> EXP\n<color=#00E61A>x1.01</color> Top End Damage\n<color=#00E61A>+2.5</color> Equip Load Capacity\n=<color=#00E61A>+1</color> 经验\n<color=#00E61A>x1.01</color> 伤害上限\n<color=#00E61A>+2.5</color> 装备负重上限\n
+Full Screen=全屏
+Confirm=确认
+confirm=确认
+Use=使用
+Drop=丢弃
+Swap=切换
+Character panel=角色面板
+Really give up?=确定要放弃吗？
+Select a trait to remove=选择一个要移除的特质
+Increase your luck for a chance\nto get 4 choices.=提高幸运值，便有机会\n获得 4 个选项。
+Not locked.=未锁定。
+Wooden Chest=木制宝箱
+EXP=经验
+The Boneyard=骸骨场
+The Halls of agony=苦痛大厅
+The Pit=深坑
+Too many I-Frames!=无敌帧太多了！
+16 times the detail!=16 倍细节！
+Collect all Arch Pieces!=收集所有拱门碎片！
+Completely free of gravity!=完全不受重力束缚！
+Do a sitment!=坐一下！
+Everything must be reshaped!=万物都必须重塑！
+GOMAD!=疯狂起来！
+It just works!=就是能用！
+Just don't get hit!=别被打中！
+Just one more run!=再来一局！
+Lidl Scoundrels!=廉价恶棍！
+Over 1000 items!=超过 1000 件物品！
+Poggers!=太强了！
+Super Auto Companions!=超级自动同伴！
+The Missile knows where it is at all times.=导弹时刻知道自己身在何处。
+There is no secret cow level.=没有隐藏奶牛关。
+Thumbs Up!=点赞！
+Treat yourself with a glass of milk!=喝杯牛奶犒劳一下自己！
+Try using shields!=试试盾牌！
+Tuh=哼！
+We need more overlords.=我们需要更多霸主。
+What is up dog?=怎么了，老兄？
+What the mook?!=什么鬼？！
+What's up with the paintings?=那些画是怎么回事？
+Your understanding of the universe has been upended by a stunning revelation: Death is not the end, but a waypoint on a Soul's journey. The Bonfire charges you with traveling to the Burning Hells and High Heavens to discover the secrets of the afterlife.\n\nProgress:\nDefeat somebody a lot of times.\n(3/3)\n\nEffect:\nUnlocks something totally awesome.\n=一个惊人的真相彻底颠覆了你对宇宙的认知：死亡并非终点，而只是灵魂旅途中的一处驿站。篝火命令你前往燃烧地狱与至高天堂，揭开来世的秘密。\n\n进度：\n多次击败某人。\n（3/3）\n\n效果：\n解锁超级酷的内容。\n
+Beyond Tomorrow=超越明日
+BEYOND TOMORROW=超越明日
+Brave the Unknown=勇闯未知
+BRAVE THE UNKNOWN=勇闯未知
+The End?=终局？
+THE END?=终局？
+Whispers of Brimstone=硫磺低语
+WHISPERS OF BRIMSTONE=硫磺低语
+Echoes of the Forgotten=遗忘回响
+ECHOES OF THE FORGOTTEN=遗忘回响
+Cinder High Score=余烬最高纪录
+Current Streak Details=当前连胜详情
+Mastery EXP Bonus=精通经验加成
+Locked=未解锁
+Gain <color=#00E61A>+20%</color> Effect of <color=#A61FFF>Ailments</color> per <color=#26B0FF>Soul Heart</color><sprite name="Soul_Heart"> you have.=每拥有一个<color=#26B0FF>灵魂之心</color><sprite name="Soul_Heart">，<color=#A61FFF>异常状态</color>效果提高 <color=#00E61A>+20%</color>。
+The Bonfire beckons you on a journey to vanquish the darkness that plagues this world.\n\nObjective:\nBegin your adventure. <color=#008F05></color>\n\nResult:\nA new set of enemies may appear on each floor.=篝火召唤你踏上征途，驱散笼罩这个世界的黑暗。\n\n目标：\n开始你的冒险。<color=#008F05></color>\n\n结果：\n每一层都可能出现一组新的敌人。
+Gain <color=#00E317>+1</color> <color=#00D608>Luck</color><sprite name="Luck">\non Floor 1 and 2.=在第 1 层和第 2 层\n获得 <color=#00E317>+1</color> 点<color=#00D608>幸运</color><sprite name="Luck">。
+Floor 3 has an additional Armory, but it only contains 2 <color=#A61FFF>Weapons</color>.=第 3 层会额外出现一间军械库，但其中只有 2 件<color=#A61FFF>武器</color>。
+Healing<sprite name="Heart"> Rewards are <color=#00E317>25%</color> more common while at the brink of death.=濒死时，治疗<sprite name="Heart">奖励的出现概率提高 <color=#00E317>25%</color>。
+You start with \n<color=#00E317>+1</color> <color=#26B0FF>Soul Heart</color><sprite name="Soul_Heart">.=初始获得\n<color=#00E317>+1</color> 个<color=#26B0FF>灵魂之心</color><sprite name="Soul_Heart">。
+Advanced Ballistics=高级弹道学
+Boozer=酒豪
+Vision Quest=灵视试炼
+<color=#A61FFF>Booze</color> <color=#A61FFF>Buffs</color> are <color=#00E317>permanent</color> and have <color=#00E61A>+100%</color> Effect.=<color=#A61FFF>酒类</color><color=#A61FFF>增益</color>将<color=#00E317>永久</color>持续，且效果提高 <color=#00E61A>+100%</color>。
+Your <color=#26FF66>Ranged</color> damage is always considered to be at <color=#FF2666>Close Range</color><sprite name="Close">.=你的<color=#26FF66>远程</color>伤害始终视为在<color=#FF2666>近距离</color><sprite name="Close">造成。
+After not having Attacked for <color=#00E317>2 seconds</color>, your next <color=#A61FFF>Attack</color> grants you <color=#FF2666>Courage</color>.=停止攻击 <color=#00E317>2 秒</color>后，下一次<color=#A61FFF>攻击</color>会使你获得<color=#FF2666>勇气</color>。
+<color=#A61FFF>On the Tally </color>of <color=#00E61A>30</color> <color=#A61FFF>Attacks</color>, <color=#A61FFF>trigger</color> your <color=#A61FFF>On Skill Used </color>Effects and then deal <color=#00E61A>+100%</color> Damage for <color=#00E61A>8</color> <color=#00E61A>seconds</color>. <color=#808080>[<color=#A61FFF><color=#A61FFF>Buff</color></color>] </color>=<color=#A61FFF>累计</color>进行 <color=#00E61A>30</color> 次<color=#A61FFF>攻击</color>后，<color=#A61FFF>触发</color>你的<color=#A61FFF>使用技能时</color>效果，并在 <color=#00E61A>8</color> <color=#00E61A>秒</color>内造成 <color=#00E61A>+100%</color> 伤害。<color=#808080>[<color=#A61FFF><color=#A61FFF>增益</color></color>] </color>
+Modifiers to your <color=#3B3B7A>Cursed Hit Chance</color><sprite name="Curse"> <color=#00E317>also</color> apply to your <color=#FF3326>Critical Hit Chance</color><sprite name="Critical_Hit">.\n<color=#7F7F7FFF>(<color=#808080>0%</color> currently)</color>=你的<color=#3B3B7A>诅咒命中几率</color><sprite name="Curse">修正<color=#00E317>也会</color>作用于<color=#FF3326>暴击几率</color><sprite name="Critical_Hit">。\n<color=#7F7F7FFF>（当前为 <color=#808080>0%</color>）</color>
+Ranger=游侠
+RANGER=游侠
+Farsight=远视
+FARSIGHT=远视
+Deal <color=#00E61A>x1.30</color> Damage at <color=#26FF66>Far Range</color><sprite name="Far">.=在<color=#26FF66>远距离</color><sprite name="Far">造成 <color=#00E61A>x1.30</color> 倍伤害。
+Piercing Volley=穿刺齐射
+PIERCING VOLLEY=穿刺齐射
+Shoot a volley of piercing arrows that deals <color=#6E5442>Thrusting Damage</color>.=射出一轮穿刺箭，造成<color=#6E5442>突刺伤害</color>。
+Shortbow=短弓
+Ranger Cloak=游侠斗篷
+Ranger Cap=游侠帽
+A New Dawn=新黎明
+A NEW DAWN=新黎明
+The Bonfire calls upon you to vanquish Death and expand its dominion over this world.\n\nObjective:\nDefeat Death. (0/1)\n\nResult:\nUnlocks a set of alternate floors to appear, bringing new events to discover and foes to defeat with it.=篝火召唤你击败死神，扩展其对这个世界的统治。\n\n目标：\n击败死神。（0/1）\n\n结果：\n解锁一组可替换楼层，并带来新的事件与敌人。
+Knight=骑士
+KNIGHT=骑士
+Defiance=不屈
+DEFIANCE=不屈
+Deal <color=#00E61A>x1.10</color> <color=#6E5442>Physical Damage </color>per <color=#406E7D>Armor Container</color><sprite name="Armor"> you have.=每拥有一个<color=#406E7D>护甲容器</color><sprite name="Armor">，造成 <color=#00E61A>x1.10</color> 倍<color=#6E5442>物理伤害</color>。
+Guard Bash=盾击
+GUARD BASH=盾击
+Deal <color=#6E5442>Striking Damage </color>in a cone and clear the area of Enemy Projectiles.=对锥形区域造成<color=#6E5442>打击伤害</color>，并清除区域内的敌方投射物。
+Round Shield=圆盾
+Knight Helmet=骑士头盔
+Shortsword=短剑
+Sorcerer Cloak=术士斗篷
+Emit a nova of frost around you, dealing <color=#639CFF>Cold Damage </color>and leaving behind frozen ground that inflicts <color=#639BFF>Chill</color>.=在周围释放冰霜新星，造成<color=#639CFF>冰冷伤害</color>，并留下可施加<color=#639BFF>寒冷</color>的冻结地面。
 You gain <color=#00E61A>+1</color> <color=#00D608>Luck</color><sprite name="Luck"> at Level <color=#00E317>1</color>, <color=#00E317>3</color> and <color=#00E317>5</color>.=你在 <color=#00E317>1</color>、<color=#00E317>3</color> 和 <color=#00E317>5</color> 级时各获得 <color=#00E61A>+1</color> 点<color=#00D608>幸运</color><sprite name="Luck">。
 Raise a flag that grants an <color=#FFFFFF>Attack Speed </color><color=#A61FFF>Buff</color> to you and your Companions<sprite name="Companion"> for a short duration.=升起一面旗帜，在短时间内为你和同伴<sprite name="Companion">提供<color=#FFFFFF>攻击速度</color><color=#A61FFF>增益</color>。
 Raise a flag that grants an <color=#FFFFFF>Attack Speed </color><color=#A61FFF>增益</color>，持续短时间。<sprite name="Companion"> for a short duration.=升起一面旗帜，在短时间内为你和同伴<sprite name="Companion">提供<color=#FFFFFF>攻击速度</color><color=#A61FFF>增益</color>。
@@ -10,3 +111,395 @@ Start with 30 <color=#FCC926>Gold</color><sprite name="Gold">. <color=#7F7F7FFF>
 Start with 5 <color=#3B3B7A>Bombs</color><sprite name="Bomb">. <color=#7F7F7FFF>[Resource]</color>=初始获得 5 枚<color=#3B3B7A>炸弹</color><sprite name="Bomb">。<color=#7F7F7FFF>[资源]</color>
 Fully absolves you from <color=#3B3B7A>Curse</color><sprite name="Curse">. <color=#7F7F7FFF>[Consumable]</color>=完全消除你的<color=#3B3B7A>诅咒</color><sprite name="Curse">。<color=#7F7F7FFF>[消耗品]</color>
 Start with 3 <color=#FCC926>Keys</color><sprite name="Key">. <color=#7F7F7FFF>[Resource]</color>=初始获得 3 把<color=#FCC926>钥匙</color><sprite name="Key">。<color=#7F7F7FFF>[资源]</color>
+<color=#808080>Consumable</color>\nFully absolves you from <color=#3B3B7A>Curse</color><sprite name="Curse">.=<color=#808080>消耗品</color>\n完全消除你的<color=#3B3B7A>诅咒</color><sprite name="Curse">。
+Details=查看详情
+Pick Up=拾取
+Wooden Sword=木剑
+Compare=比较
+COMPAREOPTION.ORDINAL 不能与其他选项一起使用。=比较
+Character=角色
+General=概览
+Offense=攻击
+Defense=防御
+Misc=其他
+EQUIP LOAD=装备负重
+Current=当前
+Not Encumbered=未负重
+Move. Speed Penalty=移动速度惩罚
+Dash Length Penalty=冲刺距离惩罚
+Mana Rec. Penalty=法力恢复惩罚
+Alignment Requirement=阵营要求
+Lawful=守序
+Chaotic=混乱
+Good=善良
+Evil=邪恶
+Strength=力量
+Dexterity=敏捷
+Intelligence=智力
+Cold=冰霜
+Lightning=闪电
+Poison=毒素
+Radiant=光耀
+Dark=暗影
+Nature=自然
+Sound=音波
+Necrotic=死灵
+Explosion=爆炸
+Energy=能量
+Physical=物理
+Magic=魔法
+Crystal=水晶
+Soul=灵魂
+SOUL=灵魂
+Grants <color=#00E317>5</color>\n<color=#5ECCE3>Souls</color><sprite name="Soul">.=获得 <color=#00E317>5</color> 个\n<color=#5ECCE3>灵魂</color><sprite name="Soul">。
+Blood Chest=鲜血宝箱
+BLOOD CHEST=鲜血宝箱
+Candy=糖果
+CANDY=糖果
+Sorcerer=术士
+SORCERER=术士
+A sorcerer with innate arcane abilities and unnaturally high intelligence.=拥有与生俱来的奥术能力和超凡智力的术士。
+Elemental Affinity=元素亲和
+ELEMENTAL AFFINITY=元素亲和
+Frost Nova=冰霜新星
+FROST NOVA=冰霜新星
+Emit a nova of frost around you, dealing Cold Damage and leaving behind frozen ground that inflicts Chill.=在周围释放冰霜新星，造成冰霜伤害，并留下会施加寒冷的冻土。
+Magic Missile Wand=魔法飞弹魔杖
+Magic Missile Staff=魔法飞弹法杖
+魔法 Missile 魔棒=魔法飞弹魔杖
+Missile Wand=飞弹魔杖
+Missile Staff=飞弹法杖
+Aquamarine Ring=海蓝宝石戒指
+Aquamarine=海蓝宝石
+<color=#00E61A>+1</color> EXP\n<color=#00E61A>+1%</color> <color=#FF3326>Critical Hit Chance</color><sprite name="Critical_Hit">\n<color=#00E61A>+2.5%</color> <color=#26B0FF>Mana Recovery</color><sprite name="Mana">\n=<color=#00E61A>+1</color> 经验\n<color=#00E61A>+1%</color> <color=#FF3326>暴击几率</color><sprite name="Critical_Hit">\n<color=#00E61A>+2.5%</color> <color=#26B0FF>法力恢复</color><sprite name="Mana">\n
+<color=#00E61A>+1</color> 经验\n<color=#00E61A>+1%</color> <color=#FF3326>Critical Hit Chance</color><sprite name="Critical_Hit">\n<color=#00E61A>+2.5%</color> <color=#26B0FF>Mana Recovery</color><sprite name="Mana">\n=<color=#00E61A>+1</color> 经验\n<color=#00E61A>+1%</color> <color=#FF3326>暴击几率</color><sprite name="Critical_Hit">\n<color=#00E61A>+2.5%</color> <color=#26B0FF>法力恢复</color><sprite name="Mana">\n
++1 <color=#26B0FF>INT</color>=+1 <color=#26B0FF>智力</color>
+Ascetic's Discipline=苦修者戒律
+Gain <color=#00E61A>+25%</color> <color=#A61FFF>Skill Effect </color>(<sprite name="Skill">) per <color=#6BBD30>Stamina</color><sprite name="Stamina"> you have.\n<color=#7F7F7FFF>(<color=#00E61A>+50%</color> currently)</color>=每拥有 1 点<color=#6BBD30>耐力</color><sprite name="Stamina">，获得 <color=#00E61A>+25%</color> <color=#A61FFF>技能效果</color>(<sprite name="Skill">)。\n<color=#7F7F7FFF>（当前为 <color=#00E61A>+50%</color>）</color>
+Ancestral Aid=先祖援助
+Ancestral Spirit=先祖之灵
+Grants 2 <color=#FF2666>Ancestral Spirit</color> Companions<sprite name="Companion">.<color=#808080>\n•Attack Damage: </color><color=#00E61A>132 to 182</color> <color=#6E5442>Slashing</color> <color=#808080>\n•Attack Speed: </color><color=#00E61A>2.00</color>\n<color=grey>•<indent=7px>Each Grants:</color> <color=#00E61A>+10%</color> <color=#FFFFFF>Attack Speed</color></indent>=召唤 2 个<color=#FF2666>先祖之灵</color>同伴<sprite name="Companion">。<color=#808080>\n•攻击伤害: </color><color=#00E61A>132 至 182</color> <color=#6E5442>斩击</color><color=#808080>\n•攻击速度: </color><color=#00E61A>2.00</color>\n<color=grey>•<indent=7px>每个提供:</color> <color=#00E61A>+10%</color> <color=#FFFFFF>攻击速度</color></indent>
+Lightning Conductor=雷电导体
+Your <color=#A61FFF>Attacks</color> gain a 25% chance to <color=#A61FFF>trigger</color> a <color=#FFE63D>Chain <color=#FFE63D>Lightning</color></color> <color=#A61FFF>on Hit </color>that deals <color=#00E61A>292 to 882</color> <color=#FFE63D>Lightning Damage</color>.=你的<color=#A61FFF>攻击</color>有 25% 几率<color=#A61FFF>触发</color><color=#FFE63D>连锁<color=#FFE63D>闪电</color></color>，并在<color=#A61FFF>命中时</color>造成 <color=#00E61A>292 至 882</color> 点<color=#FFE63D>闪电伤害</color>。
+It's dangerous to go alone!=独自前行很危险！
+It knows this because it knows where it isn't.=它之所以知道，是因为它知道自己不在哪里。
+Key=钥匙
+Bombs=炸弹
+Shrine=神龛
+Many Bombs=大量炸弹
+Armory=军械库
+LEVEL UP!=升级！
+Character Panel=角色面板
+Magical Bow=魔法弓
+Bomb Enchanted=炸弹附魔
+DODGED=闪避
+EVADED=闪避
+Purging Stone=净化石
+Blacksmith Whetstone=铁匠磨刀石
+Bard Hat=吟游诗人帽
+Random Potion=随机药水
+Burger=汉堡
+Anger Potion=狂怒药水
+Guaranteed\nRare Item=保底\n稀有物品
+Guaranteed\nAccessory=保底\n饰品
+Guaranteed\nUncommon Item=保底\n优秀物品
+Lich=巫妖
+Interact=互动
+Bonfire=篝火
+Mageblood=魔血
+Alacrity=迅捷
+Pack Mentality=群体意识
+Opportunistic=伺机而动
+Lightning Resistance\n=闪电抗性\n
+Grants a\nBlessing.=获得一项\n祝福。
+Contains\n<color=#4CC2FF><color=#4CC2FF>uncommon</color></color>\nweapons.=包含\n<color=#4CC2FF><color=#4CC2FF>优秀</color></color>\n武器。
+Buy Items\nfor <color=#FCC926>Gold</color><sprite name="Gold">.=使用<color=#FCC926>金币</color><sprite name="Gold">\n购买物品。
+<color=#808080>Consumable</color>\nRepairs all <color=#406E7D>Armor</color><sprite name="Armor">.\n<color=grey>(Cannot be used during combat.)</color>=<color=#808080>消耗品</color>\n修复全部<color=#406E7D>护甲</color><sprite name="Armor">。\n<color=grey>（战斗中无法使用。）</color>
+<color=#808080>Consumable</color>\nDispels 1 stack of <color=#3B3B7A>Curse</color><sprite name="Curse">.=<color=#808080>消耗品</color>\n移除 1 层<color=#3B3B7A>诅咒</color><sprite name="Curse">。
+<color=#808080>Consumable</color>\nUpgrades any <color=#A61FFF>Weapon</color> by 1 Level.\n<sprite name="SubArrow">Non <color=#FF2666>Melee</color> <color=#A61FFF>Weapons</color> up to Level 3.\n<sprite name="SubArrow"><color=#FF2666>Melee</color> <color=#A61FFF>Weapons</color> up to Level 4.=<color=#808080>消耗品</color>\n使任意<color=#A61FFF>武器</color>提升 1 级。\n<sprite name="SubArrow">非<color=#FF2666>近战</color><color=#A61FFF>武器</color>最高提升至 3 级。\n<sprite name="SubArrow"><color=#FF2666>近战</color><color=#A61FFF>武器</color>最高提升至 4 级。
+<color=#808080>Consumable</color> | <color=#808080>Potion</color>\n•<color=#00E61A>+20%</color> <color=#FFFFFF>Attack Speed</color>\n<color=#808080>•Duration: </color><color=#00E61A>10</color> rooms\n<color=#808080>[<color=#A61FFF><color=#A61FFF>Potion</color></color>] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>Buff</color></color>] </color>=<color=#808080>消耗品</color> | <color=#808080>药水</color>\n•<color=#00E61A>+20%</color> <color=#FFFFFF>攻击速度</color>\n<color=#808080>•持续时间：</color><color=#00E61A>10</color> 个房间\n<color=#808080>[<color=#A61FFF><color=#A61FFF>药水</color></color>] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>增益</color></color>] </color>
+<color=#A61FFF>Potion</color> <color=#A61FFF>Buffs</color> are <color=#00E317>permanent</color>.=<color=#A61FFF>药水</color><color=#A61FFF>增益</color>变为<color=#00E317>永久</color>。
+Grants <color=#00E61A>+40%</color> <color=#FFFFFF>Attack Speed </color>with <color=#A61FFF>Weapons</color> that scale with <color=#26FF66>Dexterity</color>.=使用受<color=#26FF66>敏捷</color>加成的<color=#A61FFF>武器</color>时，获得 <color=#00E61A>+40%</color> <color=#FFFFFF>攻击速度</color>。
+•<indent=7px>Your damage rolls <color=red>twice</color> and takes the <color=red>lower</color> value.</indent>\n•<color=#00E61A>+1</color> Companion Capacity<sprite name="Companion">=•<indent=7px>你的伤害会判定<color=red>两次</color>并取<color=red>较低</color>值。</indent>\n•<color=#00E61A>+1</color> 同伴容量<sprite name="Companion">
+While there are fewer than 4 Enemies in the Room:\n<sprite name="SubArrow"><indent=7px> Deal <color=#00E61A>x1.20</color> Damage at <color=#26FF66>Far Range</color><sprite name="Far">.</indent>\nWhile there are more than 2 Enemies in the Room:\n<sprite name="SubArrow"><indent=7px> Deal <color=#00E61A>x1.30</color> Damage at <color=#FF2666>Close Range</color><sprite name="Close">.</indent>=房间内敌人少于 4 个时：\n<sprite name="SubArrow"><indent=7px>在<color=#26FF66>远程</color><sprite name="Far">造成 <color=#00E61A>x1.20</color> 倍伤害。</indent>\n房间内敌人多于 2 个时：\n<sprite name="SubArrow"><indent=7px>在<color=#FF2666>近程</color><sprite name="Close">造成 <color=#00E61A>x1.30</color> 倍伤害。</indent>
+REFILLED <color=#26B0FF>MANA</color><sprite name="Mana">=<color=#26B0FF>法力</color><sprite name="Mana">已回满
++1 <color=#26FF66>DEX</color>=+1 <color=#26FF66>敏捷</color>
++1 <color=#FF2666>STR</color>=+1 <color=#FF2666>力量</color>
++1 <color=#3B3B7A>CURSE</color>=+1 <color=#3B3B7A>诅咒</color>
++1 <color=#FCC926>KEY</color>=+1 <color=#FCC926>钥匙</color>
+-1 <color=#FCC926>KEY</color>=-1 <color=#FCC926>钥匙</color>
+Guaranteed Charm=保底护符
+Guaranteed Offhand=保底副手
+Bomber Garb=炸弹客护甲
+Bomber Helmet=炸弹客头盔
+Boom! Boom! Boom!=轰！轰！轰！
+Minotaur=牛头人
+Puzzle Cube=谜题魔方
+Patient Gown=病号服
+Wind Charm=风之护符
+Dice Bag=骰子袋
+Golden Chest=黄金宝箱
+Contains\nRewards.=包含\n奖励。
+Random Dice=随机骰子
+Blood Altar=鲜血祭坛
+Cursed Shrine=诅咒神龛
+Cursed\nKey=诅咒\n钥匙
+Cursed\nKeys=诅咒\n钥匙
+Set Stash=套装藏匿处
+Cellar=地窖
+Smuggler=走私商
+Fair Lady=贵妇
+Flask Charge=药瓶补充
+Key [x2]=钥匙 [x2]
+BOSS DEFEATED=首领已击败
+BLOCKED=格挡
+ARMOR=护甲
+Plague Enchanted\n=瘟疫附魔\n
+<color=#FFEB04>>Yes<</color>=<color=#FFEB04>>是<</color>
+<color=#FFEB04>>No<</color>=<color=#FFEB04>>否<</color>
+Sapphire Ring=蓝宝石戒指
+Sapphire 戒指=蓝宝石戒指
+Leather Boots=皮靴
+Leather 靴子=皮靴
+Circlet=头环
+Echo Shard=回声碎片
+Carrot on a Stick=胡萝卜钓竿
+Blueberries=蓝莓
+Wedding Dress=婚纱
+Wedding Veil=婚纱头纱
+Bridal Vows=婚礼誓约
+Threat Reckoning=威胁清算
+SURPRISE!=惊喜！
+Butter up a cleric!=讨好一位牧师！
+HSssSssS=嘶嘶嘶
+HSssSssS！=嘶嘶嘶！
+HSsSssS=嘶嘶嘶
+HSsSssS！=嘶嘶嘶！
+HSsSssS！\n我要把你\n喂给我的孩子们！=嘶嘶嘶！\n我要把你\n喂给我的孩子们！
+<color=yellow>Golden Dice</color>\nRerolls offered items from\nshops, armories and boss rewards.=<color=yellow>黄金骰子</color>\n重新随机商店、军械库和\n首领奖励提供的物品。
+<color=#26FF66>Evades</color><sprite name="Evade"> refresh after <color=#00E317>5</color>\ncombat encounters without\ntaking damage or evading.=连续 <color=#00E317>5</color> 场战斗\n未受到伤害或使用闪避后，\n恢复<color=#26FF66>闪避</color><sprite name="Evade">次数。
+Exit to title menu?=返回标题菜单？
+Nurse=护士
+Tavern Keeper=酒馆老板
+HSssSssS!=嘶嘶嘶！
+Almost No Dark Matter!!=几乎没有暗物质！！
+Dang yo!=我去！
+Arcade=街机
+Try your luck!=试试手气！
+Gift Box=礼物盒
+<color=#808080>Consumable</color> | <color=#808080>Gift Box</color>\nGrants <color=#00E317>1</color> random Equipment Item.=<color=#808080>消耗品</color> | <color=#808080>礼物盒</color>\n获得 <color=#00E317>1</color> 件随机装备。
+Are giraffes real?=长颈鹿真的存在吗？
+Are narwhals real?=独角鲸真的存在吗？
+Can fish drown?=鱼会淹死吗？
+Check out the Game Doctor!=去看看游戏医生！
+December 6th HYPE!?=12月6日，嗨起来！？
+Do penguins have knees?=企鹅有膝盖吗？
+Does true randomness exist?=真正的随机存在吗？
+Don't drink and drive!=喝酒不开车！
+Don't get cursed!=别被诅咒了！
+Don't get too tipsy!=别喝得太醉！
+Don't take candy from strangers!=别吃陌生人给的糖！
+For Frodo!=为了弗罗多！
+For Thighs!=为了大腿！
+Happy Holidays!=节日快乐！
+He is Tony Rouge!=他是托尼·罗格！
+He's beginning to believe!=他开始相信了！
+Hersey!=异端！
+Hire Esty8nine!=雇用 Esty8nine！
+Hop on Tiny Rogues!=快来玩《小小肉鸽》！
+Huge Barbarians!=巨型野蛮人！
+I doubt it!=我对此表示怀疑！
+I got that reference!=我懂这个梗！
+I need your strongest potion!=我要你最强的药水！
+I never tell lies!=我从不撒谎！
+I'll have what I'm having!=我就要我正在喝的这个！
+Is a hot dog a sandwich?=热狗算三明治吗？
+Is cereal soup?=麦片算汤吗？
+Is time travel possible?=时间旅行可能吗？
+Is water wet?=水是湿的吗？
+It takes all night to get lucky!=好运要等上一整夜！
+Looking cute!=看起来真可爱！
+Made at home!=家庭制作！
+Made in Austria!=奥地利制造！
+Medium-Sized Wizards!=中等体型的巫师！
+Minuscule Thieves!=微型盗贼！
+Music by MiguelAngell960!=音乐由 MiguelAngell960 制作！
+No chickens were harmed in making this game!=本游戏制作过程中没有鸡受到伤害！
+Now with a less jank!=现在没那么粗糙了！
+Now with cheats!=现在有作弊功能了！
+Now with even tinier rogues!=现在肉鸽变得更小了！
+Now with Pay2Win!=现在可以氪金变强了！
+OMG! It's the Gungeon maiden!?=天啊！这是挺进地牢少女！？
+Pineapple on pizza?=披萨上放菠萝？
+R.I.P Soul Scarf!=灵魂围巾，安息吧！
+Soon with housing!=住房系统即将推出！
+Stay a while and listen!=留下来听我说一会儿吧！
+Still a hot pocket!=还是热腾腾的馅饼！
+Thanks for playing!=感谢游玩！
+The best update ever?=史上最佳更新？
+The Cake isn't a lie!=蛋糕不是谎言！
+The next Isaac?=下一个以撒？
+The one piece is real!=大秘宝是真的！
+This is to go even further beyond!=这是为了超越极限！
+Try Cinder!=试试余烬！
+Try lightning!=试试闪电！
+Try punching!=试试拳头！
+Unlimited Power!=无限力量！
+Welcome to the Jungle!=欢迎来到丛林！
+What a time to be alive!=活在这个时代真好！
+Why so serious?=何必这么严肃？
+With Lemon Pepper Steppers!=还有柠檬胡椒舞步！
+Wouldn't want you to see you go hollow!=可不想看到你变成游魂！
+Wove the Arcane!=编织奥术！
+Wow these rogues are tiny!=哇，这些肉鸽真小！
+You're pretty cool!=你很酷！
+Yo-ho-ho!=哟吼吼！
+Give Up=放弃
+Pause=暂停
+Resume=继续
+Spider Queen=蜘蛛女王
+Borderless Full Screen=无边框全屏
+1280x800 (Steam Deck)=1280x800（Steam Deck）
+1920x1080 (Legacy Don't Use)=1920x1080（旧版，请勿使用）
+2560x1440 (Legacy Don't Use)=2560x1440（旧版，请勿使用）
+QUEST=任务
+Defeat Eden in the High Heavens.=在至高天击败伊甸。
+Open=打开
+Treasure Rock=宝藏岩石
+Tutorial=教程
+Sit, stay and\nhave a drink!=坐下休息，\n喝一杯吧！
+Drops Rewards\nwhen bombed<sprite name="Bomb">.=被炸弹<sprite name="Bomb">炸中时\n掉落奖励。
+<color=yellow>Unlocks:</color> Super Hero Class\n<color=#FCC926>Status: </color><color=#808080>Not Completed</color>=<color=yellow>解锁：</color>超级英雄职业\n<color=#FCC926>状态：</color><color=#808080>未完成</color>
+<color=#3B3B7A><color=#3B3B7A>Curse</color><sprite name="Curse"></color>:=<color=#3B3B7A><color=#3B3B7A>诅咒</color><sprite name="Curse"></color>：
+<color=#00D608>Lucky Hits</color><sprite name="Luck"> have <color=#00E317>x2.00</color> chance\nfor <color=#A61FFF>Hit</color> Effects to happen.<color=#FFFFFF>\n<color=#00D608>Lucky Hit Chance</color><sprite name="Luck">: 5%</color>=<color=#00D608>幸运命中</color><sprite name="Luck">有 <color=#00E317>x2.00</color> 倍几率\n触发<color=#A61FFF>命中</color>效果。<color=#FFFFFF>\n<color=#00D608>幸运命中几率</color><sprite name="Luck">：5%</color>
+<color=#3B3B7A>Cursed Hits</color><sprite name="Curse"> have <color=red>x0.50</color> chance\nfor <color=#A61FFF>Hit</color> Effects to happen.\n<color=#3B3B7A>Cursed Hit Chance</color><sprite name="Curse">: 0%=<color=#3B3B7A>诅咒命中</color><sprite name="Curse">有 <color=red>x0.50</color> 倍几率\n触发<color=#A61FFF>命中</color>效果。\n<color=#3B3B7A>诅咒命中几率</color><sprite name="Curse">：0%
+Raise a flag and gain <color=#00E61A>+33%</color><sprite name="Skill"> <color=#FFFFFF>Attack Speed </color>and <color=#00E61A>+33%</color><sprite name="Skill"> Companion <color=#FFFFFF>Attack Speed</color><sprite name="Companion"> for <color=#00E61A>8.8<sprite name="Skill"> seconds</color>.<line-height=0px>​\n<line-height=1em>\n<color=#808080>•Charge Time: </color><color=#00E61A>0.5 seconds</color><color=#808080>\n•Mana Refill: </color>every <color=#00E61A>9 </color><color=#FFFFFF>Rooms </color><color=#808080>\n•Mana Cost: </color><color=#00E61A>1</color><sprite name="Mana"><line-height=0px>​\n<line-height=1em>\n<color=#808080>[<color=#A61FFF><color=#A61FFF>Skill</color></color>]</color> <color=#808080>[<color=#A61FFF><color=#A61FFF>Buff</color></color>]</color>.=升起一面旗帜，获得 <color=#00E61A>+33%</color><sprite name="Skill"> <color=#FFFFFF>攻击速度</color>，并使同伴获得 <color=#00E61A>+33%</color><sprite name="Skill"> <color=#FFFFFF>攻击速度</color><sprite name="Companion">，持续 <color=#00E61A>8.8<sprite name="Skill"> 秒</color>。<line-height=0px>​\n<line-height=1em>\n<color=#808080>•蓄力时间：</color><color=#00E61A>0.5 秒</color><color=#808080>\n•法力补充：</color>每 <color=#00E61A>9 </color><color=#FFFFFF>个房间</color><color=#808080>\n•法力消耗：</color><color=#00E61A>1</color><sprite name="Mana"><line-height=0px>​\n<line-height=1em>\n<color=#808080>[<color=#A61FFF><color=#A61FFF>技能</color></color>]</color> <color=#808080>[<color=#A61FFF><color=#A61FFF>增益</color></color>]</color>。
+Use <color=#FCC926><color=#FCC926>Key</color><sprite name="Key"></color>=使用<color=#FCC926><color=#FCC926>钥匙</color><sprite name="Key"></color>
+<color=#3B3B7A>Curse</color><sprite name="Curse"> grants <color=#3B3B7A>Cursed Hit Chance</color><sprite name="Curse">. By default,\n<color=#3B3B7A>Cursed Hits</color><sprite name="Curse"> have <color=red>x0.50</color> chance for <color=#A61FFF>Hit</color> Effects to happen.\n<color=#3B3B7A>Curse</color><sprite name="Curse"> can also downgrade Room Rewards, spawn <color=#8000FF>Reapers</color>,\nmake <color=#A61FFF>Weapons</color> have bad Enchantments, maximize Shop Prices and much more.\nYou can use Purging Stones do dispel a stack of <color=#3B3B7A>Curse</color><sprite name="Curse">.=<color=#3B3B7A>诅咒</color><sprite name="Curse">会提供<color=#3B3B7A>诅咒命中几率</color><sprite name="Curse">。\n默认情况下，<color=#3B3B7A>诅咒命中</color><sprite name="Curse">仅有 <color=red>x0.50</color> 几率触发<color=#A61FFF>命中</color>效果。\n<color=#3B3B7A>诅咒</color><sprite name="Curse">还可能降低房间奖励、生成<color=#8000FF>收割者</color>、\n使<color=#A61FFF>武器</color>带有负面附魔、将商店价格提高至最高等。\n可以使用净化石移除一层<color=#3B3B7A>诅咒</color><sprite name="Curse">。
+It seems you have been <color=#3B3B7A>Cursed</color><sprite name="Curse">!=看来你受到了<color=#3B3B7A>诅咒</color><sprite name="Curse">！
+A big iron on his hip!=腰间别着一把大铁枪！
+Made by RubyDev!=由 RubyDev 制作！
+<color=#26B0FF>From <color=#26B0FF>Int</color>.</color>:=<color=#26B0FF>来自<color=#26B0FF>智力</color>。</color>：
+<color=#26FF66>From <color=#26FF66>Dex</color>.</color>:=<color=#26FF66>来自<color=#26FF66>敏捷</color>。</color>：
+<color=#FF2666>From <color=#FF2666>Str</color>.</color>:=<color=#FF2666>来自<color=#FF2666>力量</color>。</color>：
+<color=#26B0FF>MANA</color>=<color=#26B0FF>法力</color>
+Slime Orb=史莱姆宝珠
+Bone Gloves=骨质手套
+Druid Coat=德鲁伊外套
+Sticky Orbital=黏液环绕物
+Sticky Goo=黏液
+Event Horizon=事件视界
+Elemental Focus=元素专注
+Cursed\nBroccoli=诅咒\n西兰花
+Event=事件
+EVENT=事件
+Where could\nit lead?=会通往\n何处？
+Greed's Touch=贪婪之触
+Greed's Crown=贪婪王冠
+Greed's Avarice=贪婪欲望
+Thaumaturgical Echo=奇术回响
+<color=#A61FFF>On the Tally </color>of <color=#00E61A>3</color> <color=#A61FFF>Attacks</color>, <color=#A61FFF>repeat</color> your next <color=#A61FFF>Attack</color>.=<color=#A61FFF>每累计</color><color=#00E61A>3</color>次<color=#A61FFF>攻击</color>，就会<color=#A61FFF>重复</color>你的下一次<color=#A61FFF>攻击</color>。
+Momentum=动量
+•<indent=7px>Gain <color=#00E61A>+50%</color> <color=#6BBD30>Stamina Recovery Speed</color><sprite name="Stamina">.</indent>\n•<indent=7px><color=#A61FFF>On Dash</color>, your next <color=#00E317>5</color> <color=#A61FFF>Attacks</color> or <color=#A61FFF>Skills</color> deal guaranteed <color=#EBD67D>Crushing Hits</color><sprite name="Crushing_Hit">.</indent>=•<indent=7px>获得<color=#00E61A>+50%</color><color=#6BBD30>耐力恢复速度</color><sprite name="Stamina">。</indent>\n•<indent=7px><color=#A61FFF>冲刺时</color>，接下来的<color=#00E317>5</color>次<color=#A61FFF>攻击</color>或<color=#A61FFF>技能</color>必定造成<color=#EBD67D>碾压一击</color><sprite name="Crushing_Hit">。</indent>
+Resolute Technique=坚毅技巧
+•Your <color=#FF3326>Critical Hit Chance</color><sprite name="Critical_Hit"> is <color=red>0%</color>.\n•Grants <color=#00E61A>+100%</color> <color=#EBD67D>Crushing Hit Chance</color><sprite name="Crushing_Hit">.=•你的<color=#FF3326>暴击几率</color><sprite name="Critical_Hit">变为<color=red>0%</color>。\n•获得<color=#00E61A>+100%</color><color=#EBD67D>碾压一击几率</color><sprite name="Crushing_Hit">。
+<color=#A61FFF>On Skill Used</color>, grants <color=#FF2666>Berserk</color>.=<color=#A61FFF>使用技能时</color>，获得<color=#FF2666>狂暴</color>。
+•<indent=7px>Grants <color=#00E61A>+100%</color> <color=#A61FFF>Orbital</color> Range.</indent>\n•<indent=7px>Your Orbitals inflict <color=#76428A>Vulnerability</color>.</indent>=•<indent=7px>获得 <color=#00E61A>+100%</color> <color=#A61FFF>环绕物</color>射程。</indent>\n•<indent=7px>你的环绕物会施加<color=#76428A>易伤</color>。</indent>
+•<indent=7px><color=#FF3326>Fire Damage </color>from <color=#A61FFF>Skills</color> and <color=#A61FFF>Auras</color> inflicts <color=#DF7126>Scorch</color>.</indent>\n•<indent=7px><color=#639CFF>Cold Damage </color>from <color=#A61FFF>Skills</color> and <color=#A61FFF>Auras</color> inflicts <color=#6299FC>Frostbite</color>.</indent>\n•<indent=7px><color=#FFE63D>Lightning Damage </color>from <color=#A61FFF>Skills</color> and <color=#A61FFF>Auras</color> inflicts <color=#5FCDE4>Zap</color>.</indent>=•<indent=7px><color=#FF3326>火焰伤害</color>由<color=#A61FFF>技能</color>或<color=#A61FFF>光环</color>造成时会施加<color=#DF7126>灼烧</color>。</indent>\n•<indent=7px><color=#639CFF>冰霜伤害</color>由<color=#A61FFF>技能</color>或<color=#A61FFF>光环</color>造成时会施加<color=#6299FC>冻伤</color>。</indent>\n•<indent=7px><color=#FFE63D>闪电伤害</color>由<color=#A61FFF>技能</color>或<color=#A61FFF>光环</color>造成时会施加<color=#5FCDE4>感电</color>。</indent>
+Arcane Familiar=奥术使魔
+Dreamer=梦想家
+<color=#00E61A>+25%</color> Damage with <color=#A61FFF>Non Critical Hits</color>=<color=#00E61A>+25%</color> <color=#A61FFF>非暴击命中</color>伤害
++1 Ethereal Dice=+1 空灵骰子
++1 Golden Dice=+1 黄金骰子
++1 Red Dice=+1 红色骰子
+Guardian Enchanted\n=守护者附魔\n
+守护ian Enchanted\n=守护者附魔\n
+Door=门
+Requires <color=#FCC926><color=#FCC926>Key</color><sprite name="Key"></color>\nto open.=需要<color=#FCC926><color=#FCC926>钥匙</color><sprite name="Key"></color>\n才能打开。
+There is no escape!=无处可逃!
+To be fair, you have to have a very high IQ to understand Tiny Rogues.=平心而论,想理解《小小肉鸽》需要非常高的智商。
+Delete Save Data in Slot 2?=删除 2 号存档位的数据?
+High Scores=最高纪录
+Mandrake=曼德拉草
+Vampire=吸血鬼
+The Catacombs=地下墓穴
+The Desert=沙漠
+Frozen Enchanted\n=冰冻附魔\n
+Laser Enchanted\n=激光附魔\n
+Red=红色
+Green=绿色
+Blue=蓝色
+Bar Maiden=酒馆女侍
+Cleric=牧师
+Creepy Wizard=诡异巫师
+Dwarf Warrior=矮人战士
+Farmer=农夫
+Old Hag=老巫婆
+Potion Buyer=药水买家
+Undead Merchant=亡灵商人
+Viking=维京人
+Blacksmith=铁匠
+Broccoli=西兰花
+Lollipop=棒棒糖
+Petrified Hoard=石化宝藏
+Warrior Stash=战士储藏
+Guaranteed\nSet Item=保底\n套装物品
+LEFT TO FATE=听天由命
+CALL TO ADVENTURE=冒险召唤
+Best Friends Forever=永远的挚友
+Forethought=深思熟虑
+Intuition=直觉
+Razor's Edge=剃刀边缘
+Steady Strikes=稳健打击
+Two Steps Ahead=领先两步
+Mead=蜂蜜酒
+Whiskey=威士忌
+Rum=朗姆酒
+Champagne=香槟
+Spore Pine Resin=孢子松脂
+Green Blossom=绿花
+Small Gift Box=小礼物盒
+Tipsiness=醉意
+War Belt=战争腰带
+Chef's Hat=厨师帽
+Freezing Scepter=冰冻权杖
+Nunchaku=双节棍
+Red Hoodie=红色连帽衫
+Reinforced Club=强化木棒
+Frost Touch Gauntlets=霜触护手
+> <color=#FFEB04>Red</color>=> <color=#FFEB04>红色</color>
+<color=#808080>Green</color>=<color=#808080>绿色</color>
+<color=#808080>Blue</color>=<color=#808080>蓝色</color>
+  <color=#808080>Green</color>=  <color=#808080>绿色</color>
+  <color=#808080>Blue</color>=  <color=#808080>蓝色</color>
+<color=#4CC2FF>Freezing Scepter +1</color>=<color=#4CC2FF>冰冻权杖 +1</color>
+<color=#4CC2FF>Nunchaku +1</color>=<color=#4CC2FF>双节棍 +1</color>
+<color=#4CC2FF>Reinforced Club +4</color>=<color=#4CC2FF>强化木棒 +4</color>
++1 <color=#26B0FF>Mana</color><sprite name="Mana">=+1 <color=#26B0FF>法力</color><sprite name="Mana">
++1 <color=#FCC926>Tipsiness</color>=+1 <color=#FCC926>醉意</color>
+-1 <color=#FCC926>Tipsiness</color>=-1 <color=#FCC926>醉意</color>
++3 <color=#26B0FF>INT</color>=+3 <color=#26B0FF>智力</color>
++3 <color=#26FF66>DEX</color>=+3 <color=#26FF66>敏捷</color>
++3 <color=#FF2666>STR</color>=+3 <color=#FF2666>力量</color>
+<color=#4CC2FF>Uncommon</color>=<color=#4CC2FF>优秀</color>
+*You don't have\nenou=*你的\n金币不够。
+*You don't have\ne=*你的\n金币不够。
+Ha-=哈-
+Hello there! You seem strong.\nNeed =你好!你看起来很强。\n需要点什么吗?
+Hello there! You seem strong.\nNe=你好!你看起来很强。\n需要点什么吗?
+Hello!\nYou look=你好!\n你看起来饿了。
+Hello!\nYou =你好!\n你看起来饿了。
+Hello!\nY=你好!\n你看起来饿了。
+Howdy!\n=你好!\n
+Need a =需要一点帮助吗?
+Nye-he-he-he!\nWelcome, travelle=嘿嘿嘿!\n欢迎,旅行者。
+Nye-he-he-he!\nWelcome, trave=嘿嘿嘿!\n欢迎,旅行者。
+Nye-he-he-he!\nWelcome, t=嘿嘿嘿!\n欢迎,旅行者。
+Nye-he-he-he!\nWelcom=嘿嘿嘿!\n欢迎,旅行者。
+Nye-he-he-he!\nWel=嘿嘿嘿!\n欢迎,旅行者。
+Would you like to stay\nfor =想要\n住一晚吗?
+Would you like to stay\n=想要\n住一晚吗?
+You disrupt nature's peace...\nI will stop =你破坏了自然的宁静...\n我会阻止你。
+You disrupt nature's peace...\nI will st=你破坏了自然的宁静...\n我会阻止你。
+You disrupt nature's peace...\nI wil=你破坏了自然的宁静...\n我会阻止你。
+You disrupt nature's peace...\nI =你破坏了自然的宁静...\n我会阻止你。

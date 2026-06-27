@@ -2,7 +2,7 @@
 
 适用于 Steam 版《Tiny Rogues》的非官方简体中文汉化补丁。
 
-当前版本：`1.3.1`
+当前版本：`1.5.14`
 
 ## 功能
 
@@ -75,6 +75,7 @@ dotnet build .\TinyRogues.TmpFallback\TinyRogues.TmpFallback.csproj `
 - `runtime_plugin_overrides_zh.txt`
 - `runtime_regex_zh.txt`
 - `runtime_fragments_zh.txt`
+- `runtime_item_fragments_zh.txt`
 - `runtime_dialogue_overrides_zh.txt`
 
 翻译时不得改动变量、控制符、颜色代码、换行符、图标标签和占位符。

@@ -1,0 +1,197 @@
+// 仅用于运行时富文本和拼接文本的受控片段替换，按最长片段优先匹配。
+// 安全替换：此文件中的规则不会替换 <...> 富文本标签内部的属性值。
+After each run you gain mastery =每轮结束后，你都会获得精通
+ depending on how many bosses you have defeated.=，数量取决于你击败的首领数。
+Per level you can allocate one perk.=每提升一级即可分配一个天赋点。
+These perks are =这些天赋
+not required=并非必要
+ to succeed on your journey but they surely help.=，但肯定会对冒险有所帮助。
+Unlock and activate =解锁并启用
+ modifiers to level up faster.=修正，以更快提升等级。
+// 专有名词
+Cinder=余烬
+// 角色面板标题与标签页
+CHARACTER=角色
+GENERAL=概览
+OFFENSE=攻击
+DEFENSE=防御
+MISC=其他
+// 职业名
+The Hero=英雄
+The Mage=法师
+The Rogue=盗贼
+The Barbarian=野蛮人
+The Knight=骑士
+Lvl=等级
+// 角色面板动态属性名（按最长前缀优先，避免短词误伤）
+Movement Speed=移动速度
+Equip Load=装备负重
+Attack Speed=攻击速度
+Attack Damage=攻击伤害
+Critical Hit Chance=暴击几率
+Critical Hit Damage=暴击伤害
+Defense Rating=防御等级
+Soul of =灵魂
+Strength=力量
+Dexterity=敏捷
+Intelligence=智力
+Vitality=活力
+Pick Up=拾取
+Health=生命
+Luck=幸运
+Mana=法力
+Dash=冲刺
+Stamina=体力
+// 攻击面板
+Weapon Scaling=武器补正
+Scaling Grades=补正等级
+Scaling Caps=补正上限
+Scaling Damage Bonus=补正伤害加成
+Weapon Damage=武器伤害
+Base Damage=基础伤害
+Total Damage=总伤害
+Attacks Per Second=每秒攻击次数
+Chance To Repeat Attack=连击几率
+Repeat Damage=连击伤害
+// 伤害类型
+Striking=打击
+Thrusting=突刺
+Slashing=斩击
+Blunt=钝击
+Magic=魔法
+General=通用
+// 连接词（前后带空格，避免误伤）
+ to =至
+// 防御面板
+Not Encumbered=未负重
+Encumbered=负重
+Over Encumbered=严重超重
+Move. Speed Penalty=移速惩罚
+Length Penalty=距离惩罚
+Rec. Penalty=恢复惩罚
+Alignment Requirement=阵营要求
+Lawful=守序
+Chaotic=混乱
+// MISC 面板
+Close=近程
+Far=远程
+Threshold=阈值
+Tiles=格
+Count=数量
+Capacity=容量
+Companion=同伴
+Critical=暴击
+Chance=几率
+RNG=随机
+// 教程提示
+You can dash, with=你可以通过
+While dashing, you are invincible.=冲刺时你处于无敌状态。
+costs=消耗
+Costs=消耗
+invincible.=无敌。
+invincible=无敌
+// 教程—拾取与装备
+Pick up items with =使用 
+[E]=<E>键拾取物品，
+[E],= <E>，
+open your =打开你的
+with [F]=用 [F]
+[E], open= <E>，打开
+Drag and drop, or right-click=拖拽或右键
+the weapon to equip it.=武器来装备。
+equip it.=装备。
+to equip it.=装备它。
+// 套装
+2-Set: =2件套：
+3-Set: =3件套：
+4-Set: =4件套：
+5-Set: =5件套：
+Set:=套装：
+// 闪避机制
+if you don't take damage=如果你没有受到伤害
+If you haven't taken damage=如果你没受到伤害
+in this room=在这个房间
+Your Evades=你的闪避
+ now refresh after = 在 
+ room without taking damage or Evading= 个房间未受伤害或使用闪避后
+ instead of=代替
+Your Evades now refresh=你的闪避现在
+evading=闪避
+refresh after=在
+// 装备后缀
+Boots=靴子
+Cloak=斗篷
+Gloves=手套
+Helmet=头盔
+Ring=戒指
+Amulet=护身符
+Shield=盾牌
+Bow=弓
+Sword=剑
+Staff=法杖
+Wand=魔棒
+Axe=斧
+Dagger=匕首
+Mace=锤
+Spear=矛
+// 武器前缀（含前导空格，仅匹配空格后的单词）
+ Weapon= 武器
+ Weapons= 武器
+// 动作
+drop,=丢弃，
+drop =丢弃 
+drag=拖拽
+// 技能描述
+Deal=造成
+damage at=伤害于
+Damage at=伤害于
+Damage.=伤害。
+Piercing Volley=穿刺连射
+piercing arrows=穿刺箭
+that deals=造成
+ ranged= 远程
+ piercing= 穿刺
+ Shortbow= 短弓
+ Longbow= 长弓
+ Crossbow= 弩
+// 战斗类型
+Ranged=远程
+Melee=近战
+Guard=守护
+// 技能触发
+on hit=命中时
+on kill=击杀时
+hits=命中
+on taking damage=受到伤害时
+// 技能 UI
+Skill=技能
+Skills=技能
+Remote Sight=远程视野
+Remote=远程
+Sight=视野
+// 世界层描述
+A New Dawn=新黎明
+Objective:=目标：
+Defeat Death.=击败死神。
+Result:=结果：
+Unlocks a set=解锁一系列
+alternate floors=备用楼层
+new events=新的事件
+and foes to defeat=以及要击败的敌人
+the Bonfire calls upon you=篝火召唤你
+to vanquish Death=消灭死神
+expand its dominion=扩展其统治
+over this world=统治这个世界
+this world=这个世界
+// 通用动名词（完整单词，避免子串误伤）
+Unlocks=解锁
+Defeat=击败
+Death=死神
+discover=探索
+foes=敌人
+appear=出现
+bring=带来
+// 注意：已删除易误伤的极短键
+// RANGE — 删掉了「范围」的重复项，V2.6 中改为通过小r开头区分远程视野
+// EXP — 删除独立key避免误伤 MASTERY EXP
+// to — 保留「 to =」作为完整单词边界

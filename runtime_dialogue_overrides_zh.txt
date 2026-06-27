@@ -1,7 +1,45 @@
 // 教程文本采用打字机效果，触发后直接显示完整中文。
 Welcome young traveller!\nI am here to help you\nget going on your journey.=欢迎你，年轻的旅行者！\n我会帮助你\n踏上这段旅程。
-Move with <color=#A61FFF>W</color>, <color=#A61FFF>A</color>,\n<color=#A61FFF>S</color> and <color=#A61FFF>D</color>.=使用 <color=#A61FFF>W</color>、<color=#A61FFF>A</color>、<color=#A61FFF>S</color> 和 <color=#A61FFF>D</color> 移动。
-You can dash, with <color=#A61FFF>Space</color>.\nWhile dashing, you are\ninvincible.\nDashing costs 1 <color=#6BBD30>Stamina</color><sprite index=3 > !=按 <color=#A61FFF>Space</color> 可以冲刺。\n冲刺期间你将处于无敌状态。\n冲刺会消耗 1 点<color=#6BBD30>耐力</color><sprite index=3 >！
+Move with <color=#A61FFF>W</color>, <color=#A61FFF>A</color>,\n<color=#A61FFF>S</color> and <color=#A61FFF>D</color>.=使用 <color=#A61FFF>W</color>、<color=#A61FFF>A</color>，\n使用 <color=#A61FFF>S</color> 和 <color=#A61FFF>D</color> 移动。
+You can dash, with <color=#A61FFF>Space</color>.\nWhile dashing, you are\ninvincible.\nDashing costs 1 <color=#6BBD30>Stamina</color><sprite index=3 > !=按 <color=#A61FFF>Space</color> 可以冲刺。\n冲刺期间\n你将处于无敌状态。\n冲刺会消耗 1 点<color=#6BBD30>耐力</color><sprite index=3 >！
 You can use Bombs<sprite name=Bomb>, with <color=#A61FFF>Q</color>.\nHere are some for later!=按 <color=#A61FFF>Q</color> 可以使用炸弹<sprite name=Bomb>。\n这些留给你之后使用！
-Splendid!\nNow attack the target dummy\nwith <color=#A61FFF>Mouse Left</color>!\nShow it who's boss!=太棒了！\n现在用<color=#A61FFF>鼠标左键</color>攻击目标假人！\n让它看看谁才是老大！
+Splendid!\nNow attack the target dummy\nwith <color=#A61FFF>Mouse Left</color>!\nShow it who's boss!=太棒了！\n现在用<color=#A61FFF>鼠标左键</color>\n攻击目标假人！\n让它看看谁才是老大！
 +1 <color=#3B3B7A>BOMBS</color>=+1 <color=#3B3B7A>炸弹</color>
+Pick up items with <color=#FCC926>[E]</color>, open\nyour <color=#FCC926>Inventory</color> with <color=#FCC926>[F]</color>.\n<color=#A61FFF>Drag and drop, or right-click</color> the\nweapon to <color=#FCC926>equip</color> it.=按 <color=#FCC926>[E]</color> 拾取物品，\n按 <color=#FCC926>[F]</color> 打开<color=#FCC926>物品栏</color>。\n<color=#A61FFF>拖放或右键点击</color>\n武器即可<color=#FCC926>装备</color>。
+Haha!\nYou're a natural.\nLet's meet in the next room.=哈哈！\n你很有天赋。\n我们在下一个房间见。
+To defeat stronger foes, you\nwill have to arm yourself.=要击败更强的敌人，\n你必须武装自己。
+If you want to know even\nmore about yourself, you can\nopen the Character Panel with <color=#FCC926>[C]</color>.=想进一步了解自己，\n可以按 <color=#FCC926>[C]</color>\n打开角色面板。
+Time for a real battle.\nWe shall meet again\nin the next room!=真正的战斗要开始了！\n我们会再次见面，\n就在下一个房间！
+Well done!\nNow bear with me for a moment.=干得漂亮！\n现在请稍等片刻。
+On your journey, you\nwill find food.=旅途中，\n你会找到食物。
+<color=#26FF66>Pears</color> increase your <color=#26FF66>Dexterity</color>,\n<color=#FF2666>Meat</color> increases your <color=#FF2666>Strength</color>\nand <color=#26B0FF>Candy</color> increases your <color=#26B0FF>Intelligence</color>.=<color=#26FF66>梨</color>会提高<color=#26FF66>敏捷</color>，\n<color=#FF2666>肉</color>会提高<color=#FF2666>力量</color>，\n<color=#26B0FF>糖果</color>会提高<color=#26B0FF>智力</color>。
+Long time no see!\nI just remembered, I forgot to\nteach you about <color=#A61FFF>Skills</color>.=好久不见！\n我刚想起来，忘了教你\n有关<color=#A61FFF>技能</color>的知识。
+<color=#FF2666>Strength</color>, <color=#26FF66>Dexterity</color> and <color=#26B0FF>Intelligence</color>\nscale your damage.=<color=#FF2666>力量</color>、<color=#26FF66>敏捷</color>和<color=#26B0FF>智力</color>\n会提高你的伤害。
+The grading letters in the colors of\n<color=#FF2666>Strength</color>, <color=#26FF66>Dexterity</color> and <color=#26B0FF>Intelligence</color>\ndecide how high you can scale the damage.=以<color=#FF2666>力量</color>、<color=#26FF66>敏捷</color>和<color=#26B0FF>智力</color>颜色\n显示的评级字母，\n决定伤害加成的上限。
+That is all I can teach you for now.\nThe rest you will figure\nout on your own.=目前能教你的就这些。\n剩下的内容，\n要靠你自己探索。
+If you haven't figured it out yet,\nyou can use your <color=#A61FFF>Skill</color> with <color=#FCC926>Mouse Right</color>.=如果你还没弄明白，\n可以按<color=#FCC926>鼠标右键</color>使用<color=#A61FFF>技能</color>。
+You can inspect your <color=#A61FFF>Skill</color>\nin the <color=#FCC926>Character Panel</color>.\nRemember, you can open it with <color=#FCC926>[C]</color>.=你可以在<color=#FCC926>角色面板</color>中\n查看自己的<color=#A61FFF>技能</color>。\n别忘了，按<color=#FCC926>[C]</color>即可打开。
+While <color=#26B0FF>Per Room</color> and <color=#26B0FF>Per Second</color>\nare quite self explanatory,\n<color=#26B0FF>Per Enemy</color> generates <color=#26B0FF>Mana<sprite name=Mana></color> as you\ninflict damage to an Enemy.=<color=#26B0FF>每个房间</color>和<color=#26B0FF>每秒</color>\n都很好理解，\n而<color=#26B0FF>每个敌人</color>会在你\n对敌人造成伤害时生成<color=#26B0FF>法力<sprite name=Mana></color>。
+If you ever wonder what aspects of your <color=#A61FFF>Skill</color>\nare influenced by the <color=#A61FFF>Skill Effect</color> Stat,\nmake sure to check if the <sprite name="Skill"> <color=#00E61A>Icon</color>\nis next to the value.=如果你想知道<color=#A61FFF>技能效果</color>属性\n会影响<color=#A61FFF>技能</color>的哪些部分，\n请确认数值旁\n是否有 <sprite name="Skill"> <color=#00E61A>图标</color>。
+Bosses count as multiple Enemies,\nso you can generate more <color=#26B0FF>Mana<sprite name=Mana></color>\nwhen fighting against them.=首领会被视为多个敌人，\n因此与首领战斗时可以生成更多\n<color=#26B0FF>法力<sprite name=Mana></color>。
+Every class has a different <color=#A61FFF>Skill</color> and\n<color=#A61FFF>Skills</color> come in a variety of\nshapes and forms.=每个职业都有不同的<color=#A61FFF>技能</color>，\n而<color=#A61FFF>技能</color>\n也有各种不同的形式。
+For example:\n<color=#A61FFF>Skills</color> can have 3 different kinds\nof <color=#26B0FF>Mana Recovery<sprite name=Mana></color>.=例如：\n<color=#A61FFF>技能</color>可以采用三种不同的\n<color=#26B0FF>法力恢复<sprite name=Mana></color>方式。
+Now you are good to go!\nGo get em tiger!=现在你已经准备好了！\n上吧！
+But be careful!\n<color=#A61FFF>Skills</color> cost <color=#26B0FF>Mana<sprite name=Mana></color>!=但要小心！\n<color=#A61FFF>技能</color>会消耗<color=#26B0FF>法力<sprite name=Mana></color>！
+<color=#26B0FF>Per Room</color>, <color=#26B0FF>Per Second</color> or <color=#26B0FF>Per Enemy</color>.=<color=#26B0FF>每个房间</color>、<color=#26B0FF>每秒</color>或<color=#26B0FF>每个敌人</color>。
+In need of a favour?=需要帮忙吗？
+Need something?=需要点什么？
+Hello, Traveller?\nDo you want to\nbuy something?=你好，旅行者？\n你想要\n买点东西吗？
+Nye-he-he-he!\nWelcome, traveller.=嘿嘿嘿!\n欢迎,旅行者。
+Hello there! You seem strong.\nNeed anything?=你好!你看起来很强。\n需要点什么吗?
+Hello!\nYou look hungry.=你好!\n你看起来饿了。
+Howdy!=你好!
+Need a little help?=需要一点帮助吗?
+Would you like to stay\nfor the night?=想要\n住一晚吗?
+A favour?\nVery well.=要帮忙?\n好吧。
+Doing well?=还顺利吗?
+Glad to be\nof help.=很高兴\n能帮上忙。
+You disrupt nature's peace...\nI will stop you.=你破坏了自然的宁静...\n我会阻止你。
+*Knit*=*编织*
+*SIP*=*小啜*
+*You don't have\nenough Gold.=*你的\n金币不够。

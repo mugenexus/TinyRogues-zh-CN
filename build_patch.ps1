@@ -179,7 +179,7 @@ IgnoreWhitespaceInDialogue=True
 MinDialogueChars=1
 EnableUIResizing=True
 ForceUIResizing=False
-UseStaticTranslations=True
+UseStaticTranslations=False
 OverrideFont=
 OverrideFontSize=
 OverrideFontTextMeshPro=
@@ -280,28 +280,38 @@ Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'runtime_regex_zh.txt') `
     -Destination (Join-Path $fallbackPluginDirectory 'RuntimeRegex_zh.txt')
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'runtime_fragments_zh.txt') `
     -Destination (Join-Path $fallbackPluginDirectory 'RuntimeFragments_zh.txt')
+Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'runtime_item_fragments_zh.txt') `
+    -Destination (Join-Path $fallbackPluginDirectory 'RuntimeItemFragments_zh.txt')
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'runtime_plugin_overrides_zh.txt') `
     -Destination (Join-Path $fallbackPluginDirectory 'RuntimePluginOverrides_zh.txt')
 
 $dialogueRows = @(
     $rows | Where-Object {
-        $_.key -notlike 'AUTO_*' -and
+        ($_.key -notlike 'AUTO_*' -or $_.source_file -like '*global-metadata.dat') -and
         $_.source_text.Length -ge 6 -and
         $_.source_text -match '[.!?]|\\n' -and
         $_.translation_zh -cne $_.source_text
     }
 )
-$dialogueLines = New-Object System.Collections.Generic.List[string]
+$dialogueMap = [ordered]@{}
 foreach ($row in $dialogueRows) {
-    $dialogueLines.Add(
-        (Escape-XUnityText $row.source_text) + '=' + (Escape-XUnityText $row.translation_zh)
-    )
+    $source = Escape-XUnityText $row.source_text
+    $dialogueMap[$source] = Escape-XUnityText $row.translation_zh
 }
 foreach ($line in Get-Content -LiteralPath (Join-Path $PSScriptRoot 'runtime_dialogue_overrides_zh.txt') -Encoding UTF8) {
-    if (-not [string]::IsNullOrWhiteSpace($line)) {
-        $dialogueLines.Add((ConvertTo-XUnityDictionaryLine $line))
+    $converted = ConvertTo-XUnityDictionaryLine $line
+    $separator = Find-XUnityDictionarySeparator $converted
+    if ($separator -gt 0) {
+        $source = $converted.Substring(0, $separator)
+        $translation = $converted.Substring($separator + 1)
+        $dialogueMap[$source] = $translation
     }
 }
+$dialogueLines = @(
+    $dialogueMap.GetEnumerator() | ForEach-Object {
+        $_.Key + '=' + $_.Value
+    }
+)
 [IO.File]::WriteAllLines(
     (Join-Path $fallbackPluginDirectory 'RuntimeDialogue_zh.txt'),
     $dialogueLines,

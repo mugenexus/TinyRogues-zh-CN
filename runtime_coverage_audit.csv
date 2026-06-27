@@ -1,0 +1,183 @@
+﻿status,component,source,history_files
+dialogue,Text,*Knit*,live:_TmpUntranslated.txt
+dialogue,Text,*SIP*,live:_TmpUntranslated.txt
+dialogue,Text,A favour?\nV,live:_TmpUntranslated.txt
+dialogue,Text,A favour?\nVery ,live:_TmpUntranslated.txt
+dialogue,Text,A favour?\nVery wel,live:_TmpUntranslated.txt
+dialogue,Text,A favour?\nVery well.,live:_TmpUntranslated.txt
+dialogue,Text,Doing w,live:_TmpUntranslated.txt
+dialogue,Text,Doing well,live:_TmpUntranslated.txt
+dialogue,Text,Glad,live:_TmpUntranslated.txt
+dialogue,Text,Glad to ,live:_TmpUntranslated.txt
+dialogue,Text,Glad to be\n,live:_TmpUntranslated.txt
+dialogue,Text,Glad to be\nof h,live:_TmpUntranslated.txt
+dialogue,Text,Glad to be\nof help.,live:_TmpUntranslated.txt
+dialogue,Text,Need a litt,live:_TmpUntranslated.txt
+dialogue,Text,Need a little h,live:_TmpUntranslated.txt
+dialogue,Text,Need a little help,live:_TmpUntranslated.txt
+dialogue,Text,Need a little help?,live:_TmpUntranslated.txt
+exact,Banner Text (TMP),BOSS DEFEATED,live:_TmpUntranslated.txt
+exact,Boss Name Text,Mandrake,live:_TmpUntranslated.txt
+exact,Boss Name Text,Vampire,live:_TmpUntranslated.txt
+exact,Choice 1 (TMP),> <color=#FFEB04>Red</color>,live:_TmpUntranslated.txt
+exact,Choice 2 (TMP),  <color=#808080>Green</color>,live:_TmpUntranslated.txt
+exact,Choice 3 (TMP),  <color=#808080>Blue</color>,live:_TmpUntranslated.txt
+exact,Choice A (TMP),<color=#FFEB04>>Yes<</color>,live:_TmpUntranslated.txt
+exact,Choice B (TMP),<color=#FFEB04>>No<</color>,live:_TmpUntranslated.txt
+exact,Cinder Modifier Title,High Scores,live:_TmpUntranslated.txt
+exact,Dialog Text,Delete Save Data in Slot 2?,live:_TmpUntranslated.txt
+exact,Elite Enchantment Text,Frozen Enchanted\n,live:_TmpUntranslated.txt
+exact,Elite Enchantment Text,Laser Enchanted\n,live:_TmpUntranslated.txt
+exact,Elite Enchantment Text,Plague Enchanted\n,live:_TmpUntranslated.txt
+exact,Main Header,<color=#00B824>Bomber Garb</color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#00B824>War Belt</color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#00B824>Wedding Dress</color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#4CC2FF>Blueberries</color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#4CC2FF>Carrot on a Stick</color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#4CC2FF>Chef's Hat</color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#4CC2FF>Circlet</color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#4CC2FF>Echo Shard</color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#4CC2FF>Freezing Scepter +1</color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#4CC2FF>Nunchaku +1</color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#4CC2FF>Red Hoodie</color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#4CC2FF>Reinforced Club +4</color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#FFDB59>Frost Touch Gauntlets</color>,live:_TmpUntranslated.txt
+exact,Main Header,Flask Charge,live:_TmpUntranslated.txt
+exact,Main Header,Green Blossom,live:_TmpUntranslated.txt
+exact,Main Header,Key [x2],live:_TmpUntranslated.txt
+exact,Main Header,Mead,live:_TmpUntranslated.txt
+exact,Main Header,Small Gift Box,live:_TmpUntranslated.txt
+exact,Main Header,Spore Pine Resin,live:_TmpUntranslated.txt
+exact,Main Header,Whiskey,live:_TmpUntranslated.txt
+exact,Name (TMP),<color=#008E05>Spore Pine Resin</color>,live:_TmpUntranslated.txt
+exact,Name (TMP),<color=#FCC926>Tipsiness</color>,live:_TmpUntranslated.txt
+exact,Name (TMP),<color=#FFC414>Mead</color>,live:_TmpUntranslated.txt
+exact,Splash Text,Butter up a cleric!,live:_TmpUntranslated.txt
+exact,Splash Text,SURPRISE!,live:_TmpUntranslated.txt
+exact,Splash Text,There is no escape!,live:_TmpUntranslated.txt
+exact,Splash Text,"To be fair, you have to have a very high IQ to understand Tiny Rogues.",live:_TmpUntranslated.txt
+exact,Splash Text,You're pretty cool!,live:_TmpUntranslated.txt
+exact,Stage Title (TMP),The Catacombs,live:_TmpUntranslated.txt
+exact,Stage Title (TMP),The Desert,live:_TmpUntranslated.txt
+exact,Text,*You don't have\ne,live:_TmpUntranslated.txt
+exact,Text,*You don't have\nenou,live:_TmpUntranslated.txt
+exact,Text,"+1 <color=#26B0FF>Mana</color><sprite name=""Mana"">",live:_TmpUntranslated.txt
+exact,Text,+1 <color=#FCC926>Tipsiness</color>,live:_TmpUntranslated.txt
+exact,Text,+3 <color=#26B0FF>INT</color>,live:_TmpUntranslated.txt
+exact,Text,+3 <color=#26FF66>DEX</color>,live:_TmpUntranslated.txt
+exact,Text,+3 <color=#FF2666>STR</color>,live:_TmpUntranslated.txt
+exact,Text,-1 <color=#FCC926>Tipsiness</color>,live:_TmpUntranslated.txt
+exact,Text,<color=#406E7D>ARMOR</color>,live:_TmpUntranslated.txt
+exact,Text,BLOCKED,live:_TmpUntranslated.txt
+exact,Text,Bar Maiden,live:_TmpUntranslated.txt
+exact,Text,Cellar,live:_TmpUntranslated.txt
+exact,Text,Cleric,live:_TmpUntranslated.txt
+exact,Text,Creepy Wizard,live:_TmpUntranslated.txt
+exact,Text,Dwarf Warrior,live:_TmpUntranslated.txt
+exact,Text,Fair Lady,live:_TmpUntranslated.txt
+exact,Text,Farmer,live:_TmpUntranslated.txt
+exact,Text,HSssSssS！,live:_TmpUntranslated.txt
+exact,Text,Ha-,live:_TmpUntranslated.txt
+exact,Text,Hello there! You seem strong.\nNe,live:_TmpUntranslated.txt
+exact,Text,Hello there! You seem strong.\nNeed ,live:_TmpUntranslated.txt
+exact,Text,Hello!\nY,live:_TmpUntranslated.txt
+exact,Text,Hello!\nYou ,live:_TmpUntranslated.txt
+exact,Text,Hello!\nYou look,live:_TmpUntranslated.txt
+exact,Text,Howdy!\n,live:_TmpUntranslated.txt
+exact,Text,Need a ,live:_TmpUntranslated.txt
+exact,Text,Nye-he-he-he!\nWel,live:_TmpUntranslated.txt
+exact,Text,Nye-he-he-he!\nWelcom,live:_TmpUntranslated.txt
+exact,Text,"Nye-he-he-he!\nWelcome, t",live:_TmpUntranslated.txt
+exact,Text,"Nye-he-he-he!\nWelcome, trave",live:_TmpUntranslated.txt
+exact,Text,"Nye-he-he-he!\nWelcome, travelle",live:_TmpUntranslated.txt
+exact,Text,Old Hag,live:_TmpUntranslated.txt
+exact,Text,Potion Buyer,live:_TmpUntranslated.txt
+exact,Text,Set Stash,live:_TmpUntranslated.txt
+exact,Text,Smuggler,live:_TmpUntranslated.txt
+exact,Text,Undead Merchant,live:_TmpUntranslated.txt
+exact,Text,Viking,live:_TmpUntranslated.txt
+exact,Text,Would you like to stay\n,live:_TmpUntranslated.txt
+exact,Text,Would you like to stay\nfor ,live:_TmpUntranslated.txt
+exact,Text,You disrupt nature's peace...\nI ,live:_TmpUntranslated.txt
+exact,Text,You disrupt nature's peace...\nI wil,live:_TmpUntranslated.txt
+exact,Text,You disrupt nature's peace...\nI will st,live:_TmpUntranslated.txt
+exact,Text,You disrupt nature's peace...\nI will stop ,live:_TmpUntranslated.txt
+exact,Title Text,Blacksmith,live:_TmpUntranslated.txt
+exact,Title Text,Blood Altar,live:_TmpUntranslated.txt
+exact,Title Text,Broccoli,live:_TmpUntranslated.txt
+exact,Title Text,Guaranteed\nSet Item,live:_TmpUntranslated.txt
+exact,Title Text,Guaranteed\nUncommon Item,live:_TmpUntranslated.txt
+exact,Title Text,Lollipop,live:_TmpUntranslated.txt
+exact,Title Text,Petrified Hoard,live:_TmpUntranslated.txt
+exact,Title Text,Warrior Stash,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),CALL TO ADVENTURE,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),LEFT TO FATE,live:_TmpUntranslated.txt
+exact,Trait Title,Best Friends Forever,live:_TmpUntranslated.txt
+exact,Trait Title,Forethought,live:_TmpUntranslated.txt
+exact,Trait Title,Intuition,live:_TmpUntranslated.txt
+exact,Trait Title,Razor's Edge,live:_TmpUntranslated.txt
+exact,Trait Title,Steady Strikes,live:_TmpUntranslated.txt
+exact,Trait Title,Threat Reckoning,live:_TmpUntranslated.txt
+exact,Trait Title,Two Steps Ahead,live:_TmpUntranslated.txt
+exact,Value,<color=#4CC2FF>Uncommon</color>,live:_TmpUntranslated.txt
+general_fragments,Choice 2 (TMP),"  <color=#808080><color=#008E05>Champagne</color> [<color=#FCC926><color=#FFFFFF>10</color> Gold<sprite name=""Gold""></color>]</color>",live:_TmpUntranslated.txt
+general_fragments,Choice 2 (TMP),"  <color=#808080><color=#8F563B>Rum</color> [<color=#FCC926><color=#FFFFFF>5</color> Gold<sprite name=""Gold""></color>]</color>",live:_TmpUntranslated.txt
+general_fragments,Choice 2 (TMP),"  <color=#808080>Upgrade <color=grey>[<color=#FFFFFF>20</color> Gold<sprite name=""Gold"">]</color></color>",live:_TmpUntranslated.txt
+general_fragments,Choice 3 (TMP),"  <color=#808080><color=#DE6A1D>Whiskey</color> [<color=#FCC926><color=#FFFFFF>5</color> Gold<sprite name=""Gold""></color>]</color>",live:_TmpUntranslated.txt
+general_fragments,Trait Description,Gain stats if you have this trait.\n•Example line 1.\n•Example line 2.\n•Example line 3.\n•Example line 4.,live:_TmpUntranslated.txt
+regex,Ability Description,"Deal <color=#00E61A>x1.10</color> <color=#6E5442>Physical Damage </color>per <color=#406E7D>Armor Container</color><sprite name=""Armor""> you have.\n<color=#7F7F7FFF>(<color=#00E61A>x1.20</color> currently)</color>",live:_TmpUntranslated.txt
+regex,Choice 2 (TMP),"> <color=#FFEB04><color=#008E05>Champagne</color> [<color=#FCC926><color=#FFFFFF>10</color> Gold<sprite name=""Gold""></color>]</color>",live:_TmpUntranslated.txt
+regex,Choice 2 (TMP),"> <color=#FFEB04><color=#8F563B>Rum</color> [<color=#FCC926><color=#FFFFFF>5</color> Gold<sprite name=""Gold""></color>]</color>",live:_TmpUntranslated.txt
+regex,Choice 3 (TMP),"> <color=#FFEB04><color=#DE6A1D>Whiskey</color> [<color=#FCC926><color=#FFFFFF>5</color> Gold<sprite name=""Gold""></color>]</color>",live:_TmpUntranslated.txt
+regex,Description (TMP),<color=#00E61A>+2.5%</color> <color=#FFFFFF>Attack Speed </color><color=#808080>[<color=#A61FFF><color=#A61FFF>Booze</color></color>] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>Buff</color></color>] </color>,live:_TmpUntranslated.txt
+regex,Description (TMP),<color=#00E61A>+25</color> <color=#00E317>to</color> <color=#00E61A>30</color> <color=#1F852E>Poison Damage </color>to <color=#A61FFF>Weapons</color>\n<color=#808080>[<color=#FFFFFF>4</color> rooms]</color><color=#808080> [1/1 stacks] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>Infusion</color></color>] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>Buff</color></color>] </color>,live:_TmpUntranslated.txt
+regex,Description (TMP),<color=#00E61A>+25</color> <color=#00E317>to</color> <color=#00E61A>30</color> <color=#1F852E>Poison Damage </color>to <color=#A61FFF>Weapons</color>\n<color=#808080>[<color=#FFFFFF>7</color> rooms]</color><color=#808080> [1/1 stacks] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>Infusion</color></color>] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>Buff</color></color>] </color>,live:_TmpUntranslated.txt
+regex,Description (TMP),•Stacks: 1/<color=#00E61A>3</color>\n•Duration: <color=#00E61A>10</color> rooms per stack\n•Lose next <color=#A61FFF>booze</color> <color=#A61FFF>buff</color> in <color=#00FF00>2</color> rooms.,live:_TmpUntranslated.txt
+regex,Description Text,"+1 <color=#3B3B7A>CHAOTIC</color><sprite name=""Chaos"">",live:_TmpUntranslated.txt
+regex,Description Text,"+1 <color=#5ECCE3>LAWFUL</color><sprite name=""Lawful"">",live:_TmpUntranslated.txt
+regex,Description Text,"+1 <color=#FCC926>GOOD</color> <sprite name=""Good"">",live:_TmpUntranslated.txt
+regex,Description Text,"+1 <color=#FF0000>EVIL</color> <sprite name=""Evil"">",live:_TmpUntranslated.txt
+regex,Description Text,"+1 <color=#FF0000>EVIL</color><sprite name=""Evil"">\n<color=grey>[once per run]</color>",live:_TmpUntranslated.txt
+regex,Description Text,<color=#6BBD30>Stam. Rec. Time</color>: <color=#00E317>4 seconds</color>,live:_TmpUntranslated.txt
+regex,Description Text,<color=#A61FFF>Weapons</color> gain <color=#00E317>x1.10</color>\nDamage per <color=#A61FFF>Upgrade Level</color>.,live:_TmpUntranslated.txt
+regex,Description Text,"<color=#FF3326>Critical Hit Chance</color><sprite name=""Critical_Hit"">: <color=#00E317>12.00%</color>\n<color=#FF3326>Critical Hit Damage</color><sprite name=""Critical_Hit"">: <color=#00E317>200%</color>",live:_TmpUntranslated.txt
+regex,Description Text,"Any interaction in\nthe Black Market\nwill add <color=#00E317>+1</color> <color=#FF0000>Evil</color><sprite name=""Evil"">\nonce per run.",live:_TmpUntranslated.txt
+regex,Description Text,"Buy Charms\nfor <color=#FCC926>Gold</color><sprite name=""Gold"">.",live:_TmpUntranslated.txt
+regex,Description Text,"Buy Equipment\nfor <color=#FCC926>Gold</color><sprite name=""Gold"">.",live:_TmpUntranslated.txt
+regex,Description Text,Contains a\n<color=#FF2666>Melee</color> <color=#A61FFF>Weapon</color>.,live:_TmpUntranslated.txt
+regex,Description Text,Contains an\nEquipment Item\nwith Set Bonus.,live:_TmpUntranslated.txt
+regex,Description Text,"Costs 1 <color=#FF3326>Heart</color><sprite name=""Health"">\nto open.",live:_TmpUntranslated.txt
+regex,Description Text,Grants <color=#00E317>2</color>\n<color=#FCC926>Keys</color>.,live:_TmpUntranslated.txt
+regex,Description Text,"Refills all\n<color=#FF3326>Hearts</color><sprite name=""Heart"">\nand Flasks<sprite name=""Flask"">.",live:_TmpUntranslated.txt
+regex,Description Text,"Roll for an item\nof a chosen type\nfor the cost of 1 <color=#FF3326>Heart</color><sprite name=""Health"">.",live:_TmpUntranslated.txt
+regex,Description Text,Sell weapons\nand equipment.,live:_TmpUntranslated.txt
+regex,Description Text,"Upgrade Weapons\nand repair\n<color=#406E7D>Armor</color><sprite name=""Armor"">.",live:_TmpUntranslated.txt
+regex,Description Text,"Your Power: <color=#00E317>0</color>\n<sprite name=""SubArrow""><color=#00E317>+0%</color> Damage\n<sprite name=""SubArrow""><color=#00E317>+0%</color> Area Radius",live:_TmpUntranslated.txt
+regex,Input Alias,"E<sprite name=""Arrow_Right"">Use <color=#FCC926><color=#FCC926>Key</color><sprite name=""Key""></color>\nto open.",live:_TmpUntranslated.txt
+regex,Text,+1 <color=#5ECCE3>LAWFUL</color>,live:_TmpUntranslated.txt
+regex,Text,+1 <color=#FF0000>EVIL</color>,live:_TmpUntranslated.txt
+regex,Text,"<color=#3B3B7A>Curses</color><sprite name=""Curse""> you.",live:_TmpUntranslated.txt
+regex,Text,<color=#8000FF><color=#8000FF>Slow</color>: </color><color=#FF0000>-5%</color> <color=#FFFFFF>Attack Speed</color>,live:_TmpUntranslated.txt
+regex,Text,"<color=#FCC926>Price:</color> <color=#FFFFFF>15</color> <color=#FCC926><color=#FCC926>Gold</color><sprite name=""Gold""></color>",live:_TmpUntranslated.txt
+regex,Text,"<color=#FCC926>Price:</color> <color=#FFFFFF>16</color> <color=#FCC926><color=#FCC926>Gold</color><sprite name=""Gold""></color>",live:_TmpUntranslated.txt
+regex,Text,"<color=#FCC926>Price:</color> <color=#FFFFFF>17</color> <color=#FCC926><color=#FCC926>Gold</color><sprite name=""Gold""></color>",live:_TmpUntranslated.txt
+regex,Text,"<color=#FCC926>Price:</color> <color=#FFFFFF>19</color> <color=#FCC926><color=#FCC926>Gold</color><sprite name=""Gold""></color>",live:_TmpUntranslated.txt
+regex,Text,"<color=#FCC926>Price:</color> <color=#FFFFFF>4</color> <color=#FCC926><color=#FCC926>Gold</color><sprite name=""Gold""></color>",live:_TmpUntranslated.txt
+regex,Text,Refills <color=#00E317>1</color> Flask.,live:_TmpUntranslated.txt
+regex,Text,To open locked things!,live:_TmpUntranslated.txt
+regex,Tooltip Text (TMP),"<color=#3B3B7A>Curse</color><sprite name=""Curse""> is <color=#00E317>x0.75</color> less likely to downgrade Room Rewards.",live:_TmpUntranslated.txt
+regex,Tooltip Text (TMP),"Gain <color=#00E317>+1</color> <color=#2BAD99>Suppression</color><sprite name=""Suppression""> in the Floor 1, 2 and 3 Boss Fight.",live:_TmpUntranslated.txt
+technical_ignored,Ability Description,asdasd\nasdasd\nasdasd,live:_TmpUntranslated.txt
+technical_ignored,Ability Title,My Ability,live:_TmpUntranslated.txt
+technical_ignored,Text,Ey,live:_TmpUntranslated.txt
+technical_ignored,Text,HS,live:_TmpUntranslated.txt
+technical_ignored,Text,HSs,live:_TmpUntranslated.txt
+technical_ignored,Text,If ,live:_TmpUntranslated.txt
+technical_ignored,Text,It ,live:_TmpUntranslated.txt
+technical_ignored,Text,Ne,live:_TmpUntranslated.txt
+technical_ignored,Text,Nee,live:_TmpUntranslated.txt
+technical_ignored,Text,Oh,live:_TmpUntranslated.txt
+technical_ignored,Text,Th,live:_TmpUntranslated.txt
+technical_ignored,Text,We ,live:_TmpUntranslated.txt
+technical_ignored,Text,Who,live:_TmpUntranslated.txt
+technical_ignored,Text,asdasdasdasdasdsadasddsadasdasdasdasdasdasdsadasdasdas\nasdasd\nasdasd,live:_TmpUntranslated.txt
