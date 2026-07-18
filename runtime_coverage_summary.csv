@@ -5,16 +5,23 @@ regex,Description Text,20
 dialogue,Text,17
 technical_ignored,Text,12
 regex,Text,11
+exact,Tooltip Title (TMP),9
 exact,Title Text,8
+exact,Tooltip Text (TMP),7
 exact,Trait Title,7
 exact,Splash Text,5
+typing_prefix,Text,5
+exact,Equipment Name,4
 regex,Description (TMP),4
 exact,Elite Enchantment Text,3
 exact,Name (TMP),3
 general_fragments,Choice 2 (TMP),3
+uncovered,Text,3
 exact,Boss Name Text,2
+exact,Class Ability,2
+exact,Class Ability Title,2
+exact,Class Name,2
 exact,Stage Title (TMP),2
-exact,Tooltip Title (TMP),2
 regex,Choice 2 (TMP),2
 regex,Tooltip Text (TMP),2
 exact,Banner Text (TMP),1
@@ -25,6 +32,7 @@ exact,Choice A (TMP),1
 exact,Choice B (TMP),1
 exact,Cinder Modifier Title,1
 exact,Dialog Text,1
+exact,Skill Name,1
 exact,Value,1
 general_fragments,Choice 3 (TMP),1
 general_fragments,Trait Description,1

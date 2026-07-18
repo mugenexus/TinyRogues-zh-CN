@@ -25,10 +25,20 @@ exact,Choice 3 (TMP),  <color=#808080>Blue</color>,live:_TmpUntranslated.txt
 exact,Choice A (TMP),<color=#FFEB04>>Yes<</color>,live:_TmpUntranslated.txt
 exact,Choice B (TMP),<color=#FFEB04>>No<</color>,live:_TmpUntranslated.txt
 exact,Cinder Modifier Title,High Scores,live:_TmpUntranslated.txt
+exact,Class Ability,"Gain <color=#00E61A>+10%</color> <color=#FFFFFF>Attack Speed </color>per <color=#FF3326>Heart Container</color><sprite name=""Heart""> you have.",live:_TmpUntranslated.txt
+exact,Class Ability,"Gain <color=#00E61A>x2.00</color> <color=#00D608>Lucky Hit Chance</color><sprite name=""Luck"">.",live:_TmpUntranslated.txt
+exact,Class Ability Title,<color=#FCC926>Blessed</color>,live:_TmpUntranslated.txt
+exact,Class Ability Title,<color=#FF2666>Steadfast</color>,live:_TmpUntranslated.txt
+exact,Class Name,Cleric,live:_TmpUntranslated.txt
+exact,Class Name,Warrior,live:_TmpUntranslated.txt
 exact,Dialog Text,Delete Save Data in Slot 2?,live:_TmpUntranslated.txt
 exact,Elite Enchantment Text,Frozen Enchanted\n,live:_TmpUntranslated.txt
 exact,Elite Enchantment Text,Laser Enchanted\n,live:_TmpUntranslated.txt
 exact,Elite Enchantment Text,Plague Enchanted\n,live:_TmpUntranslated.txt
+exact,Equipment Name,<color=#4CC2FF>Talisman</color>,live:_TmpUntranslated.txt
+exact,Equipment Name,<color=#808080>Buckler</color>,live:_TmpUntranslated.txt
+exact,Equipment Name,<color=#808080>Cleric Robe</color>,live:_TmpUntranslated.txt
+exact,Equipment Name,King Bible,live:_TmpUntranslated.txt
 exact,Main Header,<color=#00B824>Bomber Garb</color>,live:_TmpUntranslated.txt
 exact,Main Header,<color=#00B824>War Belt</color>,live:_TmpUntranslated.txt
 exact,Main Header,<color=#00B824>Wedding Dress</color>,live:_TmpUntranslated.txt
@@ -52,6 +62,7 @@ exact,Main Header,Whiskey,live:_TmpUntranslated.txt
 exact,Name (TMP),<color=#008E05>Spore Pine Resin</color>,live:_TmpUntranslated.txt
 exact,Name (TMP),<color=#FCC926>Tipsiness</color>,live:_TmpUntranslated.txt
 exact,Name (TMP),<color=#FFC414>Mead</color>,live:_TmpUntranslated.txt
+exact,Skill Name,Consecrate,live:_TmpUntranslated.txt
 exact,Splash Text,Butter up a cleric!,live:_TmpUntranslated.txt
 exact,Splash Text,SURPRISE!,live:_TmpUntranslated.txt
 exact,Splash Text,There is no escape!,live:_TmpUntranslated.txt
@@ -110,8 +121,22 @@ exact,Title Text,Guaranteed\nUncommon Item,live:_TmpUntranslated.txt
 exact,Title Text,Lollipop,live:_TmpUntranslated.txt
 exact,Title Text,Petrified Hoard,live:_TmpUntranslated.txt
 exact,Title Text,Warrior Stash,live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),Dice Rewards grant <color=#00E317>+1</color> Golden Dice.,live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),"Gain <color=#00E317>+1</color> <color=#2BAD99>Suppression</color><sprite name=""Suppression""> in the Floor 10 Boss Fight.",live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),"Gain <color=#00E317>+1</color> <color=#FCC926>Revive</color><sprite name=""Revive"">.",live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),"Once per Run, when you enter a Floor beyond Floor 5 without any <color=#3B3B7A>Bombs</color><sprite name=""Bomb"">, gain <color=#00E317>3</color> <color=#3B3B7A>Bombs</color><sprite name=""Bomb"">.",live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),"Once per Run, when you enter a Floor beyond Floor 5 without any <color=#FCC926>Keys</color><sprite name=""Key"">, gain <color=#00E317>2</color> <color=#FCC926>Keys</color><sprite name=""Key"">.",live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),Secret Rooms are highlighted.,live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),"While you are Level 0,\nBosses have\n<color=#00E317>x0.90</color> <color=#FF3326>Health</color><sprite name=""Heart""> and <color=#406E7D>Armor</color><sprite name=""Armor"">.",live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),CALL TO ADVENTURE,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),CATHARSIS,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),EXPLOSIVE DELIVERY,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),GOLDEN ROULETTE,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),LAZY STROLL,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),LEFT TO FATE,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),REBIRTH,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),THE KEY TO SUCCESS,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),TREASURE HUNTER,live:_TmpUntranslated.txt
 exact,Trait Title,Best Friends Forever,live:_TmpUntranslated.txt
 exact,Trait Title,Forethought,live:_TmpUntranslated.txt
 exact,Trait Title,Intuition,live:_TmpUntranslated.txt
@@ -181,3 +206,11 @@ technical_ignored,Text,Th,live:_TmpUntranslated.txt
 technical_ignored,Text,We ,live:_TmpUntranslated.txt
 technical_ignored,Text,Who,live:_TmpUntranslated.txt
 technical_ignored,Text,asdasdasdasdasdsadasddsadasdasdasdasdasdasdsadasdasdas\nasdasd\nasdasd,live:_TmpUntranslated.txt
+typing_prefix,Text,*si,live:_TmpUntranslated.txt
+typing_prefix,Text,*sizzle,live:_TmpUntranslated.txt
+typing_prefix,Text,*sizzle cr,live:_TmpUntranslated.txt
+typing_prefix,Text,*sizzle crackl,live:_TmpUntranslated.txt
+typing_prefix,Text,*sizzle crackle si,live:_TmpUntranslated.txt
+uncovered,Text,*sizzle crackle sizzl,live:_TmpUntranslated.txt
+uncovered,Text,"Go,",live:_TmpUntranslated.txt
+uncovered,Text,"Oh,",live:_TmpUntranslated.txt
