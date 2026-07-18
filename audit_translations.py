@@ -24,7 +24,35 @@ TAG_RE = re.compile(r"<[^>]+>")
 CHINESE_RE = re.compile(r"[\u3400-\u9fff]")
 ENGLISH_WORD_RE = re.compile(r"[A-Za-z][A-Za-z'-]{1,}")
 PLACEHOLDER_RE = re.compile(
-    r"\{[^{}]+\}|%[A-Za-z]|\\[tr]|\[(?:E|F|Q|C|ESC|SHIFT|ENTER|SPACE|TAB)\]"
+    r"\{[^{}]+\}|%[A-Za-z]|\\[tr]|"
+    r"\[(?:E|F|Q|C|ESC|SHIFT|ENTER|SPACE|TAB)"
+    r"(?:\s*\+\s*(?:E|F|Q|C|ESC|SHIFT|ENTER|SPACE|TAB))*\]",
+    re.IGNORECASE,
+)
+PAREN_PLACEHOLDER_RE = re.compile(r"\([+-]?[A-Za-z][A-Za-z0-9]*\)")
+ALPHANUMERIC_ID_RE = re.compile(r"\b[A-Za-z]+\d+[A-Za-z0-9]*\b")
+KEY_NAMES = {"tab", "shift", "esc", "enter", "space"}
+NON_PLAYER_ASSET_RE = re.compile(
+    r"copyright|all rights reserved|trademark|digital id class|"
+    r"Renogare|Liberation is a registered|based on Arimo",
+    re.IGNORECASE,
+)
+TECHNICAL_METADATA_RE = re.compile(
+    r"Entity.*Notation|maxInclusive|maxExclusive|minInclusive|minExclusive|"
+    r"ResetState|WaitHandle|ObjectCreationHandling|uriString|Public Key Token|"
+    r"unsafeTypeForwarding|ushort\.MaxValue|BurstCompile|DataTable|DataColumn|"
+    r"DataSet|SetLength|Array\.Resize|ListUtilities|IList|Cinemachine|"
+    r"CompareOption|Xml|Decal|block='|TypedReferences|DTD|RenderPass|surrogate|"
+    r"MonoTlsSettings|ContainsGenericParameters|TailContraction|ConformanceLevel|"
+    r"MaxLength|ISerial|MemberInfo|NOTATION|TextGenerator|RectTransform|"
+    r"Camera\.allCamerasCount|PlayerInput|RTHandle|MSAA|RenderObjects|Rethrow|"
+    r"DrawSettings|maxShaderPasses|Range object|null instance|object ID|"
+    r"SetPixelData|TKey|EndValidation|AdjustmentRule|DateTime|UseShellExecute|"
+    r"NSSubset|GameObject.*Toggle|ACE \(xn--\)|TimeOfDay|xsi:type|Unicode|"
+    r"SortedList|TransferEncoding|UnityWebRequest|UseDebugCamera|VisualElement|"
+    r"Strip Debug Variants|WriteStartDocument|Steamworks\.NET|endIndex|"
+    r"catch or finally|minOccurs|maxOccurs|SetObjectData|NSCompat|block attribute",
+    re.IGNORECASE,
 )
 SAFE_ENGLISH = {
     "exp",
@@ -70,8 +98,66 @@ def find_separator(line: str) -> int:
 
 def visible_text(value: str) -> str:
     value = TAG_RE.sub("", value)
+    value = PAREN_PLACEHOLDER_RE.sub("", value)
+    value = ALPHANUMERIC_ID_RE.sub("", value)
+    value = PLACEHOLDER_RE.sub("", value)
     value = value.replace("\\n", " ").replace("\\t", " ").replace("\\r", " ")
     return re.sub(r"\s+", " ", value).strip()
+
+
+def is_likely_runtime_text(value: str, key: str) -> bool:
+    if re.search(r"^\{nb\[{8,}|^sf\[{8,}|[\[\]@`]{8,}", value):
+        return False
+    if key.startswith("AUTO_") and re.search(r"([A-Za-z0-9])\1{7,}", value):
+        return False
+    if key.startswith("AUTO_") and re.search(r"\s{8,}", value):
+        return False
+    if (
+        key.startswith(("AUTO_RESOURCES_ASSETS_", "AUTO_SHAREDASSETS0_ASSETS_"))
+        and not re.search(r"\s", value)
+        and len(re.findall(r"[^A-Za-z0-9]", value)) >= 3
+    ):
+        return False
+    if (
+        key.startswith(("AUTO_RESOURCES_ASSETS_", "AUTO_SHAREDASSETS0_ASSETS_"))
+        and len(re.findall(r"\s", value)) <= 1
+        and len(re.findall(r"[^A-Za-z0-9\s]", value)) >= 4
+        and max((len(part) for part in re.findall(r"[A-Za-z]+", value)), default=0) <= 5
+    ):
+        return False
+    if NON_PLAYER_ASSET_RE.search(value):
+        return False
+    if re.search(
+        r"SIL OPEN FONT LICENSE|Open Font License|VeriSign|Certification Authority|"
+        r"Universal Render Pipeline|SRDebugger|Developed by Stompy Robot|FontForge|nullCRA",
+        value,
+        re.IGNORECASE,
+    ):
+        return False
+    if key.startswith("AUTO_RESOURCES_ASSETS_"):
+        internal_suffix = re.search(
+            r"(?: Effect| Event| Parent| Layout(?: Group| Element)?| Icon| Text| Display|"
+            r" Canvas| Animator| Sprite| Projectile| Trigger| Branch| Manager| Controller|"
+            r" Renderer| Shader| Material| Cache| Gate)$",
+            value,
+        )
+        if not re.search(r"[.!?:]|\[\[|<sprite|<color|<i>|<g>|//|##", value) and internal_suffix:
+            return False
+    if len(value) > 16 and not re.search(r"\s|<[^>]+>|\[\[", value):
+        letters = len(re.findall(r"[A-Za-z]", value))
+        symbols = len(re.findall(r"[^A-Za-z0-9]", value))
+        if symbols > letters:
+            return False
+    return True
+
+
+def is_stylized_sfx(key: str, value: str) -> bool:
+    return (
+        key.casefold().startswith("boss_")
+        and not re.search(r"\s", value)
+        and bool(re.search(r"[A-Za-z]", value))
+        and len(re.findall(r"[^A-Za-z0-9]", value)) >= 2
+    )
 
 
 def english_words(value: str) -> list[str]:
@@ -175,7 +261,7 @@ def audit_dictionary(
         if not is_regex:
             cross_entries[source].append((file.name, line_number, target))
 
-        if source == target:
+        if source == target and source.casefold() not in KEY_NAMES:
             add_issue(
                 issues,
                 "review",
@@ -271,7 +357,14 @@ def audit_csv(issues: list[dict[str, str]]) -> None:
                 )
                 continue
 
-            if source == target:
+            likely_runtime = is_likely_runtime_text(source, key)
+
+            if (
+                source == target
+                and likely_runtime
+                and not is_stylized_sfx(key, source)
+                and english_words(target)
+            ):
                 add_issue(
                     issues,
                     "review",
@@ -282,7 +375,11 @@ def audit_csv(issues: list[dict[str, str]]) -> None:
                     visible_text(source),
                 )
 
-            words = english_words(target)
+            technical_metadata = (
+                (row.get("source_file") or "").casefold().endswith("global-metadata.dat")
+                and bool(TECHNICAL_METADATA_RE.search(source))
+            )
+            words = english_words(target) if likely_runtime and not technical_metadata else []
             if len(words) >= 2:
                 add_issue(
                     issues,

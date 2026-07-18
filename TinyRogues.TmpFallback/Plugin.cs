@@ -13,7 +13,7 @@ public sealed class Plugin : BasePlugin
 {
     public const string PluginGuid = "mugen.tinyrogues.tmpfallback";
     public const string PluginName = "Tiny Rogues TMP Translation Fallback";
-    public const string PluginVersion = "1.5.14";
+    public const string PluginVersion = "1.5.18";
 
     internal static ManualLogSource PluginLog { get; private set; } = null!;
 
@@ -27,15 +27,17 @@ public sealed class Plugin : BasePlugin
 
 public sealed class TmpTranslationFallback : MonoBehaviour
 {
-    private const int MinimumDialoguePrefixLength = 4;
+    private const int MinimumDialoguePrefixLength = 3;
     private const int MaximumDialoguePrefixLength = 12;
     private readonly Dictionary<string, string> _translations = new(StringComparer.Ordinal);
     private readonly List<KeyValuePair<string, string>> _fragments = [];
     private readonly List<KeyValuePair<string, string>> _itemFragments = [];
+    private readonly List<KeyValuePair<string, string>> _structuredFragments = [];
     private readonly List<KeyValuePair<Regex, string>> _regexTranslations = [];
     private readonly Dictionary<string, List<DialogueEntry>> _dialogueEntries = new(StringComparer.OrdinalIgnoreCase);
     private readonly HashSet<string> _dumpedUntranslated = new(StringComparer.Ordinal);
     private readonly HashSet<string> _dumpedResidualTranslations = new(StringComparer.Ordinal);
+    private readonly HashSet<int> _expandedGroundItemPanels = [];
     private string _untranslatedDumpPath = string.Empty;
     private string _residualDumpPath = string.Empty;
     private float _nextScanTime;
@@ -54,6 +56,9 @@ public sealed class TmpTranslationFallback : MonoBehaviour
         LoadRegexFile();
         LoadPluginFragments("RuntimeFragments_zh.txt", _fragments);
         LoadPluginFragments("RuntimeItemFragments_zh.txt", _itemFragments);
+        _structuredFragments.AddRange(_fragments);
+        _structuredFragments.AddRange(_itemFragments);
+        _structuredFragments.Sort((left, right) => right.Key.Length.CompareTo(left.Key.Length));
         LoadDialogueDictionary("RuntimeDialogue_zh.txt");
 
         var textDirectory = Path.Combine(Paths.BepInExRootPath, "Translation", "zh", "Text");
@@ -94,8 +99,24 @@ public sealed class TmpTranslationFallback : MonoBehaviour
             var translated = Translate(textComponent, normalizedSource);
             if (translated != null && !string.Equals(normalizedSource, translated, StringComparison.Ordinal))
             {
+                var isGroundItemDetail = IsGroundItemDetail(textComponent, normalizedSource);
                 var finalText = ApplyLayout(textComponent.gameObject.name, normalizedSource, translated);
+                if (isGroundItemDetail)
+                {
+                    var sizedGroundItem = Regex.Match(
+                        finalText,
+                        "^<size=[^>]+>(?<body>.*)</size>$",
+                        RegexOptions.CultureInvariant | RegexOptions.Singleline);
+                    var groundItemBody = sizedGroundItem.Success
+                        ? sizedGroundItem.Groups["body"].Value
+                        : finalText;
+                    finalText = $"<size=82%>{groundItemBody}</size>";
+                }
                 textComponent.text = finalText;
+                if (isGroundItemDetail)
+                {
+                    ExpandGroundItemPanel(textComponent);
+                }
                 DumpResidualTranslation(textComponent, normalizedSource, finalText);
                 replacements++;
                 continue;
@@ -114,7 +135,54 @@ public sealed class TmpTranslationFallback : MonoBehaviour
     private string? Translate(TMP_Text textComponent, string source)
     {
         var objectName = textComponent.gameObject.name;
+        var directTranslation = TranslateDirect(source);
+        if (directTranslation != null)
+        {
+            return directTranslation;
+        }
 
+        // Some rainbow labels wrap every ASCII letter in its own color tag.
+        // Flatten only long decorated runs so normal colored stat grades stay intact.
+        var flattenedSource = FlattenDecoratedAsciiRuns(source);
+        if (!string.Equals(flattenedSource, source, StringComparison.Ordinal))
+        {
+            source = flattenedSource;
+            directTranslation = TranslateDirect(source);
+            if (directTranslation != null)
+            {
+                return directTranslation;
+            }
+        }
+
+        if (IsStructuredRichText(objectName, source))
+        {
+            var itemResult = ApplyFragments(
+                TranslateTagDelimitedConnectors(source.Replace('\u00A0', ' ')),
+                _structuredFragments);
+            if (!string.Equals(itemResult, source, StringComparison.Ordinal))
+            {
+                return itemResult;
+            }
+        }
+
+        var dialogue = TranslateDialogue(source);
+        if (dialogue != null)
+        {
+            return dialogue;
+        }
+
+        if (!ShouldApplyGeneralFragments(objectName, source))
+        {
+            return null;
+        }
+
+        var result = ApplyFragments(TranslateTagDelimitedConnectors(source), _fragments);
+
+        return string.Equals(result, source, StringComparison.Ordinal) ? null : result;
+    }
+
+    private string? TranslateDirect(string source)
+    {
         if (_translations.TryGetValue(source, out var exact))
         {
             return exact;
@@ -138,31 +206,7 @@ public sealed class TmpTranslationFallback : MonoBehaviour
             }
         }
 
-        if (IsStructuredRichText(objectName, source))
-        {
-            var itemResult = ApplyFragments(source, _itemFragments)
-                .Replace('\u00A0', ' ');
-            itemResult = ApplyFragments(itemResult, _fragments);
-            if (!string.Equals(itemResult, source, StringComparison.Ordinal))
-            {
-                return itemResult;
-            }
-        }
-
-        var dialogue = TranslateDialogue(source);
-        if (dialogue != null)
-        {
-            return dialogue;
-        }
-
-        if (!ShouldApplyGeneralFragments(objectName, source))
-        {
-            return null;
-        }
-
-        var result = ApplyFragments(source, _fragments);
-
-        return string.Equals(result, source, StringComparison.Ordinal) ? null : result;
+        return null;
     }
 
     private void DumpUntranslated(TMP_Text textComponent, string source)
@@ -256,7 +300,7 @@ public sealed class TmpTranslationFallback : MonoBehaviour
 
     private static bool ShouldIgnoreUntranslated(string objectName, string visibleText)
     {
-        if (objectName is "Error Message" or "Description Part 1" or "Description Part 2")
+        if (objectName == "Error Message")
         {
             return true;
         }
@@ -572,7 +616,7 @@ public sealed class TmpTranslationFallback : MonoBehaviour
             return true;
         }
 
-        return objectName == "Text" &&
+        return objectName is "Text" or "Description Text" &&
                (source.Contains("<color=#808080>Consumable</color>", StringComparison.Ordinal) ||
                 source.Contains("<color=#808080>消耗品</color>", StringComparison.Ordinal) ||
                 source.Contains("Gift Box", StringComparison.Ordinal) ||
@@ -593,6 +637,7 @@ public sealed class TmpTranslationFallback : MonoBehaviour
 
         return source.Contains("\n•", StringComparison.Ordinal) ||
                source.Contains("<color=#808080>Consumable</color>", StringComparison.Ordinal) ||
+               source.Contains("<color=#808080>消耗品</color>", StringComparison.Ordinal) ||
                source.Contains("Maximum Stacks:", StringComparison.Ordinal) ||
                source.Contains("Reward choices", StringComparison.Ordinal) ||
                source.StartsWith("Grants", StringComparison.Ordinal) ||
@@ -610,6 +655,7 @@ public sealed class TmpTranslationFallback : MonoBehaviour
             "Collection Item Title" or "Collection Item Description" or
             "Class Ability Title" or "Class Stats Text" or
             "Selected Gift Name" or "Selected Gift Description" or
+            "Description Part 1" or "Description Part 2" or
             "Cinder Modifier Title" or "Cinder Modifier Description" or
             "Button Text" or "Boss Name Text" or "Objective Header" or "Objective Text" or
             "Info Text" or "Skill Description" ||
@@ -657,6 +703,73 @@ public sealed class TmpTranslationFallback : MonoBehaviour
         }
 
         return translated;
+    }
+
+    private static bool IsGroundItemDetail(TMP_Text textComponent, string source)
+    {
+        return textComponent.gameObject.name == "Text" &&
+               source.Length >= 30 &&
+               source.Contains('\n') &&
+               HasNearbyGroundActionPrompt(textComponent);
+    }
+
+    private void ExpandGroundItemPanel(TMP_Text textComponent)
+    {
+        var textRect = textComponent.rectTransform;
+        if (textRect.parent is not RectTransform frame ||
+            !_expandedGroundItemPanels.Add(frame.GetInstanceID()) ||
+            frame.rect.width <= 0f ||
+            frame.rect.height <= 0f)
+        {
+            return;
+        }
+
+        var extraWidth = frame.rect.width * 0.2f;
+        var extraHeight = frame.rect.height;
+        var frameSize = frame.sizeDelta;
+        frameSize.x += extraWidth;
+        frameSize.y += extraHeight;
+        frame.sizeDelta = frameSize;
+
+        var textSize = textRect.sizeDelta;
+        if (Mathf.Approximately(textRect.anchorMin.x, textRect.anchorMax.x))
+        {
+            textSize.x += extraWidth;
+        }
+        if (Mathf.Approximately(textRect.anchorMin.y, textRect.anchorMax.y))
+        {
+            textSize.y += extraHeight;
+        }
+        textRect.sizeDelta = textSize;
+
+        Plugin.PluginLog.LogInfo(
+            $"Expanded ground item panel by {extraWidth:F0}x{extraHeight:F0} layout units.");
+    }
+
+    private static bool HasNearbyGroundActionPrompt(TMP_Text textComponent)
+    {
+        var ancestor = textComponent.transform.parent;
+        for (var depth = 0; depth < 5 && ancestor != null; depth++, ancestor = ancestor.parent)
+        {
+            foreach (var label in ancestor.gameObject.GetComponentsInChildren<TMP_Text>(true))
+            {
+                if (label == null || label == textComponent)
+                {
+                    continue;
+                }
+
+                var text = Regex.Replace(label.text ?? string.Empty, "<[^>]+>", string.Empty);
+                if (text.Contains("拾取", StringComparison.Ordinal) ||
+                    text.Contains("购买", StringComparison.Ordinal) ||
+                    text.Contains("Pick Up", StringComparison.OrdinalIgnoreCase) ||
+                    text.Contains("Buy", StringComparison.OrdinalIgnoreCase))
+                {
+                    return true;
+                }
+            }
+        }
+
+        return false;
     }
 
     private static string NormalizePotentiallyUnsupportedGlyphs(string value)
@@ -714,6 +827,14 @@ public sealed class TmpTranslationFallback : MonoBehaviour
                 return result;
             },
             RegexOptions.CultureInvariant);
+    }
+
+    private static string TranslateTagDelimitedConnectors(string source)
+    {
+        source = Regex.Replace(source, "(?<=>)to(?=<)", "至", RegexOptions.CultureInvariant);
+        source = Regex.Replace(source, "(?<=>)to (?=<color)", "作用于 ", RegexOptions.CultureInvariant);
+        source = Regex.Replace(source, "(?<=>)\\nto (?=<color)", "\n作用于 ", RegexOptions.CultureInvariant);
+        return Regex.Replace(source, "(?<=>)for (?=<color)", "持续 ", RegexOptions.CultureInvariant);
     }
 
     private static int FindSeparator(string line)
@@ -776,6 +897,15 @@ public sealed class TmpTranslationFallback : MonoBehaviour
     {
         var withoutTags = Regex.Replace(NormalizeNewlines(value), "<[^>]+>", string.Empty);
         return Regex.Replace(withoutTags, "\\s+", " ").Trim();
+    }
+
+    private static string FlattenDecoratedAsciiRuns(string value)
+    {
+        return Regex.Replace(
+            value,
+            "(?:<color=[^>]+>[A-Za-z ]</color>){4,}",
+            match => Regex.Replace(match.Value, "<[^>]+>", string.Empty),
+            RegexOptions.CultureInvariant | RegexOptions.IgnoreCase);
     }
 
     private static string GetDialoguePrefix(string visibleSource)

@@ -1,29 +1,28 @@
 ﻿status,component,count
-exact,Text,43
-exact,Main Header,20
+exact,Text,48
+exact,Main Header,29
+dialogue,Text,22
 regex,Description Text,20
-dialogue,Text,17
+exact,Tooltip Title (TMP),19
+exact,Tooltip Text (TMP),17
+regex,Text,12
 technical_ignored,Text,12
-regex,Text,11
-exact,Tooltip Title (TMP),9
-exact,Title Text,8
-exact,Tooltip Text (TMP),7
-exact,Trait Title,7
-exact,Splash Text,5
-typing_prefix,Text,5
+exact,Title Text,9
+exact,Trait Title,9
+exact,Splash Text,6
+exact,Elite Enchantment Text,5
 exact,Equipment Name,4
 regex,Description (TMP),4
-exact,Elite Enchantment Text,3
+exact,Boss Name Text,3
+exact,Hovered Dice Description,3
 exact,Name (TMP),3
 general_fragments,Choice 2 (TMP),3
-uncovered,Text,3
-exact,Boss Name Text,2
 exact,Class Ability,2
 exact,Class Ability Title,2
 exact,Class Name,2
+exact,Description Text,2
 exact,Stage Title (TMP),2
 regex,Choice 2 (TMP),2
-regex,Tooltip Text (TMP),2
 exact,Banner Text (TMP),1
 exact,Choice 1 (TMP),1
 exact,Choice 2 (TMP),1
@@ -39,5 +38,19 @@ general_fragments,Trait Description,1
 regex,Ability Description,1
 regex,Choice 3 (TMP),1
 regex,Input Alias,1
+regex,Splash Text,1
 technical_ignored,Ability Description,1
 technical_ignored,Ability Title,1
+technical_ignored,Choice 1 (TMP),1
+technical_ignored,Choice 10 (TMP),1
+technical_ignored,Choice 11 (TMP),1
+technical_ignored,Choice 2 (TMP),1
+technical_ignored,Choice 3 (TMP),1
+technical_ignored,Choice 4 (TMP),1
+technical_ignored,Choice 5 (TMP),1
+technical_ignored,Choice 6 (TMP),1
+technical_ignored,Choice 7 (TMP),1
+technical_ignored,Choice 8 (TMP),1
+technical_ignored,Choice 9 (TMP),1
+technical_ignored,Description Part 1,1
+technical_ignored,Description Part 2,1

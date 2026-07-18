@@ -8,6 +8,7 @@ from audit_runtime_coverage import (
     LIVE_RESIDUAL_FILE,
     ROOT,
     convert_dotnet_regex,
+    flatten_decorated_ascii_runs,
     general_route,
     history_label,
     is_structured,
@@ -39,7 +40,10 @@ ALLOWED_WORDS = {
     "XUnity",
     "Steam",
     "Discord",
+    "NaN",
+    "ig-gi-ig-gi-",
 }
+STYLED_WORD_RE = re.compile(r"(?:<color=[^>]+>[A-Za-z]</color>){2,}")
 
 
 def apply_fragments(source: str, fragments: list[tuple[str, str]]) -> str:
@@ -54,6 +58,13 @@ def apply_fragments(source: str, fragments: list[tuple[str, str]]) -> str:
     return "".join(parts)
 
 
+def translate_tag_delimited_connectors(source: str) -> str:
+    source = re.sub(r"(?<=>)to(?=<)", "至", source)
+    source = re.sub(r"(?<=>)to (?=<color)", "作用于 ", source)
+    source = re.sub(r"(?<=>)\nto (?=<color)", "\n作用于 ", source)
+    return re.sub(r"(?<=>)for (?=<color)", "持续 ", source)
+
+
 def convert_replacement(value: str) -> str:
     value = re.sub(r"\$\{([A-Za-z_][A-Za-z0-9_]*)\}", r"\\g<\1>", value)
     return re.sub(r"\$([0-9]+)", r"\\g<\1>", value)
@@ -64,6 +75,7 @@ def load_exact() -> dict[str, str]:
     for file_name in (
         "runtime_overrides_zh.txt",
         "runtime_plugin_overrides_zh.txt",
+        "runtime_dialogue_overrides_zh.txt",
     ):
         exact.update(load_pairs(ROOT / file_name))
 
@@ -80,7 +92,7 @@ def load_exact() -> dict[str, str]:
 
 def translate_dialogue_prefix(source: str, exact: dict[str, str]) -> str | None:
     current = visible(source).casefold()
-    if len(current) < 4:
+    if len(current) < 3:
         return None
 
     matches = {
@@ -115,7 +127,7 @@ def translate(
     exact: dict[str, str],
     regex_pairs: list[tuple[re.Pattern[str], str]],
     fragments: list[tuple[str, str]],
-    item_fragments: list[tuple[str, str]],
+    structured_fragments: list[tuple[str, str]],
 ) -> str:
     if source in exact:
         return exact[source]
@@ -134,12 +146,29 @@ def translate(
         if pattern.fullmatch(source):
             return pattern.sub(replacement, source)
 
+    flattened_source = flatten_decorated_ascii_runs(source)
+    if flattened_source != source:
+        source = flattened_source
+        if source in exact:
+            return exact[source]
+        color_wrapped = re.fullmatch(
+            r"<color=(?P<color>[^>]+)>(?P<text>[^<>]+)</color>", source
+        )
+        if color_wrapped and color_wrapped.group("text") in exact:
+            return (
+                f'<color={color_wrapped.group("color")}>'
+                f'{exact[color_wrapped.group("text")]}</color>'
+            )
+        for pattern, replacement in regex_pairs:
+            if pattern.fullmatch(source):
+                return pattern.sub(replacement, source)
+
     if is_structured(component, source):
-        result = apply_fragments(source, item_fragments).replace("\u00a0", " ")
-        return apply_fragments(result, fragments)
+        source = translate_tag_delimited_connectors(source.replace("\u00a0", " "))
+        return apply_fragments(source, structured_fragments)
 
     if general_route(component, source):
-        return apply_fragments(source, fragments)
+        return apply_fragments(translate_tag_delimited_connectors(source), fragments)
 
     dialogue = translate_dialogue_prefix(source, exact)
     if dialogue is not None:
@@ -148,8 +177,33 @@ def translate(
     return source
 
 
+def translate_until_stable(
+    component: str,
+    source: str,
+    exact: dict[str, str],
+    regex_pairs: list[tuple[re.Pattern[str], str]],
+    fragments: list[tuple[str, str]],
+    structured_fragments: list[tuple[str, str]],
+) -> str:
+    result = source
+    for _ in range(4):
+        translated = translate(
+            component,
+            result,
+            exact,
+            regex_pairs,
+            fragments,
+            structured_fragments,
+        )
+        if translated == result:
+            break
+        result = translated
+    return result
+
+
 def residual_words(value: str) -> list[str]:
     words: list[str] = []
+    value = STYLED_WORD_RE.sub("", value)
     for match in WORD_RE.finditer(visible(value)):
         word = match.group(0)
         if len(word) <= 1 or word in ALLOWED_WORDS:
@@ -165,6 +219,9 @@ def main() -> None:
     fragments.sort(key=lambda pair: len(pair[0]), reverse=True)
     item_fragments = load_pairs(ROOT / "runtime_item_fragments_zh.txt")
     item_fragments.sort(key=lambda pair: len(pair[0]), reverse=True)
+    structured_fragments = sorted(
+        [*fragments, *item_fragments], key=lambda pair: len(pair[0]), reverse=True
+    )
 
     samples: dict[tuple[str, str], set[str]] = {}
     for path in iter_untranslated_files():
@@ -180,13 +237,13 @@ def main() -> None:
     for (component, source), files in samples.items():
         if is_technical(component, source):
             continue
-        translated = translate(
+        translated = translate_until_stable(
             component,
             source,
             exact,
             regex_pairs,
             fragments,
-            item_fragments,
+            structured_fragments,
         )
         # 历史日志中的纯英文对话数量很大，且由独立对话路由处理。
         # 本报告聚焦当前运行样本，以及翻译后仍夹杂英文的混合文本。
@@ -214,16 +271,23 @@ def main() -> None:
             source = unescape(escaped_source)
             if is_technical(component, source):
                 continue
-            translated = translate(
+            translated = translate_until_stable(
                 component,
                 source,
                 exact,
                 regex_pairs,
                 fragments,
-                item_fragments,
+                structured_fragments,
             )
             if translated == source:
-                translated = unescape(escaped_translated)
+                translated = translate_until_stable(
+                    component,
+                    unescape(escaped_translated),
+                    exact,
+                    regex_pairs,
+                    fragments,
+                    structured_fragments,
+                )
             words = residual_words(translated)
             if not words:
                 continue

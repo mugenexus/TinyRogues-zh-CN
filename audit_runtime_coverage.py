@@ -30,6 +30,9 @@ REPORT_FILE = ROOT / "runtime_coverage_audit.csv"
 SUMMARY_FILE = ROOT / "runtime_coverage_summary.csv"
 
 TAG_RE = re.compile(r"<[^>]+>")
+DECORATED_ASCII_RUN_RE = re.compile(
+    r"(?:<color=[^>]+>[A-Za-z ]</color>){4,}", re.IGNORECASE
+)
 CHINESE_RE = re.compile(r"[\u3400-\u9fff]")
 ENGLISH_WORD_RE = re.compile(r"[A-Za-z][A-Za-z'-]{1,}")
 TECHNICAL_COMPONENTS = {
@@ -49,6 +52,7 @@ TECHNICAL_TEXT_PATTERNS = [
     re.compile(r"^asdasd(?:\s+asdasd)*$", re.IGNORECASE),
     re.compile(r'^YOu have been inflicted with "SOMETHING"', re.IGNORECASE),
     re.compile(r"^Gain stats if you have this trait\.", re.IGNORECASE),
+    re.compile(r"Example line 1\.", re.IGNORECASE),
 ]
 
 
@@ -93,6 +97,10 @@ def unescape(value: str) -> str:
 def visible(value: str) -> str:
     value = TAG_RE.sub("", value.replace("\r\n", "\n").replace("\r", "\n"))
     return re.sub(r"\s+", " ", value).strip()
+
+
+def flatten_decorated_ascii_runs(value: str) -> str:
+    return DECORATED_ASCII_RUN_RE.sub(lambda match: TAG_RE.sub("", match.group()), value)
 
 
 def load_pairs(path: Path, regex_only: bool = False) -> list[tuple[str, str]]:
@@ -165,6 +173,7 @@ def is_structured(component: str, source: str) -> bool:
     return (
         "\n•" in source
         or "<color=#808080>Consumable</color>" in source
+        or "<color=#808080>消耗品</color>" in source
         or "Maximum Stacks:" in source
         or "Reward choices" in source
         or source.startswith("Grants")
@@ -197,6 +206,8 @@ def general_route(component: str, source: str) -> bool:
             "Class Stats Text",
             "Selected Gift Name",
             "Selected Gift Description",
+            "Description Part 1",
+            "Description Part 2",
             "Cinder Modifier Title",
             "Cinder Modifier Description",
             "Button Text",
@@ -224,7 +235,7 @@ def general_route(component: str, source: str) -> bool:
 
 def dialogue_match(source: str, dialogue_sources: list[str]) -> bool:
     current = visible(source).casefold()
-    if len(current) < 4:
+    if len(current) < 3:
         return False
     translations = {
         dialogue_source
@@ -261,6 +272,17 @@ def classify(
         return "exact"
     if any(pattern.fullmatch(source) for pattern in regexes):
         return "regex"
+    flattened_source = flatten_decorated_ascii_runs(source)
+    if flattened_source != source:
+        return classify(
+            component,
+            flattened_source,
+            exact,
+            regexes,
+            fragments,
+            item_fragments,
+            dialogue_sources,
+        )
     if is_structured(component, source) and (
         fragments_match(source, item_fragments) or fragments_match(source, fragments)
     ):

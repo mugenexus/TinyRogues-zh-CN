@@ -1,6 +1,11 @@
 ﻿status,component,source,history_files
 dialogue,Text,*Knit*,live:_TmpUntranslated.txt
 dialogue,Text,*SIP*,live:_TmpUntranslated.txt
+dialogue,Text,*sizzle,live:_TmpUntranslated.txt
+dialogue,Text,*sizzle cr,live:_TmpUntranslated.txt
+dialogue,Text,*sizzle crackl,live:_TmpUntranslated.txt
+dialogue,Text,*sizzle crackle si,live:_TmpUntranslated.txt
+dialogue,Text,*sizzle crackle sizzl,live:_TmpUntranslated.txt
 dialogue,Text,A favour?\nV,live:_TmpUntranslated.txt
 dialogue,Text,A favour?\nVery ,live:_TmpUntranslated.txt
 dialogue,Text,A favour?\nVery wel,live:_TmpUntranslated.txt
@@ -17,6 +22,7 @@ dialogue,Text,Need a little h,live:_TmpUntranslated.txt
 dialogue,Text,Need a little help,live:_TmpUntranslated.txt
 dialogue,Text,Need a little help?,live:_TmpUntranslated.txt
 exact,Banner Text (TMP),BOSS DEFEATED,live:_TmpUntranslated.txt
+exact,Boss Name Text,Banshee,live:_TmpUntranslated.txt
 exact,Boss Name Text,Mandrake,live:_TmpUntranslated.txt
 exact,Boss Name Text,Vampire,live:_TmpUntranslated.txt
 exact,Choice 1 (TMP),> <color=#FFEB04>Red</color>,live:_TmpUntranslated.txt
@@ -31,14 +37,21 @@ exact,Class Ability Title,<color=#FCC926>Blessed</color>,live:_TmpUntranslated.t
 exact,Class Ability Title,<color=#FF2666>Steadfast</color>,live:_TmpUntranslated.txt
 exact,Class Name,Cleric,live:_TmpUntranslated.txt
 exact,Class Name,Warrior,live:_TmpUntranslated.txt
+exact,Description Text,All <color=#A61FFF>Two-Handed</color> <color=#A61FFF>Weapons</color>\ndeal<color=#00E317>x1.10</color> damage.,live:_TmpUntranslated.txt
+exact,Description Text,Contains a\n<color=#26FF66>Ranged</color> <color=#A61FFF>Weapon</color>.,live:_TmpUntranslated.txt
 exact,Dialog Text,Delete Save Data in Slot 2?,live:_TmpUntranslated.txt
 exact,Elite Enchantment Text,Frozen Enchanted\n,live:_TmpUntranslated.txt
 exact,Elite Enchantment Text,Laser Enchanted\n,live:_TmpUntranslated.txt
+exact,Elite Enchantment Text,Molten Enchanted\n,live:_TmpUntranslated.txt
+exact,Elite Enchantment Text,Party Enchanted\n,live:_TmpUntranslated.txt
 exact,Elite Enchantment Text,Plague Enchanted\n,live:_TmpUntranslated.txt
 exact,Equipment Name,<color=#4CC2FF>Talisman</color>,live:_TmpUntranslated.txt
 exact,Equipment Name,<color=#808080>Buckler</color>,live:_TmpUntranslated.txt
 exact,Equipment Name,<color=#808080>Cleric Robe</color>,live:_TmpUntranslated.txt
 exact,Equipment Name,King Bible,live:_TmpUntranslated.txt
+exact,Hovered Dice Description,<color=#3B3B7A>Obsidian Dice</color>\nAllows you to exchange a trait with a random new trait.,live:_TmpUntranslated.txt
+exact,Hovered Dice Description,"<color=#808080>A place to keep all your dice.\n<indent=7px>""Oooh!\nShinies!""</indent></color>",live:_TmpUntranslated.txt
+exact,Hovered Dice Description,"<color=#FCC926>Golden Dice</color>\nRerolls offered items from\nshops, armories and boss rewards.",live:_TmpUntranslated.txt
 exact,Main Header,<color=#00B824>Bomber Garb</color>,live:_TmpUntranslated.txt
 exact,Main Header,<color=#00B824>War Belt</color>,live:_TmpUntranslated.txt
 exact,Main Header,<color=#00B824>Wedding Dress</color>,live:_TmpUntranslated.txt
@@ -46,12 +59,21 @@ exact,Main Header,<color=#4CC2FF>Blueberries</color>,live:_TmpUntranslated.txt
 exact,Main Header,<color=#4CC2FF>Carrot on a Stick</color>,live:_TmpUntranslated.txt
 exact,Main Header,<color=#4CC2FF>Chef's Hat</color>,live:_TmpUntranslated.txt
 exact,Main Header,<color=#4CC2FF>Circlet</color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#4CC2FF>Druid Bible</color>,live:_TmpUntranslated.txt
 exact,Main Header,<color=#4CC2FF>Echo Shard</color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#4CC2FF>Falchion +1</color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#4CC2FF>Falchion +2</color>,live:_TmpUntranslated.txt
 exact,Main Header,<color=#4CC2FF>Freezing Scepter +1</color>,live:_TmpUntranslated.txt
 exact,Main Header,<color=#4CC2FF>Nunchaku +1</color>,live:_TmpUntranslated.txt
 exact,Main Header,<color=#4CC2FF>Red Hoodie</color>,live:_TmpUntranslated.txt
 exact,Main Header,<color=#4CC2FF>Reinforced Club +4</color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#A61FFF>Light Bulb</color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#FFDB59><color=#FF0000>R</color><color=#FF7F00>a</color><color=#FFFF00>i</color><color=#00FF00>n</color><color=#0000FF>b</color><color=#9400D3>o</color><color=#FF0000>w</color><color=#FF7F00> </color><color=#FFFF00>C</color><color=#00FF00>h</color><color=#0000FF>a</color><color=#9400D3>r</color><color=#FF0000>m</color></color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#FFDB59>Camel Leash</color>,live:_TmpUntranslated.txt
 exact,Main Header,<color=#FFDB59>Frost Touch Gauntlets</color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#FFDB59>Handcuffs</color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#FFDB59>Paper Sheet</color>,live:_TmpUntranslated.txt
+exact,Main Header,<color=#FFDB59>Sea Urchin Orb</color>,live:_TmpUntranslated.txt
 exact,Main Header,Flask Charge,live:_TmpUntranslated.txt
 exact,Main Header,Green Blossom,live:_TmpUntranslated.txt
 exact,Main Header,Key [x2],live:_TmpUntranslated.txt
@@ -64,6 +86,7 @@ exact,Name (TMP),<color=#FCC926>Tipsiness</color>,live:_TmpUntranslated.txt
 exact,Name (TMP),<color=#FFC414>Mead</color>,live:_TmpUntranslated.txt
 exact,Skill Name,Consecrate,live:_TmpUntranslated.txt
 exact,Splash Text,Butter up a cleric!,live:_TmpUntranslated.txt
+exact,Splash Text,Pull the lever!,live:_TmpUntranslated.txt
 exact,Splash Text,SURPRISE!,live:_TmpUntranslated.txt
 exact,Splash Text,There is no escape!,live:_TmpUntranslated.txt
 exact,Splash Text,"To be fair, you have to have a very high IQ to understand Tiny Rogues.",live:_TmpUntranslated.txt
@@ -72,8 +95,10 @@ exact,Stage Title (TMP),The Catacombs,live:_TmpUntranslated.txt
 exact,Stage Title (TMP),The Desert,live:_TmpUntranslated.txt
 exact,Text,*You don't have\ne,live:_TmpUntranslated.txt
 exact,Text,*You don't have\nenou,live:_TmpUntranslated.txt
+exact,Text,*si,live:_TmpUntranslated.txt
 exact,Text,"+1 <color=#26B0FF>Mana</color><sprite name=""Mana"">",live:_TmpUntranslated.txt
 exact,Text,+1 <color=#FCC926>Tipsiness</color>,live:_TmpUntranslated.txt
+exact,Text,+1 Obsidian Dice,live:_TmpUntranslated.txt
 exact,Text,+3 <color=#26B0FF>INT</color>,live:_TmpUntranslated.txt
 exact,Text,+3 <color=#26FF66>DEX</color>,live:_TmpUntranslated.txt
 exact,Text,+3 <color=#FF2666>STR</color>,live:_TmpUntranslated.txt
@@ -84,9 +109,11 @@ exact,Text,Bar Maiden,live:_TmpUntranslated.txt
 exact,Text,Cellar,live:_TmpUntranslated.txt
 exact,Text,Cleric,live:_TmpUntranslated.txt
 exact,Text,Creepy Wizard,live:_TmpUntranslated.txt
+exact,Text,Don't be afraid\n,live:_TmpUntranslated.txt
 exact,Text,Dwarf Warrior,live:_TmpUntranslated.txt
 exact,Text,Fair Lady,live:_TmpUntranslated.txt
 exact,Text,Farmer,live:_TmpUntranslated.txt
+exact,Text,"Go,",live:_TmpUntranslated.txt
 exact,Text,HSssSssS！,live:_TmpUntranslated.txt
 exact,Text,Ha-,live:_TmpUntranslated.txt
 exact,Text,Hello there! You seem strong.\nNe,live:_TmpUntranslated.txt
@@ -101,6 +128,7 @@ exact,Text,Nye-he-he-he!\nWelcom,live:_TmpUntranslated.txt
 exact,Text,"Nye-he-he-he!\nWelcome, t",live:_TmpUntranslated.txt
 exact,Text,"Nye-he-he-he!\nWelcome, trave",live:_TmpUntranslated.txt
 exact,Text,"Nye-he-he-he!\nWelcome, travelle",live:_TmpUntranslated.txt
+exact,Text,"Oh,",live:_TmpUntranslated.txt
 exact,Text,Old Hag,live:_TmpUntranslated.txt
 exact,Text,Potion Buyer,live:_TmpUntranslated.txt
 exact,Text,Set Stash,live:_TmpUntranslated.txt
@@ -120,26 +148,49 @@ exact,Title Text,Guaranteed\nSet Item,live:_TmpUntranslated.txt
 exact,Title Text,Guaranteed\nUncommon Item,live:_TmpUntranslated.txt
 exact,Title Text,Lollipop,live:_TmpUntranslated.txt
 exact,Title Text,Petrified Hoard,live:_TmpUntranslated.txt
+exact,Title Text,Ranger Stash,live:_TmpUntranslated.txt
 exact,Title Text,Warrior Stash,live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),"<color=#3B3B7A>Curse</color><sprite name=""Curse""> is <color=#00E317>x0.75</color> less likely to downgrade Room Rewards.",live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),"Defeating a Boss without taking Damage grants\nyou <color=#00E317>+1</color> <color=#FF008C>Magic Find</color><sprite name=""Magic_Find""> just for that Reward Selection.",live:_TmpUntranslated.txt
 exact,Tooltip Text (TMP),Dice Rewards grant <color=#00E317>+1</color> Golden Dice.,live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),Dice Rewards grant <color=#00E317>+2 to +3</color> Red Dice.,live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),Event Rooms with Minigames \nand Arcade Rooms are\n<color=#00E317>x2.00</color> more common.\n,live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),"Gain <color=#00E317>+1</color> <color=#2BAD99>Suppression</color><sprite name=""Suppression""> in the Floor 1, 2 and 3 Boss Fight.",live:_TmpUntranslated.txt
 exact,Tooltip Text (TMP),"Gain <color=#00E317>+1</color> <color=#2BAD99>Suppression</color><sprite name=""Suppression""> in the Floor 10 Boss Fight.",live:_TmpUntranslated.txt
 exact,Tooltip Text (TMP),"Gain <color=#00E317>+1</color> <color=#FCC926>Revive</color><sprite name=""Revive"">.",live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),Gain a <color=#00E317>20%</color> chance to gain the maximum amount of Rewards from a Room.,live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),"On Floor 1, you are guaranteed a Door that leads to a <color=#A61FFF>Weapon</color> Reward as Boss Reward.",live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),"On Floor 1, you are guaranteed a Door that leads to a Charm Reward as Boss Reward.",live:_TmpUntranslated.txt
 exact,Tooltip Text (TMP),"Once per Run, when you enter a Floor beyond Floor 5 without any <color=#3B3B7A>Bombs</color><sprite name=""Bomb"">, gain <color=#00E317>3</color> <color=#3B3B7A>Bombs</color><sprite name=""Bomb"">.",live:_TmpUntranslated.txt
 exact,Tooltip Text (TMP),"Once per Run, when you enter a Floor beyond Floor 5 without any <color=#FCC926>Keys</color><sprite name=""Key"">, gain <color=#00E317>2</color> <color=#FCC926>Keys</color><sprite name=""Key"">.",live:_TmpUntranslated.txt
 exact,Tooltip Text (TMP),Secret Rooms are highlighted.,live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),The Tavern gains <color=#00E317>+25%</color> chance to have the Black Market.\n<color=grey>[Added to a 15% Base Chance.]</color>,live:_TmpUntranslated.txt
 exact,Tooltip Text (TMP),"While you are Level 0,\nBosses have\n<color=#00E317>x0.90</color> <color=#FF3326>Health</color><sprite name=""Heart""> and <color=#406E7D>Armor</color><sprite name=""Armor"">.",live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),You encounter <color=#00E317>x0.80</color> <color=#FF00FF>Enchanted Enemy Packs</color>.,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),CALL TO ADVENTURE,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),CATHARSIS,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),EXPLOSIVE DELIVERY,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),FRIENDSHIP QUEST,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),GOLDEN ROULETTE,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),HIGH ROLLER,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),LAZY STROLL,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),LEFT TO FATE,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),PLAYTIME,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),REBIRTH,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),RED ROULETTE,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),SAFE BET,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),SMUGGLER NOOK,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),SUPERNATURAL AID,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),TAKE THIS,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),THE GLASS IS HALF EMPTY,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),THE KEY TO SUCCESS,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),THIEF IN THE SHADOWS,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),TREASURE HUNTER,live:_TmpUntranslated.txt
 exact,Trait Title,Best Friends Forever,live:_TmpUntranslated.txt
 exact,Trait Title,Forethought,live:_TmpUntranslated.txt
 exact,Trait Title,Intuition,live:_TmpUntranslated.txt
+exact,Trait Title,Pushing Through,live:_TmpUntranslated.txt
+exact,Trait Title,Raised Morale,live:_TmpUntranslated.txt
 exact,Trait Title,Razor's Edge,live:_TmpUntranslated.txt
 exact,Trait Title,Steady Strikes,live:_TmpUntranslated.txt
 exact,Trait Title,Threat Reckoning,live:_TmpUntranslated.txt
@@ -179,8 +230,10 @@ regex,Description Text,Sell weapons\nand equipment.,live:_TmpUntranslated.txt
 regex,Description Text,"Upgrade Weapons\nand repair\n<color=#406E7D>Armor</color><sprite name=""Armor"">.",live:_TmpUntranslated.txt
 regex,Description Text,"Your Power: <color=#00E317>0</color>\n<sprite name=""SubArrow""><color=#00E317>+0%</color> Damage\n<sprite name=""SubArrow""><color=#00E317>+0%</color> Area Radius",live:_TmpUntranslated.txt
 regex,Input Alias,"E<sprite name=""Arrow_Right"">Use <color=#FCC926><color=#FCC926>Key</color><sprite name=""Key""></color>\nto open.",live:_TmpUntranslated.txt
+regex,Splash Text,Vampire Count: 1,live:_TmpUntranslated.txt
 regex,Text,+1 <color=#5ECCE3>LAWFUL</color>,live:_TmpUntranslated.txt
 regex,Text,+1 <color=#FF0000>EVIL</color>,live:_TmpUntranslated.txt
+regex,Text,+2 <color=#FF2666>STR</color>,live:_TmpUntranslated.txt
 regex,Text,"<color=#3B3B7A>Curses</color><sprite name=""Curse""> you.",live:_TmpUntranslated.txt
 regex,Text,<color=#8000FF><color=#8000FF>Slow</color>: </color><color=#FF0000>-5%</color> <color=#FFFFFF>Attack Speed</color>,live:_TmpUntranslated.txt
 regex,Text,"<color=#FCC926>Price:</color> <color=#FFFFFF>15</color> <color=#FCC926><color=#FCC926>Gold</color><sprite name=""Gold""></color>",live:_TmpUntranslated.txt
@@ -190,10 +243,21 @@ regex,Text,"<color=#FCC926>Price:</color> <color=#FFFFFF>19</color> <color=#FCC9
 regex,Text,"<color=#FCC926>Price:</color> <color=#FFFFFF>4</color> <color=#FCC926><color=#FCC926>Gold</color><sprite name=""Gold""></color>",live:_TmpUntranslated.txt
 regex,Text,Refills <color=#00E317>1</color> Flask.,live:_TmpUntranslated.txt
 regex,Text,To open locked things!,live:_TmpUntranslated.txt
-regex,Tooltip Text (TMP),"<color=#3B3B7A>Curse</color><sprite name=""Curse""> is <color=#00E317>x0.75</color> less likely to downgrade Room Rewards.",live:_TmpUntranslated.txt
-regex,Tooltip Text (TMP),"Gain <color=#00E317>+1</color> <color=#2BAD99>Suppression</color><sprite name=""Suppression""> in the Floor 1, 2 and 3 Boss Fight.",live:_TmpUntranslated.txt
 technical_ignored,Ability Description,asdasd\nasdasd\nasdasd,live:_TmpUntranslated.txt
 technical_ignored,Ability Title,My Ability,live:_TmpUntranslated.txt
+technical_ignored,Choice 1 (TMP),> Choice 1,live:_TmpUntranslated.txt
+technical_ignored,Choice 10 (TMP),  Choice 10,live:_TmpUntranslated.txt
+technical_ignored,Choice 11 (TMP),  Choice 11,live:_TmpUntranslated.txt
+technical_ignored,Choice 2 (TMP),  Choice 2,live:_TmpUntranslated.txt
+technical_ignored,Choice 3 (TMP),  Choice 3,live:_TmpUntranslated.txt
+technical_ignored,Choice 4 (TMP),  Choice 4,live:_TmpUntranslated.txt
+technical_ignored,Choice 5 (TMP),  Choice 5,live:_TmpUntranslated.txt
+technical_ignored,Choice 6 (TMP),  Choice 6,live:_TmpUntranslated.txt
+technical_ignored,Choice 7 (TMP),  Choice 7,live:_TmpUntranslated.txt
+technical_ignored,Choice 8 (TMP),  Choice 8,live:_TmpUntranslated.txt
+technical_ignored,Choice 9 (TMP),  Choice 9,live:_TmpUntranslated.txt
+technical_ignored,Description Part 1,"YOu have been inflicted with ""SOMETHING"".\nsomething is something something is something something is something something is something something is something something is something something is something something is something something is something \nasdasd",live:_TmpUntranslated.txt
+technical_ignored,Description Part 2,"YOu have been inflicted with ""SOMETHING"".\nsomething is something something is something something is something something is something something is something something is something something is something something is something something is something ",live:_TmpUntranslated.txt
 technical_ignored,Text,Ey,live:_TmpUntranslated.txt
 technical_ignored,Text,HS,live:_TmpUntranslated.txt
 technical_ignored,Text,HSs,live:_TmpUntranslated.txt
@@ -206,11 +270,3 @@ technical_ignored,Text,Th,live:_TmpUntranslated.txt
 technical_ignored,Text,We ,live:_TmpUntranslated.txt
 technical_ignored,Text,Who,live:_TmpUntranslated.txt
 technical_ignored,Text,asdasdasdasdasdsadasddsadasdasdasdasdasdasdsadasdasdas\nasdasd\nasdasd,live:_TmpUntranslated.txt
-typing_prefix,Text,*si,live:_TmpUntranslated.txt
-typing_prefix,Text,*sizzle,live:_TmpUntranslated.txt
-typing_prefix,Text,*sizzle cr,live:_TmpUntranslated.txt
-typing_prefix,Text,*sizzle crackl,live:_TmpUntranslated.txt
-typing_prefix,Text,*sizzle crackle si,live:_TmpUntranslated.txt
-uncovered,Text,*sizzle crackle sizzl,live:_TmpUntranslated.txt
-uncovered,Text,"Go,",live:_TmpUntranslated.txt
-uncovered,Text,"Oh,",live:_TmpUntranslated.txt

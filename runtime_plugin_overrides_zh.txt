@@ -538,3 +538,92 @@ CATHARSIS=宣泄
 TREASURE HUNTER=寻宝猎人
 Gain <color=#00E317>+1</color> <color=#2BAD99>Suppression</color><sprite name="Suppression"> in the Floor 10 Boss Fight.=在第 10 层首领战中获得 <color=#00E317>+1</color> <color=#2BAD99>压制</color><sprite name="Suppression">。
 Secret Rooms are highlighted.=隐藏房间会被标亮。
+<color=#3B3B7A>Curse</color><sprite name="Curse"> is <color=#00E317>x0.75</color> less likely to downgrade Room Rewards.=<color=#3B3B7A>诅咒</color><sprite name="Curse">使房间奖励降级的概率降至 <color=#00E317>x0.75</color>。
+Gain <color=#00E317>+1</color> <color=#2BAD99>Suppression</color><sprite name="Suppression"> in the Floor 1, 2 and 3 Boss Fight.=在第 1、2、3 层首领战中获得 <color=#00E317>+1</color> <color=#2BAD99>压制</color><sprite name="Suppression">。
+THIEF IN THE SHADOWS=暗影盗贼
+Defeating a Boss without taking Damage grants\nyou <color=#00E317>+1</color> <color=#FF008C>Magic Find</color><sprite name="Magic_Find"> just for that Reward Selection.=无伤击败首领可使\n你在本次奖励选择中获得 <color=#00E317>+1</color> <color=#FF008C>魔法寻获</color><sprite name="Magic_Find">。
+SMUGGLER NOOK=走私者据点
+The Tavern gains <color=#00E317>+25%</color> chance to have the Black Market.\n<color=grey>[Added to a 15% Base Chance.]</color>=酒馆出现黑市的概率提高 <color=#00E317>+25%</color>。\n<color=grey>[在 15% 基础概率上增加。]</color>
+THE GLASS IS HALF EMPTY=半空之杯
+You encounter <color=#00E317>x0.80</color> <color=#FF00FF>Enchanted Enemy Packs</color>.=遭遇的<color=#FF00FF>附魔敌群</color>数量变为 <color=#00E317>x0.80</color>。
+to=至
+Oh,=哦，
+Go,=去吧，
+*si=*嘶嘶噼啪声*
+Brawler Charm=格斗家护符
+Iron Ring=铁戒指
+Scholar Charm=学者护符
+Skull Ring=骷髅戒指
+Valkyrie Helmet=女武神头盔
+Guaranteed Helmet=保底头盔
+Cursed\nPear=诅咒\n梨
+Random Resin=随机树脂
+Elemental Balance=元素平衡
+Cold Blood=冷血
+Rainbow Charm=彩虹护符
+RAINBOW CHARM=彩虹护符
+Banshee=女妖
+All <color=#A61FFF>Two-Handed</color> <color=#A61FFF>Weapons</color>\ndeal<color=#00E317>x1.10</color> damage.=所有<color=#A61FFF>双手</color><color=#A61FFF>武器</color>\n造成<color=#00E317>x1.10</color>倍伤害。
+Contains a\n<color=#26FF66>Ranged</color> <color=#A61FFF>Weapon</color>.=包含一件\n<color=#26FF66>远程</color><color=#A61FFF>武器</color>。
+Party Enchanted\n=队伍已附魔\n
+<color=#3B3B7A>Obsidian Dice</color>\nAllows you to exchange a trait with a random new trait.=<color=#3B3B7A>黑曜石骰子</color>\n可将一个特质随机替换为新特质。
+<color=#808080>A place to keep all your dice.\n<indent=7px>"Oooh!\nShinies!"</indent></color>=<color=#808080>存放所有骰子的地方。\n<indent=7px>“哦！\n亮晶晶！”</indent></color>
+<color=#FCC926>Golden Dice</color>\nRerolls offered items from\nshops, armories and boss rewards.=<color=#FCC926>黄金骰子</color>\n重掷商店、军械库和\n首领奖励提供的物品。
+Druid Bible=德鲁伊圣经
+Falchion=弯刀
+Falchion +1=弯刀 +1
+Falchion +2=弯刀 +2
+Handcuffs=手铐
+Paper Sheet=纸张
+Sea Urchin Orb=海胆法球
+Pull the lever!=拉下拉杆！
+Don't be afraid\n=不要害怕\n
+Ranger Stash=游侠储藏处
+Dice Rewards grant <color=#00E317>+2 to +3</color> Red Dice.=骰子奖励会提供 <color=#00E317>+2 至 +3</color> 个红色骰子。
+Event Rooms with Minigames \nand Arcade Rooms are\n<color=#00E317>x2.00</color> more common.\n=带小游戏的事件房和街机房\n出现概率提高至\n<color=#00E317>x2.00</color>。\n
+On Floor 1, you are guaranteed a Door that leads to a <color=#A61FFF>Weapon</color> Reward as Boss Reward.=第 1 层的首领奖励必定包含一扇通往<color=#A61FFF>武器</color>奖励的门。
+On Floor 1, you are guaranteed a Door that leads to a Charm Reward as Boss Reward.=第 1 层的首领奖励必定包含一扇通往护符奖励的门。
+FRIENDSHIP QUEST=友谊任务
+FRIENDSHIP QUEST=友谊任务
+PLAYTIME=游戏时间
+RED ROULETTE=红色轮盘
+RED ROULETTE=红色轮盘
+SAFE BET=稳妥赌注
+SAFE BET=稳妥赌注
+SUPERNATURAL AID=超自然援助
+SUPERNATURAL AID=超自然援助
+TAKE THIS=拿着这个
+TAKE THIS=拿着这个
+Fish and Chips=炸鱼薯条
+Fish和Chips=炸鱼薯条
+Hand Of Hearts=红心之手
+Cursed\nBombs=诅咒\n炸弹
+Cursed\nMany Bombs=诅咒\n大量炸弹
+诅咒\nBombs=诅咒\n炸弹
+诅咒\nMany Bombs=诅咒\n大量炸弹
+<color=yellow>Unlocks:</color> Paladin Class\n<color=#FCC926>Status: </color><color=#808080>Not Completed</color>=<color=yellow>解锁：</color>圣骑士职业\n<color=#FCC926>状态：</color><color=#808080>未完成</color>
+<color=yellow>解锁:</color> Paladin Class\n<color=#FCC926>Status: </color><color=#808080>Not Completed</color>=<color=yellow>解锁：</color>圣骑士职业\n<color=#FCC926>状态：</color><color=#808080>未完成</color>
+Reward choices\nare <color=#00E317>all</color> Companion\nSummon Items.=奖励选项\n<color=#00E317>全部</color>为同伴\n召唤物品。
+Reward choices\nare <color=#00E317>all</color> 同伴\n召唤 物品s.=奖励选项\n<color=#00E317>全部</color>为同伴\n召唤物品。
+Double Axe +1=双刃斧 +1
+Double 斧 +1=双刃斧 +1
+Bone Charm=骨制护符
+Power Belt=威力腰带
+<color=#FB2665><color=#FB2665>Puncture</color></color>\n•<color=#00E61A>+10</color> 至 <color=#00E61A>30</color> 至 <color=#6E5442>物理伤害 </color>Taken\n<color=#808080>•持续时间: </color><color=#00E61A>4</color> <color=#00E61A>秒</color><color=#808080>\n•最大层数: </color><color=#00E61A>5</color>\n<color=#808080>[<color=#A61FFF><color=#A61FFF>减益</color></color>] </color>=<color=#FB2665><color=#FB2665>穿刺</color></color>\n•<color=#00E61A>+10</color> 至 <color=#00E61A>30</color> <color=#6E5442>承受物理伤害</color>\n<color=#808080>•持续时间：</color><color=#00E61A>4</color> <color=#00E61A>秒</color><color=#808080>\n•最大层数：</color><color=#00E61A>5</color>\n<color=#808080>[<color=#A61FFF><color=#A61FFF>减益</color></color>] </color>
+Molten Enchanted\n=熔火附魔\n
++1 Obsidian Dice=+1 黑曜石骰子
+HIGH ROLLER=豪赌客
+HIGH ROLLER=豪赌客
+Gain a <color=#00E317>20%</color> chance to gain the maximum amount of Rewards from a Room.=有 <color=#00E317>20%</color> 几率从房间中获得最大数量的奖励。
+Raised Morale=士气高涨
+Pushing Through=迎难而上
+On completing a Combat Encounter without taking damage, gain <color=#00E317>1</color> stack of <color=#26FF66>Morale</color>.=无伤完成战斗遭遇时，获得 <color=#00E317>1</color> 层<color=#26FF66>士气</color>。
+<size=100%>On completing a Combat Encounter without taking damage,时获得<color=#00E317>1</color> stack of <color=#26FF66>Morale</color>.</size>=<size=100%>无伤完成战斗遭遇时，获得 <color=#00E317>1</color> 层<color=#26FF66>士气</color>。</size>
+Each point of Equip Load on you grants:\n<sprite name="SubArrow"><color=#00E61A>+0.3%</color> <color=#6BBD30>Stamina Recovery Speed</color><sprite name="Stamina">\n<sprite name="SubArrow"><color=#00E61A>+0.3%</color> Movement Speed\n<sprite name="SubArrow"><color=#00E61A>+0.3%</color> Damage \n<color=#7F7F7FFF>(<color=#00E61A>+21%</color> currently)</color>=每点装备负重提供：\n<sprite name="SubArrow"><color=#00E61A>+0.3%</color> <color=#6BBD30>体力恢复速度</color><sprite name="Stamina">\n<sprite name="SubArrow"><color=#00E61A>+0.3%</color> 移动速度\n<sprite name="SubArrow"><color=#00E61A>+0.3%</color> 伤害\n<color=#7F7F7FFF>（当前 <color=#00E61A>+21%</color>）</color>
+<size=100%>Each point of 装备负重 on you grants:\n<sprite name="SubArrow"><color=#00E61A>+0.3%</color> <color=#6BBD30>体力恢复速度</color><sprite name="Stamina">\n<sprite name="SubArrow"><color=#00E61A>+0.3%</color> 移动速度\n<sprite name="SubArrow"><color=#00E61A>+0.3%</color> 伤害 \n<color=#7F7F7FFF>(<color=#00E61A>+21%</color> 当前)</color></size>=<size=100%>每点装备负重提供：\n<sprite name="SubArrow"><color=#00E61A>+0.3%</color> <color=#6BBD30>体力恢复速度</color><sprite name="Stamina">\n<sprite name="SubArrow"><color=#00E61A>+0.3%</color> 移动速度\n<sprite name="SubArrow"><color=#00E61A>+0.3%</color> 伤害\n<color=#7F7F7FFF>（当前 <color=#00E61A>+21%</color>）</color></size>
+<color=#26FF66><color=#26FF66>Morale</color></color>\n•<color=#00E61A>+20</color> Power<color=#808080>\n•Duration: </color>While having at least 1 stack.<color=#808080>\n•Max Stacks: </color>5<color=#808080>\n•Loses 1 stack on taking damage.</color>\n<color=#808080>[<color=#A61FFF><color=#A61FFF>Emotion</color></color>] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>Buff</color></color>] </color>=<color=#26FF66><color=#26FF66>士气</color></color>\n•<color=#00E61A>+20</color> 威力<color=#808080>\n•持续时间：</color>拥有至少 1 层时<color=#808080>\n•最大层数：</color>5<color=#808080>\n•受到伤害时失去 1 层。</color>\n<color=#808080>[<color=#A61FFF><color=#A61FFF>情绪</color></color>] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>增益</color></color>] </color>
+<color=#26FF66><color=#26FF66>Morale</color></color>\n•<color=#00E61A>+20</color> 威力<color=#808080>\n•持续时间: </color>While having at least 1 stack.<color=#808080>\n•最大层数: </color>5<color=#808080>\n•Loses 1 stack 受到伤害时.</color>\n<color=#808080>[<color=#A61FFF><color=#A61FFF>情绪</color></color>] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>增益</color></color>] </color>=<color=#26FF66><color=#26FF66>士气</color></color>\n•<color=#00E61A>+20</color> 威力<color=#808080>\n•持续时间：</color>拥有至少 1 层时<color=#808080>\n•最大层数：</color>5<color=#808080>\n•受到伤害时失去 1 层。</color>\n<color=#808080>[<color=#A61FFF><color=#A61FFF>情绪</color></color>] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>增益</color></color>] </color>
+<color=#00E61A>+1</color> Maximum Stacks of <color=#FCC926>Tipsiness</color>=<color=#00E61A>+1</color> <color=#FCC926>醉意</color>最大层数
+<color=#00E61A>+1</color> Maximum 层数 of <color=#FCC926>醉意</color>=<color=#00E61A>+1</color> <color=#FCC926>醉意</color>最大层数
+Light Bulb=灯泡
+Camel Leash=骆驼缰绳

@@ -42,4 +42,5 @@ Glad to be\nof help.=很高兴\n能帮上忙。
 You disrupt nature's peace...\nI will stop you.=你破坏了自然的宁静...\n我会阻止你。
 *Knit*=*编织*
 *SIP*=*小啜*
+*sizzle crackle sizzle*=*嘶嘶噼啪声*
 *You don't have\nenough Gold.=*你的\n金币不够。

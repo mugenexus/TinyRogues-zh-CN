@@ -1,8 +1,15 @@
 # Tiny Rogues 简体中文汉化
 
-适用于 Steam 版《Tiny Rogues》的非官方简体中文汉化补丁。
+适用于 Steam 版《Tiny Rogues》的非官方简体中文汉化补丁，覆盖菜单、职业、物品、技能、特质、教程、动态状态和多数剧情文本。
 
-当前版本：`1.5.14`
+当前版本：`1.5.18`
+
+## 1.5.18 版本亮点
+
+- 补齐特质选择、士气状态、同伴装备、骰子奖励和分段教学文本中的英文残留
+- 修复彩色逐字富文本导致的物品名称与属性漏翻
+- 扩大地面未拾取/待购买物品详情框，身上装备界面保持原样
+- 发布前审计结果：控制符问题 0、运行时未覆盖 0、英文残留 0
 
 ## 功能
 
@@ -79,6 +86,8 @@ dotnet build .\TinyRogues.TmpFallback\TinyRogues.TmpFallback.csproj `
 - `runtime_dialogue_overrides_zh.txt`
 
 翻译时不得改动变量、控制符、颜色代码、换行符、图标标签和占位符。
+
+完整版本记录见 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 说明
 

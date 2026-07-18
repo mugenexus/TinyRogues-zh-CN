@@ -1,13 +1,6 @@
 {
-  "total": 520,
-  "by_severity": {
-    "review": 520
-  },
-  "by_category": {
-    "译文英文残留": 2,
-    "原译文相同": 3,
-    "CSV 原译文相同": 147,
-    "CSV 英文残留": 368
-  },
+  "total": 0,
+  "by_severity": {},
+  "by_category": {},
   "report": "D:\\CodexWork\\汉化\\translation_self_audit.csv"
 }

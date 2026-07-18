@@ -92,7 +92,24 @@ function Test-LikelyRuntimeText {
     if ($Key -like 'AUTO_*' -and $Text -match '([A-Za-z0-9])\1{7,}') {
         return $false
     }
-    if ($Text -match 'SIL OPEN FONT LICENSE|Open Font License|VeriSign|Certification Authority|Universal Render Pipeline|SRDebugger|Developed by Stompy Robot|FontForge|nullCRA') {
+    if ($Key -like 'AUTO_*' -and $Text -match '\s{8,}') {
+        return $false
+    }
+    if (($Key -like 'AUTO_RESOURCES_ASSETS_*' -or $Key -like 'AUTO_SHAREDASSETS0_ASSETS_*') -and
+        $Text -notmatch '\s' -and
+        ([regex]::Matches($Text, '[^A-Za-z0-9]')).Count -ge 3) {
+        return $false
+    }
+    if (($Key -like 'AUTO_RESOURCES_ASSETS_*' -or $Key -like 'AUTO_SHAREDASSETS0_ASSETS_*') -and
+        ([regex]::Matches($Text, '\s')).Count -le 1 -and
+        ([regex]::Matches($Text, '[^A-Za-z0-9\s]')).Count -ge 4) {
+        $maxRun = @([regex]::Matches($Text, '[A-Za-z]+') | ForEach-Object { $_.Value.Length } |
+            Measure-Object -Maximum).Maximum
+        if ($null -eq $maxRun -or $maxRun -le 5) {
+            return $false
+        }
+    }
+    if ($Text -match 'SIL OPEN FONT LICENSE|Open Font License|VeriSign|Certification Authority|Universal Render Pipeline|SRDebugger|Developed by Stompy Robot|FontForge|nullCRA|Copyright|All Rights Reserved|Trademark|Digital ID Class|Renogare|Liberation is a registered|based on Arimo') {
         return $false
     }
     if ($Key -like 'AUTO_RESOURCES_ASSETS_*' -and
