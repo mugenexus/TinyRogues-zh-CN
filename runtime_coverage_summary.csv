@@ -1,32 +1,37 @@
 ﻿status,component,count
-exact,Text,48
-exact,Main Header,29
-dialogue,Text,22
-regex,Description Text,20
-exact,Tooltip Title (TMP),19
-exact,Tooltip Text (TMP),17
-regex,Text,12
-technical_ignored,Text,12
-exact,Title Text,9
-exact,Trait Title,9
-exact,Splash Text,6
-exact,Elite Enchantment Text,5
+dialogue,Text,88
+exact,Text,64
+typing_prefix,Text,64
+visible_exact,Main Header,32
+exact,Tooltip Title (TMP),24
+exact,Tooltip Text (TMP),22
+regex,Description Text,19
+regex,Text,19
+exact,Trait Title,16
+exact,Main Header,13
+exact,Title Text,13
+exact,Description Text,11
+visible_exact,Tooltip Text (TMP),9
+visible_exact,Tooltip Title (TMP),9
+exact,Elite Enchantment Text,8
+exact,Splash Text,8
 exact,Equipment Name,4
 regex,Description (TMP),4
 exact,Boss Name Text,3
 exact,Hovered Dice Description,3
 exact,Name (TMP),3
 general_fragments,Choice 2 (TMP),3
+general_fragments,Main Header,3
+exact,Choice 2 (TMP),2
+exact,Choice 3 (TMP),2
 exact,Class Ability,2
 exact,Class Ability Title,2
 exact,Class Name,2
-exact,Description Text,2
 exact,Stage Title (TMP),2
+general_fragments,Trait Title,2
 regex,Choice 2 (TMP),2
 exact,Banner Text (TMP),1
 exact,Choice 1 (TMP),1
-exact,Choice 2 (TMP),1
-exact,Choice 3 (TMP),1
 exact,Choice A (TMP),1
 exact,Choice B (TMP),1
 exact,Cinder Modifier Title,1
@@ -34,6 +39,7 @@ exact,Dialog Text,1
 exact,Skill Name,1
 exact,Value,1
 general_fragments,Choice 3 (TMP),1
+general_fragments,Choice 4 (TMP),1
 general_fragments,Trait Description,1
 regex,Ability Description,1
 regex,Choice 3 (TMP),1
@@ -54,3 +60,5 @@ technical_ignored,Choice 8 (TMP),1
 technical_ignored,Choice 9 (TMP),1
 technical_ignored,Description Part 1,1
 technical_ignored,Description Part 2,1
+technical_ignored,Text,1
+visible_exact,Choice 1 (TMP),1

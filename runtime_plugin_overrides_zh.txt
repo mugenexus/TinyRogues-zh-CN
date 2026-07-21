@@ -627,3 +627,248 @@ Each point of Equip Load on you grants:\n<sprite name="SubArrow"><color=#00E61A>
 <color=#00E61A>+1</color> Maximum 层数 of <color=#FCC926>醉意</color>=<color=#00E61A>+1</color> <color=#FCC926>醉意</color>最大层数
 Light Bulb=灯泡
 Camel Leash=骆驼缰绳
+Spiked Gauntlets=尖刺护手
+Garnet Bracelet=石榴石手镯
+War Fans=战扇
+Wanderer Coat=流浪者外套
+Maple Pine Resin=枫木松脂
+Maple Pine 树脂=枫木松脂
+Rainbow Potion=彩虹药水
+Rainbow 药水=彩虹药水
+Agility Potion=敏捷药水
+Meat Shank=肉腿
+Explosive Force=爆发力
+Keen Mind=敏锐思维
+Nature's Boon=自然恩赐
+Oh yeah. It's all coming together.=没错.一切都串起来了.
+<color=#FCC926>REVIVED</color>!=<color=#FCC926>已复活</color>!
+READY TO GO=准备就绪
+Gain <color=#00E317>+25%</color> chance for <color=#A61FFF>Weapons</color> to spawn with an <color=#FF00FF>Enchantment Modifier</color>.=获得 <color=#00E317>+25%</color> 几率使<color=#A61FFF>武器</color>生成时带有<color=#FF00FF>附魔词条</color>.
+<color=yellow>Unlocks:</color> Monk Class\n<color=#FCC926>Status: </color><color=#808080>Not Completed</color>=<color=yellow>解锁:</color> 武僧职业\n<color=#FCC926>状态: </color><color=#808080>未完成</color>
+<color=yellow>解锁:</color> Monk Class\n<color=#FCC926>Status: </color><color=#808080>Not Completed</color>=<color=yellow>解锁:</color> 武僧职业\n<color=#FCC926>状态: </color><color=#808080>未完成</color>
+Maid Costume=女仆装
+Cat Ears=猫耳
+Purrfect Service=完美服务
+PURRFECT SERVICE ACTIVATED!=完美服务已激活！
+<color=#D77BBA><color=#D77BBA>Charm</color></color>\n•<indent=7px><color=#00E61A>x1.25</color> Damage Taken\nat <color=#26FF66>Far Range</color><sprite name="Far"></indent>\n<color=#808080>•Duration: </color><color=#00E61A>8</color> <color=#00E61A>seconds</color><color=#808080>\n•Max Stacks: </color><color=#00E61A>1</color>\n<color=#808080>[<color=#A61FFF><color=#A61FFF>Emotion</color></color>] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>Debuff</color></color>] </color>=<color=#D77BBA><color=#D77BBA>魅惑</color></color>\n•<indent=7px>承受伤害 <color=#00E61A>x1.25</color>\n处于<color=#26FF66>远距离</color><sprite name="Far">时</indent>\n<color=#808080>•持续时间：</color><color=#00E61A>8</color> <color=#00E61A>秒</color><color=#808080>\n•最大层数：</color><color=#00E61A>1</color>\n<color=#808080>[<color=#A61FFF><color=#A61FFF>情绪</color></color>] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>减益</color></color>] </color>
+<size=72%><color=#00B824>Cat Ears</color></size>=<size=72%><color=#00B824>猫耳</color></size>
+<size=72%><color=#00B824>Maid Costume</color></size>=<size=72%><color=#00B824>女仆装</color></size>
+COMPROMISED LOOT=受损战利品
+LABYRINTH OF FATE=命运迷宫
+LOST GOODS=遗失物品
+SPOILED FOR CHOICE=挑花了眼
+Completing an entire Floor without taking Damage makes the Boss offer <color=#00E317>+1</color> Reward.=整层未受到伤害时，首领奖励增加 <color=#00E317>+1</color> 个选项。
+All Blacksmiths now charge\n<color=#00E317>5</color> <color=#5ECCE3>Souls</color><sprite name="Soul"> instead of \n20 <color=#FCC926>Gold</color><sprite name="Gold"> per <color=#A61FFF>Upgrade Level</color>.=所有铁匠现在每个<color=#A61FFF>升级等级</color>收取\n<color=#00E317>5</color> <color=#5ECCE3>灵魂</color><sprite name="Soul">，而不是\n20 <color=#FCC926>金币</color><sprite name="Gold">。
+You gain <color=#00E317>+10%</color> chance per Run to run into a Royal Armory.\n<color=grey>[Added to a 5% Base Chance.]</color>=每局有 <color=#00E317>+10%</color> 几率遇到皇家军械库。\n<color=grey>[在 5% 基础几率上叠加。]</color>
+<color=#76428A><color=#76428A>Vulnerability</color></color>\n•<color=#00E61A>x1.20</color> Damage Taken\n<color=#808080>•Duration: </color><color=#00E61A>8</color> <color=#00E61A>seconds</color><color=#808080>\n•Max Stacks: </color><color=#00E61A>1</color>\n<color=#808080>[<color=#A61FFF><color=#A61FFF>Hex</color></color>] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>Debuff</color></color>] </color>=<color=#76428A><color=#76428A>易伤</color></color>\n•承受伤害 <color=#00E61A>x1.20</color>\n<color=#808080>•持续时间：</color><color=#00E61A>8</color> <color=#00E61A>秒</color><color=#808080>\n•最大层数：</color><color=#00E61A>1</color>\n<color=#808080>[<color=#A61FFF><color=#A61FFF>咒术</color></color>] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>减益</color></color>] </color>
+•<indent=7px>Recover <color=#00E317>2</color> <color=#FF3326>Hearts</color><sprite name="Heart"> on <color=#FCC926>Revive</color><sprite name="Revive">.</indent>\n•<indent=7px><color=#FCC926>Revive</color><sprite name="Revive"> refreshes every Floor.=•<indent=7px><color=#FCC926>复活</color><sprite name="Revive">时恢复 <color=#00E317>2</color> 颗<color=#FF3326>心</color><sprite name="Heart">.</indent>\n•<indent=7px><color=#FCC926>复活</color><sprite name="Revive">每层刷新.
+•<indent=7px>恢复 <color=#00E317>2</color> <color=#FF3326>心</color><sprite name="Heart"> on <color=#FCC926>Revive</color><sprite name="Revive">.</indent>\n•<indent=7px><color=#FCC926>Revive</color><sprite name="Revive"> refreshes every Floor.=•<indent=7px><color=#FCC926>复活</color><sprite name="Revive">时恢复 <color=#00E317>2</color> 颗<color=#FF3326>心</color><sprite name="Heart">.</indent>\n•<indent=7px><color=#FCC926>复活</color><sprite name="Revive">每层刷新.
+// 元进度节点标题；插件会忽略大小写并统一普通空格与不换行空格。
+Adaptability=随机应变
+All In=孤注一掷
+Backup Armory=后备军械库
+Bargain Hunter=议价高手
+Bulk Seller=批量出售
+Bunking Up=拼房过夜
+Butterfly Effect=蝴蝶效应
+Call To Adventure=冒险召唤
+Catharsis=宣泄
+Compromised Loot=受损战利品
+Dedication=专注
+Deep Sea Contraband=深海走私品
+Deflation=通货紧缩
+Demand And Supply=需求与供给
+Double Trouble=祸不单行
+Drinking On The Dot=准点畅饮
+Enigmatic=神秘莫测
+Ethereal Roulette=虚灵轮盘
+Evergreen=常青
+Explosive Delivery=爆炸配送
+Faith=信仰
+Farewell Drink=饯行酒
+First Aid=急救
+Fishing Club=钓鱼俱乐部
+Forbidden Magic=禁忌魔法
+Freedom=自由
+Friend of Nature=自然之友
+Friendship Quest=友谊任务
+Golden Roulette=黄金轮盘
+Happy Hour=欢乐时光
+Head Start=抢先一步
+Health Insurance=健康保险
+Heart Seeker=寻心者
+High Roller=豪赌客
+High Stakes=高额赌注
+Holy Devoition=神圣奉献
+Hope=希望
+In The Eleventh Hour=最后关头
+Inflation=通货膨胀
+Labyrinth Of Fate=命运迷宫
+Lazy Stroll=悠闲漫步
+Left To Fate=听天由命
+Loss Leader=亏本促销
+Lost Goods=遗失物品
+Loyalty=忠诚
+Lucky Start=幸运开局
+Magnum Opus=巅峰之作
+Mixed Bag=好坏参半
+Money At The Spot=现款交易
+Odyssey=奥德赛
+Opening Move=先手
+Pandoras Boxes=潘多拉魔盒
+Pay To Win=氪金取胜
+Perfectionist=完美主义者
+Perseverance=坚持不懈
+Personal Agency=自主抉择
+Pity=怜悯
+Playtime=游戏时间
+Precognition=预知
+Prodigy=奇才
+Prosperity=繁荣
+Quick Recovery=快速恢复
+Rainy Day Fund=未雨绸缪
+Ready To Go=准备就绪
+Rebirth=重生
+Red Roulette=红色轮盘
+Repair Every Slot=全面修复
+Repercussions=反噬
+Rise Or Fall=成败
+Royal Descent=王室血统
+Safe Bet=稳妥之选
+Secret Service=秘密服务
+Shortcut=捷径
+Silent Night=寂静之夜
+Skirmisher=散兵
+Sleight=巧手
+Slow And Steady=稳扎稳打
+Smash And Grab=砸抢一空
+Smuggler Nook=走私窝点
+Speed=速度
+Spoiled For Choice=挑花了眼
+Stamina Scout=耐力侦察
+Steady To Go=稳步出发
+Strong Foundation=坚实基础
+Suit Up=全副武装
+Supernatural Aid=超自然援助
+Superstitions=迷信
+Supply And Demand=供给与需求
+Sympathy=同情
+Take This=拿着这个
+The Glass Is Half Empty=杯中半空
+The Glass Is Half Full=杯中半满
+They Key To Success=成功之钥
+Thief In the Shadows=暗影盗贼
+Throne Quest=王座任务
+Treasure Hunter=宝藏猎人
+Trust Issues=信任危机
+Twilight Fall=暮光降临
+Vanity=虚荣
+Vigor=活力
+Weave The Arcane=编织奥术
+Well Rounded Beast=全能野兽
+Wild Card=百搭
+Wildlife Trafficking=野生动物走私
+Window Shopper=只看不买
+World of Hurt=痛苦世界
+Worth Of A Soul=灵魂之价
+Wrangler=驯兽师
+// 元进度完整说明；补齐资源中被静态提取器拆段的 34 个节点。
+Weapons that are not the same Weapon Type that you are\ncurrently wearing are [[x1.20]] more ##common.\n<color=grey>[Weapon Types are //Melee, //Ranged and Magic.]</color>=与当前装备不同武器类型的武器\n出现概率提高至 [[x1.20]]。\n<color=grey>[武器类型包括 //近战、//远程和魔法。]</color>
+With each consecutive Item sold at a Pawn Shop, following Items sell for\n[[+1]] Gold<sprite name="Gold"> up to a maximum of [[+10]].=在典当行连续出售物品时，\n后续物品的售价逐件增加 [[+1]] 金币<sprite name="Gold">，最高增加 [[+10]]。
+Weapons of the same Weapon Class that you started with, \nare [[x1.20]] more //common.\n<color=grey>[E.g.: Sword, Bow, Gun, Wand, ...]</color>=与初始武器相同类别的武器\n出现概率提高至 [[x1.20]]。\n<color=grey>[例如：剑、弓、枪、魔杖等。]</color>
+The Black Market always has the Kuo-Tao selling Fish.\nYou also gain a [[50%]] Discount at that Shop.=黑市必定出现出售鱼类的寇涛鱼人。\n你还会在该商店获得 [[50%]] 折扣。
+You encounter less Mimics but they now always appear in pairs.\n<color=grey>[Info: Fighting against 2 Mimics at the same time can be difficult but rewarding.]</color>=遭遇宝箱怪的次数减少，但它们总是成对出现。\n<color=grey>[提示：同时对付 2 只宝箱怪很困难，但回报丰厚。]</color>
+While one Alignment is 2 or higher and the other three are 1 or lower:\nGain [[+1]] Treasure Find<Treasure>.\n<g>(Alignments are Good<Good>, Evil<Evil>, Lawful<Lawful> or Chaotic<Chaos>.)</g>\n=当一种阵营倾向达到 2 或以上，另外三种均为 1 或以下时：\n获得 [[+1]] 寻宝<Treasure>。\n<g>(阵营倾向包括善良<Good>、邪恶<Evil>、守序<Lawful>或混乱<Chaos>。)</g>\n
+An aquarium is added to\nevery Tavern, at which\nyou may catch up to [[2]] Fish.=每座酒馆都会增设水族箱，\n你可以在那里\n捕获最多 [[2]] 条鱼。
+The Black Market always has the Wizard selling ##Charms.\nYou also gain a [[50%]] Discount at that Shop.=黑市必定出现出售##护符的法师。\n你还会在该商店获得 [[50%]] 折扣。
+The Dryad is now always at the Tavern, replacing the Nurse.\nShe sells Green Blossoms for Gold<Gold>.=树妖将取代护士，固定出现在酒馆。\n她会出售可用金币<Gold>购买的绿色花朵。
+On the first 3 Floors: \nEquipment items that grant Hearts<sprite name="Heart"> are [[x2.00]] more ##common.=在前 3 层：\n提供心<sprite name="Heart">的装备出现概率提高至 [[x2.00]]。
+The Cleric is now always at the Tavern, replacing the Nurse.\nShe sells Purging Stones that reduce Curse<Curse> for Gold<Gold>.=牧师将取代护士，固定出现在酒馆。\n她会出售可用金币<Gold>购买、能够降低诅咒<Curse>的净化石。
+You start with \n[[+1]] Soul Heart<sprite name="Soul_Heart">.=初始获得\n[[+1]] 颗灵魂之心<sprite name="Soul_Heart">。
+Weapons and Equipment are\n[[1 to 5]] Gold<sprite name="Gold"> cheaper at Shops.=商店中的武器和装备\n便宜 [[1 至 5]] 金币<sprite name="Gold">。
+While you are Level 0,\nBosses have\n[[x0.90]] Health<Heart> and Armor<Armor>.=当你为 0 级时，\n首领的生命<Heart>和护甲<Armor>\n降至 [[x0.90]]。
+Gain [[+1]] Luck<sprite name="Luck">\non Floor 1 and 2.=在第 1、2 层\n获得 [[+1]] 幸运<sprite name="Luck">。
+Upon opening\n5 Treasure Chests, \npermanently gain \n[[+1]] Magic Find<Magic_Find>.=开启\n5 个宝箱后，\n永久获得\n[[+1]] 魔法寻宝<Magic_Find>。
+Gain [[+1]] Trait Reroll\non Level 6.=达到 6 级时，\n获得 [[+1]] 次特质重投。
+Event Rooms with Minigames \nand Arcade Rooms are\n[[x2.00]] more //common.\n=带小游戏的事件房\n和街机房\n出现概率提高至 [[x2.00]]。\n
+The chance to win the Jackpot at the Arcade rises\nfrom 1% to [[5%]].\n\nAdditionally, Minigames are\n[[20% to 30% easier]].\n<g>(E.g.: Fishing, Dancing, Lockpicking...)</g>=街机大奖的中奖率\n从 1% 提高至 [[5%]]。\n\n此外，小游戏的难度\n降低 [[20% 至 30%]]。\n<g>(例如：钓鱼、跳舞、开锁等。)</g>
+For each point of Evil<Evil>,\nfind [[+5%]] Blood Chest Rewards.\n\nFor each point of Good<Good>,\nfind [[+5%]] Shrine Rewards.\n\nFor each point of Lawful<Lawful>,\nfind [[+5%]] Soul Rewards.\n\nFor each point of Chaotic<Chaos>,\nfind [[+5%]] Dice Rewards.=每点邪恶<Evil>\n使血宝箱奖励出现率 [[+5%]]。\n\n每点善良<Good>\n使神殿奖励出现率 [[+5%]]。\n\n每点守序<Lawful>\n使灵魂奖励出现率 [[+5%]]。\n\n每点混乱<Chaos>\n使骰子奖励出现率 [[+5%]]。
+You gain [[+10%]] chance per Run to run into a Royal Armory.\n<color=grey>[Added to a 5% Base Chance.]</color>=每局有 [[+10%]] 几率遇到皇家军械库。\n<color=grey>[在 5% 基础几率上叠加。]</color>
+You find up to [[x2.00]]\nmore Secret Rooms\nand Locked Cellars.=发现的秘密房间\n和上锁地窖数量\n最多提高至 [[x2.00]]。
+Santa is now always at the Tavern, replacing the Nurse.\nHe sells Gift Boxes for Gold<Gold>.=圣诞老人将取代护士，固定出现在酒馆。\n他会出售可用金币<Gold>购买的礼物盒。
+Gain [[-0.5 seconds]] Bomb<Bomb>\nExplosion Delay.=炸弹<Bomb>爆炸延迟\n[[-0.5 秒]]。
+The Tavern gains [[+25%]] chance to have the Black Market.\n<color=grey>[Added to a 15% Base Chance.]</color>=酒馆出现黑市的几率 [[+25%]]。\n<color=grey>[在 15% 基础几率上叠加。]</color>
+On the first 3 Floors: \nEquipment items that grant Stamina<Stamina> or Stamina Recovery Speed<Stamina> are [[x2.00]] more ##common.=在前 3 层：\n提供耐力<Stamina>或耐力恢复速度<Stamina>的装备出现概率提高至 [[x2.00]]。
+Gain [[+1]] Trait Reroll\non Level 1.=达到 1 级时，\n获得 [[+1]] 次特质重投。
+Upon entering Floor 2, \ngain [[+1]] point of \na random Alignment.\n<g>(Alignments are Good<Good>, Evil<Evil>, Lawful<Lawful> and Chaotic<Chaos>.</g>=进入第 2 层时，\n随机获得 [[+1]] 点\n阵营倾向。\n<g>(阵营倾向包括善良<Good>、邪恶<Evil>、守序<Lawful>和混乱<Chaos>。</g>
+Blacksmiths sell\nRepair Powder for 5 Gold<sprite name="Gold">.=铁匠会出售修复粉，\n售价 5 金币<sprite name="Gold">。
+Defeating a Boss without taking Damage grants\nyou [[+1]] Magic Find<sprite name="Magic_Find"> just for that Reward Selection.=无伤击败首领后，\n仅在该次奖励选择中获得 [[+1]] 魔法寻宝<sprite name="Magic_Find">。
+You encounter more Mimics but you get no hint for their upcoming appearance anymore.\n<color=grey>[Info: Mimics grant twice the Rewards of Treasure Chests, so more Mimics equals more Rewards.]</color>=遭遇宝箱怪的次数增加，但不再获得其出现提示。\n<color=grey>[提示：宝箱怪提供双倍宝箱奖励，因此宝箱怪越多，奖励越多。]</color>
+The Black Market always has Smuggler selling Companions<Companion>.\nYou also gain a [[50%]] Discount at that Shop.=黑市必定出现出售同伴<Companion>的走私商。\n你还会在该商店获得 [[50%]] 折扣。
+Blood Chests and\nBlood Altars are \n[[x1.30]] more //common.=血宝箱和\n血祭坛的出现概率\n提高至 [[x1.30]]。
+All Blacksmiths now charge\n[[5]] Souls<sprite name="Soul"> instead of \n20 Gold<sprite name="Gold"> per Upgrade Level.=所有铁匠现在每个升级等级收取\n[[5]] 灵魂<sprite name="Soul">，而不是\n20 金币<sprite name="Gold">。
+<color=#FF0000>-1%</color> <color=#FFFFFF>Attack Speed</color>\n<color=#FF0000>-0.5%</color> Movement Speed\n=<color=#FF0000>-1%</color> <color=#FFFFFF>攻击速度</color>\n<color=#FF0000>-0.5%</color> 移动速度\n
+<color=#FF2666>Ruthless Hits</color><sprite name="Ruthless_Hit"> gain\n<color=#00E317>x2.00</color> Top End Damage.=<color=#FF2666>无情命中</color><sprite name="Ruthless_Hit">获得\n<color=#00E317>x2.00</color> 伤害上限。
+Buy <color=#A61FFF>Potions</color>\nfor <color=#FCC926>Gold</color><sprite name="Gold">.=花费<color=#FCC926>金币</color><sprite name="Gold">\n购买<color=#A61FFF>药水</color>。
+Contains a\n<color=#26B0FF>Magic</color> <color=#A61FFF>Weapon</color>.=包含一件\n<color=#26B0FF>魔法</color><color=#A61FFF>武器</color>。
+Contains\nEquipment.=包含\n装备。
+Totems:\n<sprite name="SubArrow">Count as your Attacks.\n<sprite name="SubArrow">Last <color=#00E317>8</color> seconds.\n<sprite name="SubArrow">Vanish on Weapon Swap.\n<sprite name="SubArrow">Limit: <color=#00E61A>2</color>=图腾：\n<sprite name="SubArrow">算作你的攻击。\n<sprite name="SubArrow">持续 <color=#00E317>8</color> 秒。\n<sprite name="SubArrow">切换武器时消失。\n<sprite name="SubArrow">上限：<color=#00E61A>2</color>
+Healing Enchanted\n=治疗附魔\n
+Mortar Enchanted\n=迫击炮附魔\n
+Oktoberfest Enchanted\n=啤酒节附魔\n
+Hidden Blades=袖剑
+Bascinet=轻型头盔
+Bandana=头巾
+Ninja Headband=忍者头巾
+Quartz Bracelet=石英手镯
+Wooden Cross Pendant=木十字吊坠
+Sake=清酒
+With (a) friendly Fire!=小心友军火力！
+*TINK*=*叮*
++1 <color=#FF3326>Heart</color><sprite name="Heart">=+1 <color=#FF3326>心</color><sprite name="Heart">
+<color=#406E7D>ARMOR</color><sprite name="Armor">REPAIRED=<color=#406E7D>护甲</color><sprite name="Armor">已修复
+Anvil=铁砧
+Crimson Cloak attuned!=猩红斗篷已调谐！
+Dwarf Merchant=矮人商人
+Samurai=武士
+Santa=圣诞老人
+Witch Doctor=巫医
+Chocolate=巧克力
+Mage Stash=法师藏品
+Obsidian Chest=黑曜石宝箱
+Apocalypse=天启
+Barbarism=野蛮
+Exploitative Explosives=乘虚爆破
+Rage=狂怒
+Rogue's Tally=盗贼计数
+> <color=#FFEB04>Green</color>=> <color=#FFEB04>绿色</color>
+> <color=#FFEB04>Blue</color>=> <color=#FFEB04>蓝色</color>
+Play for 1 <color=#FCC926><color=#FCC926>Gold</color></color><sprite name="Gold">.=花费 1 <color=#FCC926><color=#FCC926>金币</color></color><sprite name="Gold">游玩。
+Gain <color=#00E317>+1</color> Flask<sprite name="Flask">.=获得 <color=#00E317>+1</color> 次药瓶<sprite name="Flask">充能。
+Close Combat=近身战斗
+Hey kid...\nMind helping Santa out?\nI'll sell ya a "礼物盒", deal? [<color=#FFFFFF>10</color><color=#FCC926> 金币<sprite name="Gold"></color>]=嘿，孩子……\n愿意帮圣诞老人一个忙吗？\n我卖你一个“礼物盒”，成交吗？ [<color=#FFFFFF>10</color><color=#FCC926> 金币<sprite name="Gold"></color>]
+Your <color=#E03D00>Explosion Damage </color>inflicts <color=#76428A>Vulnerability</color>.=你的<color=#E03D00>爆炸伤害</color>会施加<color=#76428A>易伤</color>。
+你的<color=#E03D00>爆炸 伤害 </color>施加 <color=#76428A>Vulnerability</color>.=你的<color=#E03D00>爆炸伤害</color>会施加<color=#76428A>易伤</color>。
+Each point of <color=#FF2666>Strength</color> additionally\ngrants <color=#00E61A>+5%</color> <color=#FF3326>Critical Hit Damage</color><sprite name="Critical_Hit">.\n<color=#7F7F7FFF>(<color=#00E61A>+65%</color> currently)</color>=每点<color=#FF2666>力量</color>额外\n提供 <color=#00E61A>+5%</color> <color=#FF3326>暴击伤害</color><sprite name="Critical_Hit">。\n<color=#7F7F7FFF>（当前 <color=#00E61A>+65%</color>）</color>
+Each point of <color=#FF2666>力量</color> additionally\ngrants <color=#00E61A>+5%</color> <color=#FF3326>暴击伤害</color><sprite name="Critical_Hit">.\n<color=#7F7F7FFF>(<color=#00E61A>+65%</color> 当前)</color>=每点<color=#FF2666>力量</color>额外\n提供 <color=#00E61A>+5%</color> <color=#FF3326>暴击伤害</color><sprite name="Critical_Hit">。\n<color=#7F7F7FFF>（当前 <color=#00E61A>+65%</color>）</color>
+Grants <color=#00E61A>+100%</color> <color=#FF2666>Ruthless Hit Chance</color><sprite name="Ruthless_Hit"> at <color=#FF2666>Close Range</color><sprite name="Close">.=在<color=#FF2666>近程</color><sprite name="Close">时获得 <color=#00E61A>+100%</color> <color=#FF2666>无情命中几率</color><sprite name="Ruthless_Hit">。
+获得 <color=#00E61A>+100%</color> <color=#FF2666>无情命中几率</color><sprite name="Ruthless_Hit"> at <color=#FF2666>近程</color><sprite name="Close">.=在<color=#FF2666>近程</color><sprite name="Close">时获得 <color=#00E61A>+100%</color> <color=#FF2666>无情命中几率</color><sprite name="Ruthless_Hit">。
+<color=#A61FFF>On the Tally </color>of <color=#00E61A>3</color> <color=#A61FFF>Attacks</color>, your next <color=#A61FFF>Attack</color> or <color=#A61FFF>Skill</color> deals a guaranteed <color=#FF3326>Critical Hit</color><sprite name="Critical_Hit">.=<color=#A61FFF>累计</color> <color=#00E61A>3</color> 次<color=#A61FFF>攻击</color>后，下一次<color=#A61FFF>攻击</color>或<color=#A61FFF>技能</color>必定造成<color=#FF3326>暴击</color><sprite name="Critical_Hit">。
+<color=#A61FFF>累计达到 </color>of <color=#00E61A>3</color> <color=#A61FFF>攻击</color>, 你的下 <color=#A61FFF>攻击</color> or <color=#A61FFF>技能</color> deals a guaranteed <color=#FF3326>暴击</color><sprite name="Critical_Hit">.=<color=#A61FFF>累计</color> <color=#00E61A>3</color> 次<color=#A61FFF>攻击</color>后，下一次<color=#A61FFF>攻击</color>或<color=#A61FFF>技能</color>必定造成<color=#FF3326>暴击</color><sprite name="Critical_Hit">。
+<color=#A61FFF>On Skill Used</color>, <color=#A61FFF>trigger</color> <color=#E03D00><color=#00E317>3</color> Meteors</color> that each deal <color=#00E61A>1140 to 1898</color> <color=#FF3326>Fire Damage</color>.=<color=#A61FFF>使用技能时</color>，<color=#A61FFF>触发</color> <color=#E03D00><color=#00E317>3</color> 颗流星</color>，每颗造成 <color=#00E61A>1140 至 1898</color> 点<color=#FF3326>火焰伤害</color>。
+<color=#A61FFF>使用技能时</color>, <color=#A61FFF>trigger</color> <color=#E03D00><color=#00E317>3</color> Meteors</color> that each造成<color=#00E61A>1140 至 1898</color> <color=#FF3326>火焰 伤害</color>.=<color=#A61FFF>使用技能时</color>，<color=#A61FFF>触发</color> <color=#E03D00><color=#00E317>3</color> 颗流星</color>，每颗造成 <color=#00E61A>1140 至 1898</color> 点<color=#FF3326>火焰伤害</color>。
+•<indent=7px>Your <color=#A61FFF>Attacks</color> grant you 1 stack of <color=#FF3326>Rage</color> <color=#A61FFF>on hit</color>.</indent>\n•<indent=7px><color=#FF2666>Melee</color> <color=#A61FFF>Attacks</color> grant <color=#00E317>5</color> stacks.</indent>=•<indent=7px>你的<color=#A61FFF>攻击</color><color=#A61FFF>命中时</color>获得 1 层<color=#FF3326>狂怒</color>。</indent>\n•<indent=7px><color=#FF2666>近战</color><color=#A61FFF>攻击</color>会获得 <color=#00E317>5</color> 层。</indent>
+•<indent=7px>你的<color=#A61FFF>攻击</color>提供you 1 stack of <color=#FF3326>Rage</color> <color=#A61FFF>命中时</color>.</indent>\n•<indent=7px><color=#FF2666>近战</color> <color=#A61FFF>攻击</color>提供<color=#00E317>5</color> stacks.</indent>=•<indent=7px>你的<color=#A61FFF>攻击</color><color=#A61FFF>命中时</color>获得 1 层<color=#FF3326>狂怒</color>。</indent>\n•<indent=7px><color=#FF2666>近战</color><color=#A61FFF>攻击</color>会获得 <color=#00E317>5</color> 层。</indent>
+<color=#DF7126><color=#DF7126>Fragility</color></color>\n•<color=#00E61A>x1.40</color> <color=#A61FFF>Damage Over Time </color>Taken\n<color=#808080>•Duration: </color><color=#00E61A>8</color> <color=#00E61A>seconds</color><color=#808080>\n•Max Stacks: </color><color=#00E61A>1</color>\n<color=#808080>[<color=#A61FFF><color=#A61FFF>Hex</color></color>] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>Debuff</color></color>] </color>=<color=#DF7126><color=#DF7126>脆弱</color></color>\n•承受的<color=#A61FFF>持续伤害</color> <color=#00E61A>x1.40</color>\n<color=#808080>•持续时间：</color><color=#00E61A>8</color> <color=#00E61A>秒</color><color=#808080>\n•最大层数：</color><color=#00E61A>1</color>\n<color=#808080>[<color=#A61FFF><color=#A61FFF>咒术</color></color>] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>减益</color></color>] </color>
+<color=#FCC926><color=#FCC926>Tipsiness</color></color>\n<color=#808080>•Stacks: 0/<color=#00E61A>3</color></color><color=#808080>\n•Duration: Permanent</color>=<color=#FCC926><color=#FCC926>醉意</color></color>\n<color=#808080>•层数：0/<color=#00E61A>3</color></color><color=#808080>\n•持续时间：永久</color>
+<color=#26AFFF><color=#26AFFF>Swiftness</color></color>\n•<color=#00E61A>+20%</color> Movement Speed\n<color=#808080>•Duration: </color><color=#00E61A>8</color> <color=#00E61A>seconds</color><color=#808080>\n•Max Stacks: </color><color=#00E61A>1</color>\n<color=#808080>[<color=#A61FFF><color=#A61FFF>Buff</color></color>] </color>=<color=#26AFFF><color=#26AFFF>迅捷</color></color>\n•<color=#00E61A>+20%</color> 移动速度\n<color=#808080>•持续时间：</color><color=#00E61A>8</color> <color=#00E61A>秒</color><color=#808080>\n•最大层数：</color><color=#00E61A>1</color>\n<color=#808080>[<color=#A61FFF><color=#A61FFF>增益</color></color>] </color>
+<color=#FF3326><color=#FF3326>Rage</color></color>\n•<color=#00E61A>+1%</color> <color=#FFFFFF>Attack Speed</color>\n<color=#808080>•Duration: </color><color=#00E61A>1</color> <color=#00E61A>second</color><color=#808080>\n•Max Stacks: </color><color=#00E61A>40</color><color=#808080>\n•Stacks decay one after another.</color>\n<color=#808080>[<color=#A61FFF><color=#A61FFF>Emotion</color></color>] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>Buff</color></color>] </color>=<color=#FF3326><color=#FF3326>狂怒</color></color>\n•<color=#00E61A>+1%</color> <color=#FFFFFF>攻击速度</color>\n<color=#808080>•持续时间：</color><color=#00E61A>1</color> <color=#00E61A>秒</color><color=#808080>\n•最大层数：</color><color=#00E61A>40</color><color=#808080>\n•层数会依次衰减。</color>\n<color=#808080>[<color=#A61FFF><color=#A61FFF>情绪</color></color>] </color><color=#808080>[<color=#A61FFF><color=#A61FFF>增益</color></color>] </color>
+Any interaction in\nthe Black Market\nwill add <color=#00E317>+1</color> <color=#FF0000>Evil</color><sprite name="Evil">\nonce per run.=每局中\n与黑市进行\n任何交互都会增加 <color=#00E317>+1</color> <color=#FF0000>邪恶</color><sprite name="Evil">\n一次。
+Buy Items\nfor <color=#5ECCE3>Souls</color><sprite name="Soul">.=花费<color=#5ECCE3>灵魂</color><sprite name="Soul">\n购买物品。
+Rerolls <color=#A61FFF>Traits</color>\nin <color=#A61FFF>Trait</color> Selection.=在<color=#A61FFF>特质</color>选择时\n重投<color=#A61FFF>特质</color>。
+<color=#808080>Consumable</color>\nPermanently grants <color=#00E317>+1</color> Maximum <color=#FCC926>Tipsiness</color>.=<color=#808080>消耗品</color>\n永久获得 <color=#00E317>+1</color> 点<color=#FCC926>醉意</color>上限。
+<color=#808080>消耗品</color>\n永久ly grants <color=#00E317>+1</color> Maximum <color=#FCC926>醉意</color>.=<color=#808080>消耗品</color>\n永久获得 <color=#00E317>+1</color> 点<color=#FCC926>醉意</color>上限。
+<color=#FF00FF><color=#FF00FF><color=#FF00FF>Arcane</color></color>: </color><color=#00E61A>+5%</color> Damage per\n<color=#26B0FF>Mana Container</color><sprite name="Mana"> you have=<color=#FF00FF><color=#FF00FF><color=#FF00FF>奥术</color></color>：</color><color=#00E61A>+5%</color> 伤害，来自每个\n<color=#26B0FF>法力容器</color><sprite name="Mana">
+Arms Dealer=军火商
+Princess=公主
+GALAXY NEXUS ACTIVATED!=银河枢纽已激活！

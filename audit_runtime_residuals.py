@@ -7,6 +7,7 @@ from pathlib import Path
 from audit_runtime_coverage import (
     LIVE_RESIDUAL_FILE,
     ROOT,
+    VISIBLE_EXACT_COMPONENTS,
     convert_dotnet_regex,
     flatten_decorated_ascii_runs,
     general_route,
@@ -17,6 +18,7 @@ from audit_runtime_coverage import (
     load_pairs,
     unescape,
     visible,
+    visible_lookup_key,
 )
 
 
@@ -40,6 +42,7 @@ ALLOWED_WORDS = {
     "XUnity",
     "Steam",
     "Discord",
+    "RubyDev",
     "NaN",
     "ig-gi-ig-gi-",
 }
@@ -90,6 +93,29 @@ def load_exact() -> dict[str, str]:
     return exact
 
 
+def prepare_visible_translation(value: str) -> str:
+    value = re.sub(r"\[\[(.*?)\]\]", r"<color=#00E317>\1</color>", value)
+    value = re.sub(r"\(\((.*?)\)\)", r"<color=#FF0000>\1</color>", value)
+    value = value.replace("##", "").replace("//", "")
+    return re.sub(
+        r"<(?!/?color(?:=|>)|sprite\s+name=)[^>]+>",
+        "",
+        value,
+        flags=re.IGNORECASE,
+    ).strip()
+
+
+def load_visible_exact(exact: dict[str, str]) -> dict[str, str]:
+    visible_exact: dict[str, str] = {}
+    for source, translation in exact.items():
+        if CHINESE_RE.search(translation):
+            visible_exact.setdefault(
+                visible_lookup_key(source),
+                prepare_visible_translation(translation),
+            )
+    return visible_exact
+
+
 def translate_dialogue_prefix(source: str, exact: dict[str, str]) -> str | None:
     current = visible(source).casefold()
     if len(current) < 3:
@@ -125,12 +151,36 @@ def translate(
     component: str,
     source: str,
     exact: dict[str, str],
+    visible_exact: dict[str, str],
     regex_pairs: list[tuple[re.Pattern[str], str]],
     fragments: list[tuple[str, str]],
     structured_fragments: list[tuple[str, str]],
 ) -> str:
     if source in exact:
         return exact[source]
+
+    size_wrapped = re.fullmatch(
+        r"<size=(?P<size>[^>]+)>(?P<text>.+)</size>",
+        source,
+        flags=re.DOTALL,
+    )
+    if size_wrapped:
+        inner = translate(
+            component,
+            size_wrapped.group("text"),
+            exact,
+            visible_exact,
+            regex_pairs,
+            fragments,
+            structured_fragments,
+        )
+        if inner != size_wrapped.group("text"):
+            return f'<size={size_wrapped.group("size")}>{inner}</size>'
+
+    if component in VISIBLE_EXACT_COMPONENTS:
+        visible_translation = visible_exact.get(visible_lookup_key(source))
+        if visible_translation is not None:
+            return visible_translation
 
     color_wrapped = re.fullmatch(
         r"<color=(?P<color>[^>]+)>(?P<text>[^<>]+)</color>",
@@ -181,6 +231,7 @@ def translate_until_stable(
     component: str,
     source: str,
     exact: dict[str, str],
+    visible_exact: dict[str, str],
     regex_pairs: list[tuple[re.Pattern[str], str]],
     fragments: list[tuple[str, str]],
     structured_fragments: list[tuple[str, str]],
@@ -191,6 +242,7 @@ def translate_until_stable(
             component,
             result,
             exact,
+            visible_exact,
             regex_pairs,
             fragments,
             structured_fragments,
@@ -212,8 +264,19 @@ def residual_words(value: str) -> list[str]:
     return sorted(set(words), key=str.casefold)
 
 
+def is_typing_prefix(component: str, source: str, exact: dict[str, str]) -> bool:
+    if component != "Text" or CHINESE_RE.search(visible(source)):
+        return False
+    current = visible(source).casefold()
+    return len(current) >= 3 and any(
+        len(full) > len(current) and full.startswith(current)
+        for full in (visible(candidate).casefold() for candidate in exact)
+    )
+
+
 def main() -> None:
     exact = load_exact()
+    visible_exact = load_visible_exact(exact)
     regex_pairs = load_regex_pairs()
     fragments = load_pairs(ROOT / "runtime_fragments_zh.txt")
     fragments.sort(key=lambda pair: len(pair[0]), reverse=True)
@@ -237,10 +300,13 @@ def main() -> None:
     for (component, source), files in samples.items():
         if is_technical(component, source):
             continue
+        if is_typing_prefix(component, source, exact):
+            continue
         translated = translate_until_stable(
             component,
             source,
             exact,
+            visible_exact,
             regex_pairs,
             fragments,
             structured_fragments,
@@ -271,10 +337,13 @@ def main() -> None:
             source = unescape(escaped_source)
             if is_technical(component, source):
                 continue
+            if is_typing_prefix(component, source, exact):
+                continue
             translated = translate_until_stable(
                 component,
                 source,
                 exact,
+                visible_exact,
                 regex_pairs,
                 fragments,
                 structured_fragments,
@@ -284,6 +353,7 @@ def main() -> None:
                     component,
                     unescape(escaped_translated),
                     exact,
+                    visible_exact,
                     regex_pairs,
                     fragments,
                     structured_fragments,

@@ -40,6 +40,16 @@ TECHNICAL_COMPONENTS = {
     'Label: "Cheat Console"',
     'Label: "CRT"',
 }
+VISIBLE_EXACT_COMPONENTS = {
+    "Tooltip Title (TMP)",
+    "Tooltip Text (TMP)",
+    "Description Text",
+    "Elite Enchantment Text",
+    "Main Header",
+    "Title Text",
+    "Trait Title",
+    "Choice 1 (TMP)",
+}
 TECHNICAL_TEXT_PATTERNS = [
     re.compile(r"^\(?\d+ Errors?\)?", re.IGNORECASE),
     re.compile(r"^\d+(?:\.\d+){2,} "),
@@ -97,6 +107,20 @@ def unescape(value: str) -> str:
 def visible(value: str) -> str:
     value = TAG_RE.sub("", value.replace("\r\n", "\n").replace("\r", "\n"))
     return re.sub(r"\s+", " ", value).strip()
+
+
+def visible_lookup_key(value: str) -> str:
+    value = (
+        value.replace("[[", "")
+        .replace("]]", "")
+        .replace("((", "")
+        .replace("))", "")
+        .replace("##", "")
+        .replace("//", "")
+        .replace("\u00a0", " ")
+    )
+    value = re.sub(r"\s+\(Meta Perk\)[^A-Za-z0-9]*$", "", value, flags=re.IGNORECASE)
+    return visible(value).casefold()
 
 
 def flatten_decorated_ascii_runs(value: str) -> str:
@@ -260,6 +284,7 @@ def classify(
     component: str,
     source: str,
     exact: set[str],
+    visible_exact: set[str],
     regexes: list[re.Pattern[str]],
     fragments: list[tuple[str, str]],
     item_fragments: list[tuple[str, str]],
@@ -267,6 +292,8 @@ def classify(
 ) -> str:
     if source in exact:
         return "exact"
+    if component in VISIBLE_EXACT_COMPONENTS and visible_lookup_key(source) in visible_exact:
+        return "visible_exact"
     color_wrapped = re.fullmatch(r"<color=[^>]+>([^<>]+)</color>", source)
     if color_wrapped and color_wrapped.group(1) in exact:
         return "exact"
@@ -278,6 +305,7 @@ def classify(
             component,
             flattened_source,
             exact,
+            visible_exact,
             regexes,
             fragments,
             item_fragments,
@@ -289,6 +317,9 @@ def classify(
         return "structured_fragments"
     if dialogue_match(source, dialogue_sources):
         return "dialogue"
+    current_dialogue = visible(source).casefold()
+    if component == "Text" and any(entry.startswith(current_dialogue) for entry in dialogue_sources):
+        return "typing_prefix"
     if general_route(component, source) and fragments_match(source, fragments):
         return "general_fragments"
     if is_technical(component, source):
@@ -297,11 +328,13 @@ def classify(
 
 
 def main() -> None:
-    exact = {
-        source
+    runtime_pairs = [
+        pair
         for file in ("runtime_overrides_zh.txt", "runtime_plugin_overrides_zh.txt")
-        for source, _ in load_pairs(ROOT / file)
-    }
+        for pair in load_pairs(ROOT / file)
+    ]
+    exact = {source for source, _ in runtime_pairs}
+    visible_exact = {visible_lookup_key(source) for source, translation in runtime_pairs if translation != source}
     regexes = load_regexes()
     fragments = load_pairs(ROOT / "runtime_fragments_zh.txt")
     item_fragments = load_pairs(ROOT / "runtime_item_fragments_zh.txt")
@@ -317,6 +350,8 @@ def main() -> None:
             translation = row.get("translation_zh") or ""
             key = row.get("key") or ""
             source_file = row.get("source_file") or ""
+            if source and translation and translation != source:
+                visible_exact.add(visible_lookup_key(source))
             if (
                 (not key.startswith("AUTO_") or "global-metadata.dat" in source_file)
                 and len(source) >= 6
@@ -346,6 +381,7 @@ def main() -> None:
             component,
             source,
             exact,
+            visible_exact,
             regexes,
             fragments,
             item_fragments,

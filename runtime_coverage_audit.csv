@@ -21,13 +21,81 @@ dialogue,Text,Need a litt,live:_TmpUntranslated.txt
 dialogue,Text,Need a little h,live:_TmpUntranslated.txt
 dialogue,Text,Need a little help,live:_TmpUntranslated.txt
 dialogue,Text,Need a little help?,live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>He</color>",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Hero C</color>",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Hero Cape</color>",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Hero Cape</color>""?\nA",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Hero Cape</color>""?\nAn o",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Hero Cape</color>""?\nAn okay ",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Hero Cape</color>""?\nAn okay item",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Hero Cape</color>""?\nAn okay item.\nHo",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Hero Cape</color>""?\nAn okay item.\nHow a",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Hero Cape</color>""?\nAn okay item.\nHow about",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Hero Cape</color>""?\nAn okay item.\nHow about <color=#FCC926>5 G</color>",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Hero Cape</color>""?\nAn okay item.\nHow about <color=#FCC926>5 Gold</color>",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Hero Cape</color>""?\nAn okay item.\nHow about <color=#FCC926>5 Gold</color> fo",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Hero Cape</color>""?\nAn okay item.\nHow about <color=#FCC926>5 Gold</color> for it",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Hero Cape</color>""?\nAn okay item.\nHow about <color=#FCC926>5 Gold</color> for it?",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Red </color>",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Red Hoo</color>",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Red Hoodie</color>""",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Red Hoodie</color>""?\nAn",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Red Hoodie</color>""?\nAn ok",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Red Hoodie</color>""?\nAn okay i",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Red Hoodie</color>""?\nAn okay item",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Red Hoodie</color>""?\nAn okay item.\nH",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Red Hoodie</color>""?\nAn okay item.\nHow a",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Red Hoodie</color>""?\nAn okay item.\nHow about",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Red Hoodie</color>""?\nAn okay item.\nHow about <color=#FCC926>5 </color>",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Red Hoodie</color>""?\nAn okay item.\nHow about <color=#FCC926>5 Gold</color>",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Red Hoodie</color>""?\nAn okay item.\nHow about <color=#FCC926>5 Gold</color> fo",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Red Hoodie</color>""?\nAn okay item.\nHow about <color=#FCC926>5 Gold</color> for i",live:_TmpUntranslated.txt
+dialogue,Text,"So so, a ""<color=#4CC2FF>Red Hoodie</color>""?\nAn okay item.\nHow about <color=#FCC926>5 Gold</color> for it?",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Cru</color>",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Crude B</color>",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Crude Bow</color>""?",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Crude Bow</color>""?\nNot",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Crude Bow</color>""?\nNot th",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Crude Bow</color>""?\nNot the be",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Crude Bow</color>""?\nNot the best..",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Crude Bow</color>""?\nNot the best...\nH",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Crude Bow</color>""?\nNot the best...\nHow a",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Crude Bow</color>""?\nNot the best...\nHow about",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Crude Bow</color>""?\nNot the best...\nHow about <color=#FCC926>8 </color>",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Crude Bow</color>""?\nNot the best...\nHow about <color=#FCC926>8 Gold</color>",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Crude Bow</color>""?\nNot the best...\nHow about <color=#FCC926>8 Gold</color> fo",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Crude Bow</color>""?\nNot the best...\nHow about <color=#FCC926>8 Gold</color> for it",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Crude Bow</color>""?\nNot the best...\nHow about <color=#FCC926>8 Gold</color> for it?",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Wo</color>",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Woode</color>",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Wooden S</color>",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Wooden Sword</color>",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Wooden Sword</color>""?\n",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Wooden Sword</color>""?\nNot ",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Wooden Sword</color>""?\nNot the",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Wooden Sword</color>""?\nNot the bes",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Wooden Sword</color>""?\nNot the best..",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Wooden Sword</color>""?\nNot the best...\nH",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Wooden Sword</color>""?\nNot the best...\nHow a",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Wooden Sword</color>""?\nNot the best...\nHow abou",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Wooden Sword</color>""?\nNot the best...\nHow about <color=#FCC926>8 </color>",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Wooden Sword</color>""?\nNot the best...\nHow about <color=#FCC926>8 Gol</color>",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Wooden Sword</color>""?\nNot the best...\nHow about <color=#FCC926>8 Gold</color> f",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Wooden Sword</color>""?\nNot the best...\nHow about <color=#FCC926>8 Gold</color> for ",live:_TmpUntranslated.txt
+dialogue,Text,"Ugh, a ""<color=#808080>Wooden Sword</color>""?\nNot the best...\nHow about <color=#FCC926>8 Gold</color> for it?",live:_TmpUntranslated.txt
+dialogue,Text,What are you wa,live:_TmpUntranslated.txt
+dialogue,Text,What are you waitin,live:_TmpUntranslated.txt
+dialogue,Text,What are you waiting f,live:_TmpUntranslated.txt
+dialogue,Text,What are you waiting for?,live:_TmpUntranslated.txt
 exact,Banner Text (TMP),BOSS DEFEATED,live:_TmpUntranslated.txt
 exact,Boss Name Text,Banshee,live:_TmpUntranslated.txt
 exact,Boss Name Text,Mandrake,live:_TmpUntranslated.txt
 exact,Boss Name Text,Vampire,live:_TmpUntranslated.txt
 exact,Choice 1 (TMP),> <color=#FFEB04>Red</color>,live:_TmpUntranslated.txt
 exact,Choice 2 (TMP),  <color=#808080>Green</color>,live:_TmpUntranslated.txt
+exact,Choice 2 (TMP),> <color=#FFEB04>Green</color>,live:_TmpUntranslated.txt
 exact,Choice 3 (TMP),  <color=#808080>Blue</color>,live:_TmpUntranslated.txt
+exact,Choice 3 (TMP),> <color=#FFEB04>Blue</color>,live:_TmpUntranslated.txt
 exact,Choice A (TMP),<color=#FFEB04>>Yes<</color>,live:_TmpUntranslated.txt
 exact,Choice B (TMP),<color=#FFEB04>>No<</color>,live:_TmpUntranslated.txt
 exact,Cinder Modifier Title,High Scores,live:_TmpUntranslated.txt
@@ -37,12 +105,24 @@ exact,Class Ability Title,<color=#FCC926>Blessed</color>,live:_TmpUntranslated.t
 exact,Class Ability Title,<color=#FF2666>Steadfast</color>,live:_TmpUntranslated.txt
 exact,Class Name,Cleric,live:_TmpUntranslated.txt
 exact,Class Name,Warrior,live:_TmpUntranslated.txt
+exact,Description Text,<color=#FF0000>-1%</color> <color=#FFFFFF>Attack Speed</color>\n<color=#FF0000>-0.5%</color> Movement Speed\n,live:_TmpUntranslated.txt
+exact,Description Text,"<color=#FF00FF><color=#FF00FF><color=#FF00FF>Arcane</color></color>: </color><color=#00E61A>+5%</color> Damage per\n<color=#26B0FF>Mana Container</color><sprite name=""Mana""> you have",live:_TmpUntranslated.txt
+exact,Description Text,"<color=#FF2666>Ruthless Hits</color><sprite name=""Ruthless_Hit""> gain\n<color=#00E317>x2.00</color> Top End Damage.",live:_TmpUntranslated.txt
 exact,Description Text,All <color=#A61FFF>Two-Handed</color> <color=#A61FFF>Weapons</color>\ndeal<color=#00E317>x1.10</color> damage.,live:_TmpUntranslated.txt
+exact,Description Text,"Any interaction in\nthe Black Market\nwill add <color=#00E317>+1</color> <color=#FF0000>Evil</color><sprite name=""Evil"">\nonce per run.",live:_TmpUntranslated.txt
+exact,Description Text,"Buy <color=#A61FFF>Potions</color>\nfor <color=#FCC926>Gold</color><sprite name=""Gold"">.",live:_TmpUntranslated.txt
+exact,Description Text,"Buy Items\nfor <color=#5ECCE3>Souls</color><sprite name=""Soul"">.",live:_TmpUntranslated.txt
+exact,Description Text,Contains a\n<color=#26B0FF>Magic</color> <color=#A61FFF>Weapon</color>.,live:_TmpUntranslated.txt
 exact,Description Text,Contains a\n<color=#26FF66>Ranged</color> <color=#A61FFF>Weapon</color>.,live:_TmpUntranslated.txt
+exact,Description Text,Contains\nEquipment.,live:_TmpUntranslated.txt
+exact,Description Text,"Totems:\n<sprite name=""SubArrow"">Count as your Attacks.\n<sprite name=""SubArrow"">Last <color=#00E317>8</color> seconds.\n<sprite name=""SubArrow"">Vanish on Weapon Swap.\n<sprite name=""SubArrow"">Limit: <color=#00E61A>2</color>",live:_TmpUntranslated.txt
 exact,Dialog Text,Delete Save Data in Slot 2?,live:_TmpUntranslated.txt
 exact,Elite Enchantment Text,Frozen Enchanted\n,live:_TmpUntranslated.txt
+exact,Elite Enchantment Text,Healing Enchanted\n,live:_TmpUntranslated.txt
 exact,Elite Enchantment Text,Laser Enchanted\n,live:_TmpUntranslated.txt
 exact,Elite Enchantment Text,Molten Enchanted\n,live:_TmpUntranslated.txt
+exact,Elite Enchantment Text,Mortar Enchanted\n,live:_TmpUntranslated.txt
+exact,Elite Enchantment Text,Oktoberfest Enchanted\n,live:_TmpUntranslated.txt
 exact,Elite Enchantment Text,Party Enchanted\n,live:_TmpUntranslated.txt
 exact,Elite Enchantment Text,Plague Enchanted\n,live:_TmpUntranslated.txt
 exact,Equipment Name,<color=#4CC2FF>Talisman</color>,live:_TmpUntranslated.txt
@@ -52,32 +132,16 @@ exact,Equipment Name,King Bible,live:_TmpUntranslated.txt
 exact,Hovered Dice Description,<color=#3B3B7A>Obsidian Dice</color>\nAllows you to exchange a trait with a random new trait.,live:_TmpUntranslated.txt
 exact,Hovered Dice Description,"<color=#808080>A place to keep all your dice.\n<indent=7px>""Oooh!\nShinies!""</indent></color>",live:_TmpUntranslated.txt
 exact,Hovered Dice Description,"<color=#FCC926>Golden Dice</color>\nRerolls offered items from\nshops, armories and boss rewards.",live:_TmpUntranslated.txt
-exact,Main Header,<color=#00B824>Bomber Garb</color>,live:_TmpUntranslated.txt
-exact,Main Header,<color=#00B824>War Belt</color>,live:_TmpUntranslated.txt
-exact,Main Header,<color=#00B824>Wedding Dress</color>,live:_TmpUntranslated.txt
-exact,Main Header,<color=#4CC2FF>Blueberries</color>,live:_TmpUntranslated.txt
-exact,Main Header,<color=#4CC2FF>Carrot on a Stick</color>,live:_TmpUntranslated.txt
-exact,Main Header,<color=#4CC2FF>Chef's Hat</color>,live:_TmpUntranslated.txt
-exact,Main Header,<color=#4CC2FF>Circlet</color>,live:_TmpUntranslated.txt
-exact,Main Header,<color=#4CC2FF>Druid Bible</color>,live:_TmpUntranslated.txt
-exact,Main Header,<color=#4CC2FF>Echo Shard</color>,live:_TmpUntranslated.txt
-exact,Main Header,<color=#4CC2FF>Falchion +1</color>,live:_TmpUntranslated.txt
-exact,Main Header,<color=#4CC2FF>Falchion +2</color>,live:_TmpUntranslated.txt
 exact,Main Header,<color=#4CC2FF>Freezing Scepter +1</color>,live:_TmpUntranslated.txt
 exact,Main Header,<color=#4CC2FF>Nunchaku +1</color>,live:_TmpUntranslated.txt
-exact,Main Header,<color=#4CC2FF>Red Hoodie</color>,live:_TmpUntranslated.txt
 exact,Main Header,<color=#4CC2FF>Reinforced Club +4</color>,live:_TmpUntranslated.txt
-exact,Main Header,<color=#A61FFF>Light Bulb</color>,live:_TmpUntranslated.txt
-exact,Main Header,<color=#FFDB59><color=#FF0000>R</color><color=#FF7F00>a</color><color=#FFFF00>i</color><color=#00FF00>n</color><color=#0000FF>b</color><color=#9400D3>o</color><color=#FF0000>w</color><color=#FF7F00> </color><color=#FFFF00>C</color><color=#00FF00>h</color><color=#0000FF>a</color><color=#9400D3>r</color><color=#FF0000>m</color></color>,live:_TmpUntranslated.txt
-exact,Main Header,<color=#FFDB59>Camel Leash</color>,live:_TmpUntranslated.txt
-exact,Main Header,<color=#FFDB59>Frost Touch Gauntlets</color>,live:_TmpUntranslated.txt
-exact,Main Header,<color=#FFDB59>Handcuffs</color>,live:_TmpUntranslated.txt
-exact,Main Header,<color=#FFDB59>Paper Sheet</color>,live:_TmpUntranslated.txt
-exact,Main Header,<color=#FFDB59>Sea Urchin Orb</color>,live:_TmpUntranslated.txt
+exact,Main Header,<size=72%><color=#00B824>Cat Ears</color></size>,live:_TmpUntranslated.txt
+exact,Main Header,<size=72%><color=#00B824>Maid Costume</color></size>,live:_TmpUntranslated.txt
 exact,Main Header,Flask Charge,live:_TmpUntranslated.txt
 exact,Main Header,Green Blossom,live:_TmpUntranslated.txt
 exact,Main Header,Key [x2],live:_TmpUntranslated.txt
 exact,Main Header,Mead,live:_TmpUntranslated.txt
+exact,Main Header,Sake,live:_TmpUntranslated.txt
 exact,Main Header,Small Gift Box,live:_TmpUntranslated.txt
 exact,Main Header,Spore Pine Resin,live:_TmpUntranslated.txt
 exact,Main Header,Whiskey,live:_TmpUntranslated.txt
@@ -86,33 +150,45 @@ exact,Name (TMP),<color=#FCC926>Tipsiness</color>,live:_TmpUntranslated.txt
 exact,Name (TMP),<color=#FFC414>Mead</color>,live:_TmpUntranslated.txt
 exact,Skill Name,Consecrate,live:_TmpUntranslated.txt
 exact,Splash Text,Butter up a cleric!,live:_TmpUntranslated.txt
+exact,Splash Text,Oh yeah. It's all coming together.,live:_TmpUntranslated.txt
 exact,Splash Text,Pull the lever!,live:_TmpUntranslated.txt
 exact,Splash Text,SURPRISE!,live:_TmpUntranslated.txt
 exact,Splash Text,There is no escape!,live:_TmpUntranslated.txt
 exact,Splash Text,"To be fair, you have to have a very high IQ to understand Tiny Rogues.",live:_TmpUntranslated.txt
+exact,Splash Text,With (a) friendly Fire!,live:_TmpUntranslated.txt
 exact,Splash Text,You're pretty cool!,live:_TmpUntranslated.txt
 exact,Stage Title (TMP),The Catacombs,live:_TmpUntranslated.txt
 exact,Stage Title (TMP),The Desert,live:_TmpUntranslated.txt
+exact,Text,*TINK*,live:_TmpUntranslated.txt
 exact,Text,*You don't have\ne,live:_TmpUntranslated.txt
 exact,Text,*You don't have\nenou,live:_TmpUntranslated.txt
 exact,Text,*si,live:_TmpUntranslated.txt
 exact,Text,"+1 <color=#26B0FF>Mana</color><sprite name=""Mana"">",live:_TmpUntranslated.txt
 exact,Text,+1 <color=#FCC926>Tipsiness</color>,live:_TmpUntranslated.txt
+exact,Text,"+1 <color=#FF3326>Heart</color><sprite name=""Heart"">",live:_TmpUntranslated.txt
 exact,Text,+1 Obsidian Dice,live:_TmpUntranslated.txt
 exact,Text,+3 <color=#26B0FF>INT</color>,live:_TmpUntranslated.txt
 exact,Text,+3 <color=#26FF66>DEX</color>,live:_TmpUntranslated.txt
 exact,Text,+3 <color=#FF2666>STR</color>,live:_TmpUntranslated.txt
 exact,Text,-1 <color=#FCC926>Tipsiness</color>,live:_TmpUntranslated.txt
 exact,Text,<color=#406E7D>ARMOR</color>,live:_TmpUntranslated.txt
+exact,Text,"<color=#406E7D>ARMOR</color><sprite name=""Armor"">REPAIRED",live:_TmpUntranslated.txt
+exact,Text,<color=#7C8A91>Agility Potion</color>,live:_TmpUntranslated.txt
+exact,Text,<color=#FCC926>REVIVED</color>!,live:_TmpUntranslated.txt
+exact,Text,Anvil,live:_TmpUntranslated.txt
+exact,Text,Arms Dealer,live:_TmpUntranslated.txt
 exact,Text,BLOCKED,live:_TmpUntranslated.txt
 exact,Text,Bar Maiden,live:_TmpUntranslated.txt
 exact,Text,Cellar,live:_TmpUntranslated.txt
 exact,Text,Cleric,live:_TmpUntranslated.txt
 exact,Text,Creepy Wizard,live:_TmpUntranslated.txt
+exact,Text,Crimson Cloak attuned!,live:_TmpUntranslated.txt
 exact,Text,Don't be afraid\n,live:_TmpUntranslated.txt
+exact,Text,Dwarf Merchant,live:_TmpUntranslated.txt
 exact,Text,Dwarf Warrior,live:_TmpUntranslated.txt
 exact,Text,Fair Lady,live:_TmpUntranslated.txt
 exact,Text,Farmer,live:_TmpUntranslated.txt
+exact,Text,GALAXY NEXUS ACTIVATED!,live:_TmpUntranslated.txt
 exact,Text,"Go,",live:_TmpUntranslated.txt
 exact,Text,HSssSssS！,live:_TmpUntranslated.txt
 exact,Text,Ha-,live:_TmpUntranslated.txt
@@ -130,11 +206,17 @@ exact,Text,"Nye-he-he-he!\nWelcome, trave",live:_TmpUntranslated.txt
 exact,Text,"Nye-he-he-he!\nWelcome, travelle",live:_TmpUntranslated.txt
 exact,Text,"Oh,",live:_TmpUntranslated.txt
 exact,Text,Old Hag,live:_TmpUntranslated.txt
+exact,Text,PURRFECT SERVICE ACTIVATED!,live:_TmpUntranslated.txt
 exact,Text,Potion Buyer,live:_TmpUntranslated.txt
+exact,Text,Princess,live:_TmpUntranslated.txt
+exact,Text,Rerolls <color=#A61FFF>Traits</color>\nin <color=#A61FFF>Trait</color> Selection.,live:_TmpUntranslated.txt
+exact,Text,Samurai,live:_TmpUntranslated.txt
+exact,Text,Santa,live:_TmpUntranslated.txt
 exact,Text,Set Stash,live:_TmpUntranslated.txt
 exact,Text,Smuggler,live:_TmpUntranslated.txt
 exact,Text,Undead Merchant,live:_TmpUntranslated.txt
 exact,Text,Viking,live:_TmpUntranslated.txt
+exact,Text,Witch Doctor,live:_TmpUntranslated.txt
 exact,Text,Would you like to stay\n,live:_TmpUntranslated.txt
 exact,Text,Would you like to stay\nfor ,live:_TmpUntranslated.txt
 exact,Text,You disrupt nature's peace...\nI ,live:_TmpUntranslated.txt
@@ -144,13 +226,19 @@ exact,Text,You disrupt nature's peace...\nI will stop ,live:_TmpUntranslated.txt
 exact,Title Text,Blacksmith,live:_TmpUntranslated.txt
 exact,Title Text,Blood Altar,live:_TmpUntranslated.txt
 exact,Title Text,Broccoli,live:_TmpUntranslated.txt
+exact,Title Text,Chocolate,live:_TmpUntranslated.txt
 exact,Title Text,Guaranteed\nSet Item,live:_TmpUntranslated.txt
 exact,Title Text,Guaranteed\nUncommon Item,live:_TmpUntranslated.txt
 exact,Title Text,Lollipop,live:_TmpUntranslated.txt
+exact,Title Text,Mage Stash,live:_TmpUntranslated.txt
+exact,Title Text,Meat Shank,live:_TmpUntranslated.txt
+exact,Title Text,Obsidian Chest,live:_TmpUntranslated.txt
 exact,Title Text,Petrified Hoard,live:_TmpUntranslated.txt
 exact,Title Text,Ranger Stash,live:_TmpUntranslated.txt
 exact,Title Text,Warrior Stash,live:_TmpUntranslated.txt
 exact,Tooltip Text (TMP),"<color=#3B3B7A>Curse</color><sprite name=""Curse""> is <color=#00E317>x0.75</color> less likely to downgrade Room Rewards.",live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),"All Blacksmiths now charge\n<color=#00E317>5</color> <color=#5ECCE3>Souls</color><sprite name=""Soul""> instead of \n20 <color=#FCC926>Gold</color><sprite name=""Gold""> per <color=#A61FFF>Upgrade Level</color>.",live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),Completing an entire Floor without taking Damage makes the Boss offer <color=#00E317>+1</color> Reward.,live:_TmpUntranslated.txt
 exact,Tooltip Text (TMP),"Defeating a Boss without taking Damage grants\nyou <color=#00E317>+1</color> <color=#FF008C>Magic Find</color><sprite name=""Magic_Find""> just for that Reward Selection.",live:_TmpUntranslated.txt
 exact,Tooltip Text (TMP),Dice Rewards grant <color=#00E317>+1</color> Golden Dice.,live:_TmpUntranslated.txt
 exact,Tooltip Text (TMP),Dice Rewards grant <color=#00E317>+2 to +3</color> Red Dice.,live:_TmpUntranslated.txt
@@ -158,6 +246,8 @@ exact,Tooltip Text (TMP),Event Rooms with Minigames \nand Arcade Rooms are\n<col
 exact,Tooltip Text (TMP),"Gain <color=#00E317>+1</color> <color=#2BAD99>Suppression</color><sprite name=""Suppression""> in the Floor 1, 2 and 3 Boss Fight.",live:_TmpUntranslated.txt
 exact,Tooltip Text (TMP),"Gain <color=#00E317>+1</color> <color=#2BAD99>Suppression</color><sprite name=""Suppression""> in the Floor 10 Boss Fight.",live:_TmpUntranslated.txt
 exact,Tooltip Text (TMP),"Gain <color=#00E317>+1</color> <color=#FCC926>Revive</color><sprite name=""Revive"">.",live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),"Gain <color=#00E317>+1</color> Flask<sprite name=""Flask"">.",live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),Gain <color=#00E317>+25%</color> chance for <color=#A61FFF>Weapons</color> to spawn with an <color=#FF00FF>Enchantment Modifier</color>.,live:_TmpUntranslated.txt
 exact,Tooltip Text (TMP),Gain a <color=#00E317>20%</color> chance to gain the maximum amount of Rewards from a Room.,live:_TmpUntranslated.txt
 exact,Tooltip Text (TMP),"On Floor 1, you are guaranteed a Door that leads to a <color=#A61FFF>Weapon</color> Reward as Boss Reward.",live:_TmpUntranslated.txt
 exact,Tooltip Text (TMP),"On Floor 1, you are guaranteed a Door that leads to a Charm Reward as Boss Reward.",live:_TmpUntranslated.txt
@@ -167,31 +257,44 @@ exact,Tooltip Text (TMP),Secret Rooms are highlighted.,live:_TmpUntranslated.txt
 exact,Tooltip Text (TMP),The Tavern gains <color=#00E317>+25%</color> chance to have the Black Market.\n<color=grey>[Added to a 15% Base Chance.]</color>,live:_TmpUntranslated.txt
 exact,Tooltip Text (TMP),"While you are Level 0,\nBosses have\n<color=#00E317>x0.90</color> <color=#FF3326>Health</color><sprite name=""Heart""> and <color=#406E7D>Armor</color><sprite name=""Armor"">.",live:_TmpUntranslated.txt
 exact,Tooltip Text (TMP),You encounter <color=#00E317>x0.80</color> <color=#FF00FF>Enchanted Enemy Packs</color>.,live:_TmpUntranslated.txt
+exact,Tooltip Text (TMP),You gain <color=#00E317>+10%</color> chance per Run to run into a Royal Armory.\n<color=grey>[Added to a 5% Base Chance.]</color>,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),CALL TO ADVENTURE,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),CATHARSIS,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),COMPROMISED LOOT,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),EXPLOSIVE DELIVERY,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),FRIENDSHIP QUEST,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),GOLDEN ROULETTE,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),HIGH ROLLER,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),LABYRINTH OF FATE,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),LAZY STROLL,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),LEFT TO FATE,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),LOST GOODS,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),PLAYTIME,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),READY TO GO,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),REBIRTH,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),RED ROULETTE,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),SAFE BET,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),SMUGGLER NOOK,live:_TmpUntranslated.txt
+exact,Tooltip Title (TMP),SPOILED FOR CHOICE,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),SUPERNATURAL AID,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),TAKE THIS,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),THE GLASS IS HALF EMPTY,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),THE KEY TO SUCCESS,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),THIEF IN THE SHADOWS,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),TREASURE HUNTER,live:_TmpUntranslated.txt
+exact,Trait Title,Apocalypse,live:_TmpUntranslated.txt
+exact,Trait Title,Barbarism,live:_TmpUntranslated.txt
 exact,Trait Title,Best Friends Forever,live:_TmpUntranslated.txt
+exact,Trait Title,Exploitative Explosives,live:_TmpUntranslated.txt
+exact,Trait Title,Explosive Force,live:_TmpUntranslated.txt
 exact,Trait Title,Forethought,live:_TmpUntranslated.txt
 exact,Trait Title,Intuition,live:_TmpUntranslated.txt
+exact,Trait Title,Keen Mind,live:_TmpUntranslated.txt
 exact,Trait Title,Pushing Through,live:_TmpUntranslated.txt
+exact,Trait Title,Rage,live:_TmpUntranslated.txt
 exact,Trait Title,Raised Morale,live:_TmpUntranslated.txt
 exact,Trait Title,Razor's Edge,live:_TmpUntranslated.txt
+exact,Trait Title,Rogue's Tally,live:_TmpUntranslated.txt
 exact,Trait Title,Steady Strikes,live:_TmpUntranslated.txt
 exact,Trait Title,Threat Reckoning,live:_TmpUntranslated.txt
 exact,Trait Title,Two Steps Ahead,live:_TmpUntranslated.txt
@@ -200,7 +303,13 @@ general_fragments,Choice 2 (TMP),"  <color=#808080><color=#008E05>Champagne</col
 general_fragments,Choice 2 (TMP),"  <color=#808080><color=#8F563B>Rum</color> [<color=#FCC926><color=#FFFFFF>5</color> Gold<sprite name=""Gold""></color>]</color>",live:_TmpUntranslated.txt
 general_fragments,Choice 2 (TMP),"  <color=#808080>Upgrade <color=grey>[<color=#FFFFFF>20</color> Gold<sprite name=""Gold"">]</color></color>",live:_TmpUntranslated.txt
 general_fragments,Choice 3 (TMP),"  <color=#808080><color=#DE6A1D>Whiskey</color> [<color=#FCC926><color=#FFFFFF>5</color> Gold<sprite name=""Gold""></color>]</color>",live:_TmpUntranslated.txt
+general_fragments,Choice 4 (TMP),  <color=#808080>Leave</color>,live:_TmpUntranslated.txt
+general_fragments,Main Header,<size=72%>Cheese</size>,live:_TmpUntranslated.txt
+general_fragments,Main Header,Fairy Tale Branch,live:_TmpUntranslated.txt
+general_fragments,Main Header,Illegal Gun Parts,live:_TmpUntranslated.txt
 general_fragments,Trait Description,Gain stats if you have this trait.\n•Example line 1.\n•Example line 2.\n•Example line 3.\n•Example line 4.,live:_TmpUntranslated.txt
+general_fragments,Trait Title,Spinning Blades,live:_TmpUntranslated.txt
+general_fragments,Trait Title,Step of the Wind,live:_TmpUntranslated.txt
 regex,Ability Description,"Deal <color=#00E61A>x1.10</color> <color=#6E5442>Physical Damage </color>per <color=#406E7D>Armor Container</color><sprite name=""Armor""> you have.\n<color=#7F7F7FFF>(<color=#00E61A>x1.20</color> currently)</color>",live:_TmpUntranslated.txt
 regex,Choice 2 (TMP),"> <color=#FFEB04><color=#008E05>Champagne</color> [<color=#FCC926><color=#FFFFFF>10</color> Gold<sprite name=""Gold""></color>]</color>",live:_TmpUntranslated.txt
 regex,Choice 2 (TMP),"> <color=#FFEB04><color=#8F563B>Rum</color> [<color=#FCC926><color=#FFFFFF>5</color> Gold<sprite name=""Gold""></color>]</color>",live:_TmpUntranslated.txt
@@ -217,7 +326,6 @@ regex,Description Text,"+1 <color=#FF0000>EVIL</color><sprite name=""Evil"">\n<c
 regex,Description Text,<color=#6BBD30>Stam. Rec. Time</color>: <color=#00E317>4 seconds</color>,live:_TmpUntranslated.txt
 regex,Description Text,<color=#A61FFF>Weapons</color> gain <color=#00E317>x1.10</color>\nDamage per <color=#A61FFF>Upgrade Level</color>.,live:_TmpUntranslated.txt
 regex,Description Text,"<color=#FF3326>Critical Hit Chance</color><sprite name=""Critical_Hit"">: <color=#00E317>12.00%</color>\n<color=#FF3326>Critical Hit Damage</color><sprite name=""Critical_Hit"">: <color=#00E317>200%</color>",live:_TmpUntranslated.txt
-regex,Description Text,"Any interaction in\nthe Black Market\nwill add <color=#00E317>+1</color> <color=#FF0000>Evil</color><sprite name=""Evil"">\nonce per run.",live:_TmpUntranslated.txt
 regex,Description Text,"Buy Charms\nfor <color=#FCC926>Gold</color><sprite name=""Gold"">.",live:_TmpUntranslated.txt
 regex,Description Text,"Buy Equipment\nfor <color=#FCC926>Gold</color><sprite name=""Gold"">.",live:_TmpUntranslated.txt
 regex,Description Text,Contains a\n<color=#FF2666>Melee</color> <color=#A61FFF>Weapon</color>.,live:_TmpUntranslated.txt
@@ -233,14 +341,21 @@ regex,Input Alias,"E<sprite name=""Arrow_Right"">Use <color=#FCC926><color=#FCC9
 regex,Splash Text,Vampire Count: 1,live:_TmpUntranslated.txt
 regex,Text,+1 <color=#5ECCE3>LAWFUL</color>,live:_TmpUntranslated.txt
 regex,Text,+1 <color=#FF0000>EVIL</color>,live:_TmpUntranslated.txt
+regex,Text,+2 <color=#26B0FF>INT</color>,live:_TmpUntranslated.txt
 regex,Text,+2 <color=#FF2666>STR</color>,live:_TmpUntranslated.txt
+regex,Text,-1 <color=#26FF66>DEX</color>,live:_TmpUntranslated.txt
 regex,Text,"<color=#3B3B7A>Curses</color><sprite name=""Curse""> you.",live:_TmpUntranslated.txt
+regex,Text,"<color=#5ECCE3>Price:</color> <color=#FFFFFF>10</color> <color=#00FFFF><color=#5ECCE3>Souls</color><sprite name=""Soul""></color>",live:_TmpUntranslated.txt
+regex,Text,"<color=#5ECCE3>Price:</color> <color=#FFFFFF>3</color> <color=#00FFFF><color=#5ECCE3>Souls</color><sprite name=""Soul""></color><sprite name=""Luck"">",live:_TmpUntranslated.txt
 regex,Text,<color=#8000FF><color=#8000FF>Slow</color>: </color><color=#FF0000>-5%</color> <color=#FFFFFF>Attack Speed</color>,live:_TmpUntranslated.txt
 regex,Text,"<color=#FCC926>Price:</color> <color=#FFFFFF>15</color> <color=#FCC926><color=#FCC926>Gold</color><sprite name=""Gold""></color>",live:_TmpUntranslated.txt
 regex,Text,"<color=#FCC926>Price:</color> <color=#FFFFFF>16</color> <color=#FCC926><color=#FCC926>Gold</color><sprite name=""Gold""></color>",live:_TmpUntranslated.txt
 regex,Text,"<color=#FCC926>Price:</color> <color=#FFFFFF>17</color> <color=#FCC926><color=#FCC926>Gold</color><sprite name=""Gold""></color>",live:_TmpUntranslated.txt
 regex,Text,"<color=#FCC926>Price:</color> <color=#FFFFFF>19</color> <color=#FCC926><color=#FCC926>Gold</color><sprite name=""Gold""></color>",live:_TmpUntranslated.txt
 regex,Text,"<color=#FCC926>Price:</color> <color=#FFFFFF>4</color> <color=#FCC926><color=#FCC926>Gold</color><sprite name=""Gold""></color>",live:_TmpUntranslated.txt
+regex,Text,"<color=#FCC926>Price:</color> <color=#FFFFFF>5</color> <color=#FCC926><color=#FCC926>Gold</color><sprite name=""Gold""></color><sprite name=""Luck"">",live:_TmpUntranslated.txt
+regex,Text,"<color=#FCC926>Price:</color> <color=#FFFFFF>9</color> <color=#FCC926><color=#FCC926>Gold</color><sprite name=""Gold""></color><sprite name=""Curse"">",live:_TmpUntranslated.txt
+regex,Text,<color=#FF00FF><color=#FF00FF>Icy</color>: </color><color=#00E61A>+20</color> <color=#00E317>to</color> <color=#00E61A>30</color> <color=#639CFF>Cold Damage</color>,live:_TmpUntranslated.txt
 regex,Text,Refills <color=#00E317>1</color> Flask.,live:_TmpUntranslated.txt
 regex,Text,To open locked things!,live:_TmpUntranslated.txt
 technical_ignored,Ability Description,asdasd\nasdasd\nasdasd,live:_TmpUntranslated.txt
@@ -258,15 +373,119 @@ technical_ignored,Choice 8 (TMP),  Choice 8,live:_TmpUntranslated.txt
 technical_ignored,Choice 9 (TMP),  Choice 9,live:_TmpUntranslated.txt
 technical_ignored,Description Part 1,"YOu have been inflicted with ""SOMETHING"".\nsomething is something something is something something is something something is something something is something something is something something is something something is something something is something \nasdasd",live:_TmpUntranslated.txt
 technical_ignored,Description Part 2,"YOu have been inflicted with ""SOMETHING"".\nsomething is something something is something something is something something is something something is something something is something something is something something is something something is something ",live:_TmpUntranslated.txt
-technical_ignored,Text,Ey,live:_TmpUntranslated.txt
-technical_ignored,Text,HS,live:_TmpUntranslated.txt
-technical_ignored,Text,HSs,live:_TmpUntranslated.txt
-technical_ignored,Text,If ,live:_TmpUntranslated.txt
-technical_ignored,Text,It ,live:_TmpUntranslated.txt
-technical_ignored,Text,Ne,live:_TmpUntranslated.txt
-technical_ignored,Text,Nee,live:_TmpUntranslated.txt
-technical_ignored,Text,Oh,live:_TmpUntranslated.txt
-technical_ignored,Text,Th,live:_TmpUntranslated.txt
-technical_ignored,Text,We ,live:_TmpUntranslated.txt
-technical_ignored,Text,Who,live:_TmpUntranslated.txt
 technical_ignored,Text,asdasdasdasdasdsadasddsadasdasdasdasdasdasdsadasdasdas\nasdasd\nasdasd,live:_TmpUntranslated.txt
+typing_prefix,Text,Ey,live:_TmpUntranslated.txt
+typing_prefix,Text,HS,live:_TmpUntranslated.txt
+typing_prefix,Text,HSs,live:_TmpUntranslated.txt
+typing_prefix,Text,Hello there.\n,live:_TmpUntranslated.txt
+typing_prefix,Text,Hello!\nYo,live:_TmpUntranslated.txt
+typing_prefix,Text,Hello!\nYou lo,live:_TmpUntranslated.txt
+typing_prefix,Text,Hello!\nYou look ,live:_TmpUntranslated.txt
+typing_prefix,Text,Hoh-hoh-hoh!\n,live:_TmpUntranslated.txt
+typing_prefix,Text,If ,live:_TmpUntranslated.txt
+typing_prefix,Text,It ,live:_TmpUntranslated.txt
+typing_prefix,Text,Ne,live:_TmpUntranslated.txt
+typing_prefix,Text,Nee,live:_TmpUntranslated.txt
+typing_prefix,Text,Nye-he-he-he!\nWelc,live:_TmpUntranslated.txt
+typing_prefix,Text,Nye-he-he-he!\nWelcome,live:_TmpUntranslated.txt
+typing_prefix,Text,"Nye-he-he-he!\nWelcome, tr",live:_TmpUntranslated.txt
+typing_prefix,Text,Oh,live:_TmpUntranslated.txt
+typing_prefix,Text,So so,live:_TmpUntranslated.txt
+typing_prefix,Text,"So so, ",live:_TmpUntranslated.txt
+typing_prefix,Text,"So so, a ",live:_TmpUntranslated.txt
+typing_prefix,Text,"So so, a """,live:_TmpUntranslated.txt
+typing_prefix,Text,Th,live:_TmpUntranslated.txt
+typing_prefix,Text,Thank you\n,live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh,",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a """,live:_TmpUntranslated.txt
+typing_prefix,Text,We ,live:_TmpUntranslated.txt
+typing_prefix,Text,What are you\n,live:_TmpUntranslated.txt
+typing_prefix,Text,Who,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfo,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor t,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the ,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the ni,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the nigh,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[W</color>,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Wi</color>,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will r</color>,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will rer</color>,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will rero</color>,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will reroll t</color>,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will reroll tav</color>,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will reroll tave</color>,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will reroll tavern </color>,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will reroll tavern v</color>,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will reroll tavern vis</color>,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will reroll tavern visit</color>,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will reroll tavern visitor</color>,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will reroll tavern visitors.]</color> [,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will reroll tavern visitors.]</color> [<color=#FFFFFF>10</color><color=#FCC926> </color>,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will reroll tavern visitors.]</color> [<color=#FFFFFF>10</color><color=#FCC926> Go</color>,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will reroll tavern visitors.]</color> [<color=#FFFFFF>10</color><color=#FCC926> Gold</color>,live:_TmpUntranslated.txt
+typing_prefix,Text,"Would you like to stay\nfor the night?\n<color=grey>[Will reroll tavern visitors.]</color> [<color=#FFFFFF>10</color><color=#FCC926> Gold<sprite name=""Gold""></color>]",live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will reroll tavern visitors.]</color> [<color=#FFFFFF>1</color>,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will reroll tavern visitors</color>,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will reroll</color>,live:_TmpUntranslated.txt
+typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will</color>,live:_TmpUntranslated.txt
+typing_prefix,Text,You know it!\nTh,live:_TmpUntranslated.txt
+typing_prefix,Text,You know it!\nThat',live:_TmpUntranslated.txt
+typing_prefix,Text,You know it!\nThat's th,live:_TmpUntranslated.txt
+typing_prefix,Text,You know it!\nThat's the g,live:_TmpUntranslated.txt
+typing_prefix,Text,You know it!\nThat's the good ,live:_TmpUntranslated.txt
+visible_exact,Choice 1 (TMP),  <color=#808080>Red</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#00B824>Bomber Garb</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#00B824>Cat Ears</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#00B824>Maid Costume</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#00B824>War Belt</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#00B824>Wedding Dress</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#4CC2FF>Blueberries</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#4CC2FF>Carrot on a Stick</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#4CC2FF>Chef's Hat</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#4CC2FF>Circlet</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#4CC2FF>Druid Bible</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#4CC2FF>Echo Shard</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#4CC2FF>Falchion +1</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#4CC2FF>Falchion +2</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#4CC2FF>Red Hoodie</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#4CC2FF>Spiked Gauntlets</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#A61FFF>Hidden Blades</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#A61FFF>Light Bulb</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#FFDB59><color=#FF0000>R</color><color=#FF7F00>a</color><color=#FFFF00>i</color><color=#00FF00>n</color><color=#0000FF>b</color><color=#9400D3>o</color><color=#FF0000>w</color><color=#FF7F00> </color><color=#FFFF00>C</color><color=#00FF00>h</color><color=#0000FF>a</color><color=#9400D3>r</color><color=#FF0000>m</color></color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#FFDB59>Bascinet</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#FFDB59>Camel Leash</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#FFDB59>Frost Touch Gauntlets</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#FFDB59>Garnet Bracelet</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#FFDB59>Handcuffs</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#FFDB59>Paper Sheet</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#FFDB59>Sea Urchin Orb</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<color=#FFDB59>War Fans</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<size=72%><color=#808080>Bandana</color></size>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<size=72%><color=#808080>Ninja Headband</color></size>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<size=72%><color=#808080>Quartz Bracelet</color></size>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<size=72%><color=#808080>Wooden Cross Pendant</color></size>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<size=72%><color=#A61FFF>Hidden Blades</color></size>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<size=72%><color=#FFDB59>Bascinet</color></size>,live:_TmpUntranslated.txt
+visible_exact,Tooltip Text (TMP),"An aquarium is added to\nevery Tavern, at which\nyou may catch up to <color=#00E317>2</color> Fish.",live:_TmpUntranslated.txt
+visible_exact,Tooltip Text (TMP),Dice Rewards grant <color=#00E317>+1 to +2</color> Ethereal Dice.,live:_TmpUntranslated.txt
+visible_exact,Tooltip Text (TMP),"Enchanting <color=#A61FFF>Weapons</color> at the Enchantress costs <color=#00E317>20</color> <color=#FCC926>Gold</color><sprite name=""Gold""> instead of 30.",live:_TmpUntranslated.txt
+visible_exact,Tooltip Text (TMP),Every Armory contains a <color=#A61FFF>Weapon</color> with an <color=#FF00FF>Enchantment Modifier</color>.,live:_TmpUntranslated.txt
+visible_exact,Tooltip Text (TMP),Gain <color=#00E317>+30%</color> chance for enchanting to result in a <color=#FF631F>Legendary Enchantment Modifier</color>.,live:_TmpUntranslated.txt
+visible_exact,Tooltip Text (TMP),"On the first 3 Floors: \nEquipment items that grant <color=#6BBD30>Stamina</color><sprite name=""Stamina""> or <color=#6BBD30>Stamina Recovery Speed</color><sprite name=""Stamina""> are <color=#00E317>x2.00</color> more common.",live:_TmpUntranslated.txt
+visible_exact,Tooltip Text (TMP),"On the first 3 Floors: \nEquipment items that grant <color=#FF3326>Hearts</color><sprite name=""Heart""> are <color=#00E317>x2.00</color> more common.",live:_TmpUntranslated.txt
+visible_exact,Tooltip Text (TMP),"The Black Market always has Smuggler selling Companions<sprite name=""Companion"">.\nYou also gain a <color=#00E317>50%</color> Discount at that Shop.",live:_TmpUntranslated.txt
+visible_exact,Tooltip Text (TMP),The Black Market always has the Kuo-Tao selling Fish.\nYou also gain a <color=#00E317>50%</color> Discount at that Shop.,live:_TmpUntranslated.txt
+visible_exact,Tooltip Title (TMP),ENIGMATIC,live:_TmpUntranslated.txt
+visible_exact,Tooltip Title (TMP),ETHEREAL ROULETTE,live:_TmpUntranslated.txt
+visible_exact,Tooltip Title (TMP),FAREWELL DRINK,live:_TmpUntranslated.txt
+visible_exact,Tooltip Title (TMP),FIRST AID,live:_TmpUntranslated.txt
+visible_exact,Tooltip Title (TMP),RISE OR FALL,live:_TmpUntranslated.txt
+visible_exact,Tooltip Title (TMP),ROYAL DESCENT,live:_TmpUntranslated.txt
+visible_exact,Tooltip Title (TMP),VANITY,live:_TmpUntranslated.txt
+visible_exact,Tooltip Title (TMP),WEAVE THE ARCANE,live:_TmpUntranslated.txt
+visible_exact,Tooltip Title (TMP),WORTH OF A SOUL,live:_TmpUntranslated.txt

@@ -44,3 +44,11 @@ You disrupt nature's peace...\nI will stop you.=你破坏了自然的宁静...\n
 *SIP*=*小啜*
 *sizzle crackle sizzle*=*嘶嘶噼啪声*
 *You don't have\nenough Gold.=*你的\n金币不够。
+So so, a "<color=#4CC2FF>Hero Cape</color>"?\nAn okay item.\nHow about <color=#FCC926>5 Gold</color> for it?=这件“<color=#4CC2FF>英雄披风</color>”？\n还算可以。\n出价 <color=#FCC926>5 金币</color>，如何？
+So so, a "<color=#4CC2FF>Red Hoodie</color>"?\nAn okay item.\nHow about <color=#FCC926>5 Gold</color> for it?=这件“<color=#4CC2FF>红色连帽衫</color>”？\n还算可以。\n出价 <color=#FCC926>5 金币</color>，如何？
+Ugh, a "<color=#808080>Crude Bow</color>"?\nNot the best...\nHow about <color=#FCC926>8 Gold</color> for it?=呃，这件“<color=#808080>粗制弓</color>”？\n不算最好……\n出价 <color=#FCC926>8 金币</color>，如何？
+Ugh, a "<color=#808080>Wooden Sword</color>"?\nNot the best...\nHow about <color=#FCC926>8 Gold</color> for it?=呃，这件“<color=#808080>木剑</color>”？\n不算最好……\n出价 <color=#FCC926>8 金币</color>，如何？
+Would you like to stay\nfor the night?\n<color=grey>[Will reroll tavern visitors.]</color> [<color=#FFFFFF>10</color><color=#FCC926> Gold<sprite name="Gold"></color>]=要留宿\n一晚吗？\n<color=grey>[将重置酒馆访客。]</color> [<color=#FFFFFF>10</color><color=#FCC926> 金币<sprite name="Gold"></color>]
+Hey kid...\nMind helping Santa out?\nI'll sell ya a "Gift Box", deal? [<color=#FFFFFF>10</color><color=#FCC926> Gold<sprite name="Gold"></color>]=嘿，孩子……\n愿意帮圣诞老人一个忙吗？\n我卖你一个“礼物盒”，成交吗？ [<color=#FFFFFF>10</color><color=#FCC926> 金币<sprite name="Gold"></color>]
+Hey kid...\nMind helping Santa out?\nI'll sell ya a "礼物盒", deal? [<color=#FFFFFF>10</color><color=#FCC926> 金币<sprite name="Gold"></color>]=嘿，孩子……\n愿意帮圣诞老人一个忙吗？\n我卖你一个“礼物盒”，成交吗？ [<color=#FFFFFF>10</color><color=#FCC926> 金币<sprite name="Gold"></color>]
+What are you waiting for?=你还在等什么？

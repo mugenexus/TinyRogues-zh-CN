@@ -13,7 +13,7 @@ public sealed class Plugin : BasePlugin
 {
     public const string PluginGuid = "mugen.tinyrogues.tmpfallback";
     public const string PluginName = "Tiny Rogues TMP Translation Fallback";
-    public const string PluginVersion = "1.5.18";
+    public const string PluginVersion = "1.5.25";
 
     internal static ManualLogSource PluginLog { get; private set; } = null!;
 
@@ -30,6 +30,7 @@ public sealed class TmpTranslationFallback : MonoBehaviour
     private const int MinimumDialoguePrefixLength = 3;
     private const int MaximumDialoguePrefixLength = 12;
     private readonly Dictionary<string, string> _translations = new(StringComparer.Ordinal);
+    private readonly Dictionary<string, string> _visibleTranslations = new(StringComparer.OrdinalIgnoreCase);
     private readonly List<KeyValuePair<string, string>> _fragments = [];
     private readonly List<KeyValuePair<string, string>> _itemFragments = [];
     private readonly List<KeyValuePair<string, string>> _structuredFragments = [];
@@ -100,17 +101,15 @@ public sealed class TmpTranslationFallback : MonoBehaviour
             if (translated != null && !string.Equals(normalizedSource, translated, StringComparison.Ordinal))
             {
                 var isGroundItemDetail = IsGroundItemDetail(textComponent, normalizedSource);
+                var isGroundItemHeader = IsGroundItemHeader(textComponent);
                 var finalText = ApplyLayout(textComponent.gameObject.name, normalizedSource, translated);
                 if (isGroundItemDetail)
                 {
-                    var sizedGroundItem = Regex.Match(
-                        finalText,
-                        "^<size=[^>]+>(?<body>.*)</size>$",
-                        RegexOptions.CultureInvariant | RegexOptions.Singleline);
-                    var groundItemBody = sizedGroundItem.Success
-                        ? sizedGroundItem.Groups["body"].Value
-                        : finalText;
-                    finalText = $"<size=82%>{groundItemBody}</size>";
+                    finalText = SetRelativeSize(finalText, 82);
+                }
+                else if (isGroundItemHeader)
+                {
+                    finalText = SetRelativeSize(finalText, 72);
                 }
                 textComponent.text = finalText;
                 if (isGroundItemDetail)
@@ -118,6 +117,22 @@ public sealed class TmpTranslationFallback : MonoBehaviour
                     ExpandGroundItemPanel(textComponent);
                 }
                 DumpResidualTranslation(textComponent, normalizedSource, finalText);
+                replacements++;
+                continue;
+            }
+
+            var adjustedSource = NormalizePotentiallyUnsupportedGlyphs(normalizedSource);
+            if (IsGroundItemHeader(textComponent))
+            {
+                adjustedSource = SetRelativeSize(adjustedSource, 72);
+            }
+            else if (IsRoomRewardStats(textComponent.gameObject.name, adjustedSource))
+            {
+                adjustedSource = SetRelativeSize(adjustedSource, 68);
+            }
+            if (!string.Equals(normalizedSource, adjustedSource, StringComparison.Ordinal))
+            {
+                textComponent.text = adjustedSource;
                 replacements++;
                 continue;
             }
@@ -154,6 +169,14 @@ public sealed class TmpTranslationFallback : MonoBehaviour
             }
         }
 
+        if (objectName is "Tooltip Title (TMP)" or "Tooltip Text (TMP)" or
+                "Description Text" or "Elite Enchantment Text" or "Main Header" or
+                "Title Text" or "Trait Title" or "Choice 1 (TMP)" &&
+            _visibleTranslations.TryGetValue(NormalizeVisibleLookupKey(source), out var visibleTranslation))
+        {
+            return visibleTranslation;
+        }
+
         if (IsStructuredRichText(objectName, source))
         {
             var itemResult = ApplyFragments(
@@ -186,6 +209,19 @@ public sealed class TmpTranslationFallback : MonoBehaviour
         if (_translations.TryGetValue(source, out var exact))
         {
             return exact;
+        }
+
+        var sizeWrapped = Regex.Match(
+            source,
+            "^<size=(?<size>[^>]+)>(?<text>.+)</size>$",
+            RegexOptions.CultureInvariant | RegexOptions.Singleline);
+        if (sizeWrapped.Success)
+        {
+            var innerTranslation = TranslateDirect(sizeWrapped.Groups["text"].Value);
+            if (innerTranslation != null)
+            {
+                return $"<size={sizeWrapped.Groups["size"].Value}>{innerTranslation}</size>";
+            }
         }
 
         var colorWrapped = Regex.Match(
@@ -287,7 +323,7 @@ public sealed class TmpTranslationFallback : MonoBehaviour
             var word = match.Value;
             if (word.Length <= 1 ||
                 word is "EXP" or "STR" or "DEX" or "INT" or "RNG" or "DPS" or "HP" or "MP" or "HUD" or
-                    "FPS" or "TMP" or "UI" or "CRT")
+                    "FPS" or "TMP" or "UI" or "CRT" or "RubyDev")
             {
                 continue;
             }
@@ -387,7 +423,16 @@ public sealed class TmpTranslationFallback : MonoBehaviour
             var translated = Unescape(rawLine[(separator + 1)..]);
             if (source.Length > 0 && translated.Length > 0)
             {
-                _translations[NormalizeNewlines(source)] = translated;
+                source = NormalizeNewlines(source);
+                _translations[source] = translated;
+
+                var visibleKey = NormalizeVisibleLookupKey(source);
+                var visibleValue = PrepareVisibleTranslation(translated);
+                if (visibleKey.Length > 0 && visibleValue.Length > 0 &&
+                    Regex.IsMatch(visibleValue, "[\u4e00-\u9fff]", RegexOptions.CultureInvariant))
+                {
+                    _visibleTranslations[visibleKey] = visibleValue;
+                }
             }
         }
     }
@@ -677,24 +722,19 @@ public sealed class TmpTranslationFallback : MonoBehaviour
     {
         translated = NormalizePotentiallyUnsupportedGlyphs(translated);
 
+        if (IsRoomRewardStats(objectName, source))
+        {
+            return SetRelativeSize(translated, 68);
+        }
+
         if (IsItemDetailPanel(objectName, source))
         {
-            var sizedItem = Regex.Match(
-                translated,
-                "^<size=[^>]+>(?<body>.*)</size>$",
-                RegexOptions.CultureInvariant | RegexOptions.Singleline);
-            var itemBody = sizedItem.Success ? sizedItem.Groups["body"].Value : translated;
-            return $"<size=92%>{itemBody}</size>";
+            return SetRelativeSize(translated, 92);
         }
 
         if (string.Equals(objectName, "Trait Description", StringComparison.Ordinal))
         {
-            var sizedTrait = Regex.Match(
-                translated,
-                "^<size=[^>]+>(?<body>.*)</size>$",
-                RegexOptions.CultureInvariant | RegexOptions.Singleline);
-            var traitBody = sizedTrait.Success ? sizedTrait.Groups["body"].Value : translated;
-            return $"<size=100%>{traitBody}</size>";
+            return SetRelativeSize(translated, 100);
         }
 
         if (translated.StartsWith("<size=", StringComparison.Ordinal))
@@ -711,6 +751,32 @@ public sealed class TmpTranslationFallback : MonoBehaviour
                source.Length >= 30 &&
                source.Contains('\n') &&
                HasNearbyGroundActionPrompt(textComponent);
+    }
+
+    private static bool IsGroundItemHeader(TMP_Text textComponent)
+    {
+        return textComponent.gameObject.name == "Main Header" &&
+               HasNearbyGroundActionPrompt(textComponent);
+    }
+
+    private static bool IsRoomRewardStats(string objectName, string source)
+    {
+        return objectName == "Text" &&
+               (source.Contains(" EXP\n", StringComparison.Ordinal) ||
+                source.Contains(" 经验\n", StringComparison.Ordinal)) &&
+               (source.Contains("Top End Damage", StringComparison.Ordinal) ||
+                source.Contains("伤害上限", StringComparison.Ordinal)) &&
+               (source.Contains("Equip Load Capacity", StringComparison.Ordinal) ||
+                source.Contains("装备负重上限", StringComparison.Ordinal));
+    }
+
+    private static string SetRelativeSize(string value, int percent)
+    {
+        var sized = Regex.Match(
+            value,
+            "^<size=[^>]+>(?<body>.*)</size>$",
+            RegexOptions.CultureInvariant | RegexOptions.Singleline);
+        return $"<size={percent}%>{(sized.Success ? sized.Groups["body"].Value : value)}</size>";
     }
 
     private void ExpandGroundItemPanel(TMP_Text textComponent)
@@ -897,6 +963,33 @@ public sealed class TmpTranslationFallback : MonoBehaviour
     {
         var withoutTags = Regex.Replace(NormalizeNewlines(value), "<[^>]+>", string.Empty);
         return Regex.Replace(withoutTags, "\\s+", " ").Trim();
+    }
+
+    private static string NormalizeVisibleLookupKey(string value)
+    {
+        value = NormalizeNewlines(value)
+            .Replace("[[", string.Empty, StringComparison.Ordinal)
+            .Replace("]]", string.Empty, StringComparison.Ordinal)
+            .Replace("((", string.Empty, StringComparison.Ordinal)
+            .Replace("))", string.Empty, StringComparison.Ordinal)
+            .Replace("##", string.Empty, StringComparison.Ordinal)
+            .Replace("//", string.Empty, StringComparison.Ordinal)
+            .Replace('\u00A0', ' ');
+        value = Regex.Replace(value, "\\s+\\(Meta Perk\\)[^A-Za-z0-9]*$", string.Empty,
+            RegexOptions.CultureInvariant | RegexOptions.IgnoreCase);
+        value = Regex.Replace(value, "<[^>]+>", string.Empty, RegexOptions.CultureInvariant);
+        return Regex.Replace(value, "\\s+", " ", RegexOptions.CultureInvariant).Trim();
+    }
+
+    private static string PrepareVisibleTranslation(string value)
+    {
+        value = Regex.Replace(value, "\\[\\[(.*?)\\]\\]", "<color=#00E317>$1</color>", RegexOptions.CultureInvariant);
+        value = Regex.Replace(value, "\\(\\((.*?)\\)\\)", "<color=#FF0000>$1</color>", RegexOptions.CultureInvariant);
+        value = value.Replace("##", string.Empty, StringComparison.Ordinal);
+        value = value.Replace("//", string.Empty, StringComparison.Ordinal);
+        value = Regex.Replace(value, "<(?!/?color(?:=|>)|sprite\\s+name=)[^>]+>", string.Empty,
+            RegexOptions.CultureInvariant | RegexOptions.IgnoreCase);
+        return value.Trim();
     }
 
     private static string FlattenDecoratedAsciiRuns(string value)
