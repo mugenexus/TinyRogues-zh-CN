@@ -76,6 +76,17 @@ dotnet build .\TinyRogues.TmpFallback\TinyRogues.TmpFallback.csproj `
 
 输出目录为 `TinyRogues_zh_patch`。
 
+## 发布
+
+更新 README 和 CHANGELOG、构建并验证补丁、提交推送后执行：
+
+```powershell
+.\publish_release.ps1 -DryRun
+.\publish_release.ps1
+```
+
+脚本会自动读取当前版本和 CHANGELOG，压缩 `TinyRogues_zh_patch`，并创建对应的 GitHub Release。
+
 ## 翻译数据
 
 主词库为 `translations_zh.csv`，保留原文 key、来源路径和行号。运行时补充规则位于：
