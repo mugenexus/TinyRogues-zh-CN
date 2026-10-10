@@ -67,8 +67,11 @@ function ConvertTo-XUnityDictionaryLine {
 
 function Get-ControlSignature {
     param([string]$Text)
+    # These are translatable explanatory labels, not dynamic placeholders.
+    $translatableLabels = @('(emptying)', '(multiplicative)')
     $pattern = '\r\n|\r|\n|\\n|\\r|\\t|<[^>]+>|\{[^{}]+\}|\(\*\)|\(br\)|\((?:x\d+(?:%?x\d+)?|[a-z][A-Za-z0-9_]*)\)|\[\[|\]\]|##|//'
     return (([regex]::Matches($Text, $pattern) |
+        Where-Object { $translatableLabels -cnotcontains $_.Value } |
         ForEach-Object {
             if ($_.Value -eq "`r`n" -or $_.Value -eq "`r" -or $_.Value -eq "`n") {
                 '\n'
