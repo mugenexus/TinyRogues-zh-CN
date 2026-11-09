@@ -132,6 +132,7 @@ exact,Equipment Name,King Bible,live:_TmpUntranslated.txt
 exact,Hovered Dice Description,<color=#3B3B7A>Obsidian Dice</color>\nAllows you to exchange a trait with a random new trait.,live:_TmpUntranslated.txt
 exact,Hovered Dice Description,"<color=#808080>A place to keep all your dice.\n<indent=7px>""Oooh!\nShinies!""</indent></color>",live:_TmpUntranslated.txt
 exact,Hovered Dice Description,"<color=#FCC926>Golden Dice</color>\nRerolls offered items from\nshops, armories and boss rewards.",live:_TmpUntranslated.txt
+exact,Input Alias,"Sacrifice Heart<sprite name=""Health"">",live:_TmpUntranslated.txt
 exact,Main Header,<color=#4CC2FF>Freezing Scepter +1</color>,live:_TmpUntranslated.txt
 exact,Main Header,<color=#4CC2FF>Nunchaku +1</color>,live:_TmpUntranslated.txt
 exact,Main Header,<color=#4CC2FF>Reinforced Club +4</color>,live:_TmpUntranslated.txt
@@ -139,6 +140,7 @@ exact,Main Header,<size=72%><color=#00B824>Cat Ears</color></size>,live:_TmpUntr
 exact,Main Header,<size=72%><color=#00B824>Maid Costume</color></size>,live:_TmpUntranslated.txt
 exact,Main Header,Flask Charge,live:_TmpUntranslated.txt
 exact,Main Header,Green Blossom,live:_TmpUntranslated.txt
+exact,Main Header,Illegal Gun Parts,live:_TmpUntranslated.txt
 exact,Main Header,Key [x2],live:_TmpUntranslated.txt
 exact,Main Header,Mead,live:_TmpUntranslated.txt
 exact,Main Header,Sake,live:_TmpUntranslated.txt
@@ -154,11 +156,13 @@ exact,Splash Text,Oh yeah. It's all coming together.,live:_TmpUntranslated.txt
 exact,Splash Text,Pull the lever!,live:_TmpUntranslated.txt
 exact,Splash Text,SURPRISE!,live:_TmpUntranslated.txt
 exact,Splash Text,There is no escape!,live:_TmpUntranslated.txt
+exact,Splash Text,These splash text are\nTOTALLY NOT a Minceraft reference.,live:_TmpUntranslated.txt
 exact,Splash Text,"To be fair, you have to have a very high IQ to understand Tiny Rogues.",live:_TmpUntranslated.txt
 exact,Splash Text,With (a) friendly Fire!,live:_TmpUntranslated.txt
 exact,Splash Text,You're pretty cool!,live:_TmpUntranslated.txt
 exact,Stage Title (TMP),The Catacombs,live:_TmpUntranslated.txt
 exact,Stage Title (TMP),The Desert,live:_TmpUntranslated.txt
+exact,Text,*Poke*,live:_TmpUntranslated.txt
 exact,Text,*TINK*,live:_TmpUntranslated.txt
 exact,Text,*You don't have\ne,live:_TmpUntranslated.txt
 exact,Text,*You don't have\nenou,live:_TmpUntranslated.txt
@@ -213,6 +217,7 @@ exact,Text,Rerolls <color=#A61FFF>Traits</color>\nin <color=#A61FFF>Trait</color
 exact,Text,Samurai,live:_TmpUntranslated.txt
 exact,Text,Santa,live:_TmpUntranslated.txt
 exact,Text,Set Stash,live:_TmpUntranslated.txt
+exact,Text,Sleeping Bear,live:_TmpUntranslated.txt
 exact,Text,Smuggler,live:_TmpUntranslated.txt
 exact,Text,Undead Merchant,live:_TmpUntranslated.txt
 exact,Text,Viking,live:_TmpUntranslated.txt
@@ -282,6 +287,7 @@ exact,Tooltip Title (TMP),THE GLASS IS HALF EMPTY,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),THE KEY TO SUCCESS,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),THIEF IN THE SHADOWS,live:_TmpUntranslated.txt
 exact,Tooltip Title (TMP),TREASURE HUNTER,live:_TmpUntranslated.txt
+exact,Trait Description,Gain stats if you have this trait.\n•Example line 1.\n•Example line 2.\n•Example line 3.\n•Example line 4.,live:_TmpUntranslated.txt
 exact,Trait Title,Apocalypse,live:_TmpUntranslated.txt
 exact,Trait Title,Barbarism,live:_TmpUntranslated.txt
 exact,Trait Title,Best Friends Forever,live:_TmpUntranslated.txt
@@ -295,7 +301,9 @@ exact,Trait Title,Rage,live:_TmpUntranslated.txt
 exact,Trait Title,Raised Morale,live:_TmpUntranslated.txt
 exact,Trait Title,Razor's Edge,live:_TmpUntranslated.txt
 exact,Trait Title,Rogue's Tally,live:_TmpUntranslated.txt
+exact,Trait Title,Spinning Blades,live:_TmpUntranslated.txt
 exact,Trait Title,Steady Strikes,live:_TmpUntranslated.txt
+exact,Trait Title,Step of the Wind,live:_TmpUntranslated.txt
 exact,Trait Title,Threat Reckoning,live:_TmpUntranslated.txt
 exact,Trait Title,Two Steps Ahead,live:_TmpUntranslated.txt
 exact,Value,<color=#4CC2FF>Uncommon</color>,live:_TmpUntranslated.txt
@@ -306,10 +314,6 @@ general_fragments,Choice 3 (TMP),"  <color=#808080><color=#DE6A1D>Whiskey</color
 general_fragments,Choice 4 (TMP),  <color=#808080>Leave</color>,live:_TmpUntranslated.txt
 general_fragments,Main Header,<size=72%>Cheese</size>,live:_TmpUntranslated.txt
 general_fragments,Main Header,Fairy Tale Branch,live:_TmpUntranslated.txt
-general_fragments,Main Header,Illegal Gun Parts,live:_TmpUntranslated.txt
-general_fragments,Trait Description,Gain stats if you have this trait.\n•Example line 1.\n•Example line 2.\n•Example line 3.\n•Example line 4.,live:_TmpUntranslated.txt
-general_fragments,Trait Title,Spinning Blades,live:_TmpUntranslated.txt
-general_fragments,Trait Title,Step of the Wind,live:_TmpUntranslated.txt
 regex,Ability Description,"Deal <color=#00E61A>x1.10</color> <color=#6E5442>Physical Damage </color>per <color=#406E7D>Armor Container</color><sprite name=""Armor""> you have.\n<color=#7F7F7FFF>(<color=#00E61A>x1.20</color> currently)</color>",live:_TmpUntranslated.txt
 regex,Choice 2 (TMP),"> <color=#FFEB04><color=#008E05>Champagne</color> [<color=#FCC926><color=#FFFFFF>10</color> Gold<sprite name=""Gold""></color>]</color>",live:_TmpUntranslated.txt
 regex,Choice 2 (TMP),"> <color=#FFEB04><color=#8F563B>Rum</color> [<color=#FCC926><color=#FFFFFF>5</color> Gold<sprite name=""Gold""></color>]</color>",live:_TmpUntranslated.txt
@@ -465,6 +469,7 @@ visible_exact,Main Header,<color=#FFDB59>Handcuffs</color>,live:_TmpUntranslated
 visible_exact,Main Header,<color=#FFDB59>Paper Sheet</color>,live:_TmpUntranslated.txt
 visible_exact,Main Header,<color=#FFDB59>Sea Urchin Orb</color>,live:_TmpUntranslated.txt
 visible_exact,Main Header,<color=#FFDB59>War Fans</color>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<size=72%><color=#4CC2FF>Bear Claw Necklace</color></size>,live:_TmpUntranslated.txt
 visible_exact,Main Header,<size=72%><color=#808080>Bandana</color></size>,live:_TmpUntranslated.txt
 visible_exact,Main Header,<size=72%><color=#808080>Ninja Headband</color></size>,live:_TmpUntranslated.txt
 visible_exact,Main Header,<size=72%><color=#808080>Quartz Bracelet</color></size>,live:_TmpUntranslated.txt

@@ -431,6 +431,15 @@ Green=绿色
 Blue=蓝色
 Bar Maiden=酒馆女侍
 Cleric=牧师
+Pocket Magic=魔法口袋
+Pocket 魔法=魔法口袋
+Power Gem=威力宝石
+威力 Gem=威力宝石
+Bear Claw Necklace=熊爪项链
+Sacrifice Heart<sprite name="Health">=献祭红心<sprite name="Health">
+Sleeping Bear=沉睡的熊
+*Poke*=*戳一下*
+These splash text are\nTOTALLY NOT a Minceraft reference.=这些启动标语\n绝对没有在玩「我的世畀」的梗。
 Creepy Wizard=诡异巫师
 Dwarf Warrior=矮人战士
 Farmer=农夫

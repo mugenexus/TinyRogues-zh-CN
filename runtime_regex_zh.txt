@@ -32,6 +32,8 @@ r:"^Upgrade a polearm or spear to level ([0-9]+) without help from equipment ite
 r:"^Upgrade a cannon or gun to level ([0-9]+) without help from equipment items\.\nHigh Score: Upgrade Level ([0-9]+)$"=不借助装备物品，将火炮或枪械升级至 $1 级。\n最高纪录：升级等级 $2
 r:"^Defeat Death\.\nProgress: ([0-9]+)/([0-9]+)$"=击败死神。\n进度：$1/$2
 r:"^Lvl ([0-9]+) - The Hero$"=等级 $1 - 英雄
+r:"^(?:Lvl|等级) ([0-9]+) - Cleric$"=等级 $1 - 牧师
+r:"^<color=#00E61A>(?:Every[ \u00A0]+([0-9.]+)[ \u00A0]+seconds?|每[ \u00A0]+([0-9.]+)[ \u00A0]+秒)[ \u00A0]*</color>[ \u00A0]*<color=#A61FFF>trigger</color>[ \u00A0]+an[ \u00A0]+<color=#A61FFF>(?:Attack|攻击)</color>[ \u00A0]+of a random[ \u00A0]+(?:Wand|魔棒|魔杖)[ \u00A0]+or[ \u00A0]+(?:Staff|法杖)[ \u00A0]+<color=#A61FFF>(?:Weapon|武器)</color>[ \u00A0]+in your Inventory\.<color=#808080>\n\((?:Weapon|武器) Enchantments will not apply\.\)</color>[ \u00A0]*<color=#808080>\[<color=#A61FFF>(?:Tick|周期)</color>\]</color>$"=<color=#00E61A>每 $1$2 秒</color><color=#A61FFF>触发</color>一次背包中随机魔杖或法杖武器的<color=#A61FFF>攻击</color>。<color=#808080>\n（武器附魔不生效。）</color> <color=#808080>[<color=#A61FFF>周期</color>]</color>
 r:"^Grants\n<color=#00E317>([0-9]+)</color> <color=#FCC926>Gold</color>\.$"=获得\n<color=#00E317>$1</color> <color=#FCC926>金币</color>。
 r:"^Grants <color=#00E317>([0-9]+)</color>\n<color=#FCC926>Key</color>\.$"=获得 <color=#00E317>$1</color> 把\n<color=#FCC926>钥匙</color>。
 r:"^Grants <color=#00E317>([0-9]+)</color>\n<color=#3B3B7A>Bombs</color>\.$"=获得 <color=#00E317>$1</color> 个\n<color=#3B3B7A>炸弹</color>。

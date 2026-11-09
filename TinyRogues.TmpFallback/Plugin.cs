@@ -13,7 +13,7 @@ public sealed class Plugin : BasePlugin
 {
     public const string PluginGuid = "mugen.tinyrogues.tmpfallback";
     public const string PluginName = "Tiny Rogues TMP Translation Fallback";
-    public const string PluginVersion = "1.5.25";
+    public const string PluginVersion = "1.5.28";
 
     internal static ManualLogSource PluginLog { get; private set; } = null!;
 
@@ -171,7 +171,7 @@ public sealed class TmpTranslationFallback : MonoBehaviour
 
         if (objectName is "Tooltip Title (TMP)" or "Tooltip Text (TMP)" or
                 "Description Text" or "Elite Enchantment Text" or "Main Header" or
-                "Title Text" or "Trait Title" or "Choice 1 (TMP)" &&
+                "Title Text" or "Trait Title" or "Trait Description" or "Choice 1 (TMP)" &&
             _visibleTranslations.TryGetValue(NormalizeVisibleLookupKey(source), out var visibleTranslation))
         {
             return visibleTranslation;
@@ -264,18 +264,14 @@ public sealed class TmpTranslationFallback : MonoBehaviour
             return;
         }
 
-        var englishWords = Regex.Matches(visibleText, "[A-Za-z]{2,}");
-        if (_untranslatedDumpPath.Length == 0 || englishWords.Count == 0 ||
-            source.StartsWith("<sprite", StringComparison.OrdinalIgnoreCase) ||
-            (Regex.IsMatch(visibleText, "[\u4e00-\u9fff]") &&
-             englishWords.Cast<Match>().All(match => match.Value.Length <= 4)) ||
-            !_dumpedUntranslated.Add(source))
+        var objectName = textComponent.gameObject.name.Replace('\t', ' ');
+        if (_untranslatedDumpPath.Length == 0 || !HasActionableEnglish(visibleText) ||
+            !_dumpedUntranslated.Add($"{objectName}\n{source}"))
         {
             return;
         }
 
         var escaped = Escape(source);
-        var objectName = textComponent.gameObject.name.Replace('\t', ' ');
         File.AppendAllText(
             _untranslatedDumpPath,
             $"{DateTime.Now:yyyy-MM-dd HH:mm:ss}\t{objectName}\t{escaped}{Environment.NewLine}",
@@ -996,7 +992,7 @@ public sealed class TmpTranslationFallback : MonoBehaviour
     {
         return Regex.Replace(
             value,
-            "(?:<color=[^>]+>[A-Za-z ]</color>){4,}",
+            "(?:<color=[^>]+>(?:[A-Za-z]|[ \u00A0]+)</color>){4,}",
             match => Regex.Replace(match.Value, "<[^>]+>", string.Empty),
             RegexOptions.CultureInvariant | RegexOptions.IgnoreCase);
     }

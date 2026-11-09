@@ -31,7 +31,7 @@ SUMMARY_FILE = ROOT / "runtime_coverage_summary.csv"
 
 TAG_RE = re.compile(r"<[^>]+>")
 DECORATED_ASCII_RUN_RE = re.compile(
-    r"(?:<color=[^>]+>[A-Za-z ]</color>){4,}", re.IGNORECASE
+    r"(?:<color=[^>]+>(?:[A-Za-z]|[ \u00a0]+)</color>){4,}", re.IGNORECASE
 )
 CHINESE_RE = re.compile(r"[\u3400-\u9fff]")
 ENGLISH_WORD_RE = re.compile(r"[A-Za-z][A-Za-z'-]{1,}")
@@ -48,6 +48,7 @@ VISIBLE_EXACT_COMPONENTS = {
     "Main Header",
     "Title Text",
     "Trait Title",
+    "Trait Description",
     "Choice 1 (TMP)",
 }
 TECHNICAL_TEXT_PATTERNS = [
@@ -292,6 +293,10 @@ def classify(
 ) -> str:
     if source in exact:
         return "exact"
+    size_wrapped = re.fullmatch(r"<size=[^>]+>(.+)</size>", source, re.DOTALL)
+    if size_wrapped:
+        return classify(component, size_wrapped[1], exact, visible_exact, regexes,
+                        fragments, item_fragments, dialogue_sources)
     if component in VISIBLE_EXACT_COMPONENTS and visible_lookup_key(source) in visible_exact:
         return "visible_exact"
     color_wrapped = re.fullmatch(r"<color=[^>]+>([^<>]+)</color>", source)
