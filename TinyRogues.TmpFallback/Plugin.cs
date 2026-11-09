@@ -13,7 +13,7 @@ public sealed class Plugin : BasePlugin
 {
     public const string PluginGuid = "mugen.tinyrogues.tmpfallback";
     public const string PluginName = "Tiny Rogues TMP Translation Fallback";
-    public const string PluginVersion = "1.5.28";
+    public const string PluginVersion = "1.5.29";
 
     internal static ManualLogSource PluginLog { get; private set; } = null!;
 

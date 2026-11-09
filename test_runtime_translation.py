@@ -1,10 +1,26 @@
 import unittest
 
-from audit_runtime_coverage import flatten_decorated_ascii_runs
-from audit_runtime_residuals import load_exact, load_regex_pairs, translate
+from audit_runtime_coverage import ROOT, flatten_decorated_ascii_runs, load_pairs
+from audit_runtime_residuals import apply_fragments, load_exact, load_regex_pairs, translate
 
 
 class RuntimeTranslationTest(unittest.TestCase):
+    def test_only_explicit_per_level_conditions_are_translated_as_per_level(self):
+        fragments = load_pairs(ROOT / "runtime_item_fragments_zh.txt")
+        fragments.sort(key=lambda pair: len(pair[0]), reverse=True)
+        for source, expected in (
+            ("Deals 25", "造成25"),
+            ("Gains +10%", "获得+10%"),
+            ("Deals <color=#00E61A>25</color> Damage per Level.",
+             "造成<color=#00E61A>25</color>伤害（每级）。"),
+            ("Gains <color=#00E61A>+10%</color> Range per Level.",
+             "获得<color=#00E61A>+10%</color>射程（每级）。"),
+            ("<color=#00E61A>+10%</color>per Level.",
+             "<color=#00E61A>+10%</color>（每级）。"),
+        ):
+            with self.subTest(source=source):
+                self.assertEqual(apply_fragments(source, fragments), expected)
+
     def test_pocket_magic_preserves_dynamic_interval(self):
         exact = load_exact()
         regexes = load_regex_pairs()

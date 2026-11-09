@@ -87,11 +87,12 @@ Heart Container=心之容器
  Damage per = 每个
  you have=拥有时
  currently=当前
-Deals =每级造成
- Damage per Level.=伤害。
-Gains =每级获得
+Deals =造成
+ Damage per Level.=伤害（每级）。
+Gains =获得
 Gains <color=#00E61A>+10%</color> <color=#FFFFFF>Attack Speed </color>per <color=#26B0FF>Mana Container</color><sprite name="Mana"> you have.=每拥有一个<color=#26B0FF>法力容器</color><sprite name="Mana">，获得<color=#00E61A>+10%</color><color=#FFFFFF>攻击速度</color>。
- Range per Level.=射程。
+ Range per Level.=射程（每级）。
+per Level.=（每级）。
 Counts as =视为
  while\nnot wearing an Offhand.=且\n未装备副手时。
 Your points of =你的
