@@ -191,6 +191,8 @@ def is_item_panel(component: str, source: str) -> bool:
 
 
 def is_structured(component: str, source: str) -> bool:
+    if "Duration:" in source and "Max Stacks:" in source:
+        return True
     if is_item_panel(component, source):
         return True
     if component not in {"Description Text", "Text"}:

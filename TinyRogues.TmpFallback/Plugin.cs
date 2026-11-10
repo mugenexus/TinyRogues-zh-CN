@@ -13,7 +13,7 @@ public sealed class Plugin : BasePlugin
 {
     public const string PluginGuid = "mugen.tinyrogues.tmpfallback";
     public const string PluginName = "Tiny Rogues TMP Translation Fallback";
-    public const string PluginVersion = "1.5.29";
+    public const string PluginVersion = "1.5.30";
 
     internal static ManualLogSource PluginLog { get; private set; } = null!;
 
@@ -666,6 +666,12 @@ public sealed class TmpTranslationFallback : MonoBehaviour
 
     private static bool IsStructuredRichText(string objectName, string source)
     {
+        if (source.Contains("Duration:", StringComparison.Ordinal) &&
+            source.Contains("Max Stacks:", StringComparison.Ordinal))
+        {
+            return true;
+        }
+
         if (IsItemDetailPanel(objectName, source))
         {
             return true;
@@ -717,6 +723,11 @@ public sealed class TmpTranslationFallback : MonoBehaviour
     private static string ApplyLayout(string objectName, string source, string translated)
     {
         translated = NormalizePotentiallyUnsupportedGlyphs(translated);
+
+        if (objectName == "Description Text" && translated.Contains("负重惩罚:", StringComparison.Ordinal))
+        {
+            return SetRelativeSize(translated, 56);
+        }
 
         if (IsRoomRewardStats(objectName, source))
         {

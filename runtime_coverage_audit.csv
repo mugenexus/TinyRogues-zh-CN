@@ -83,6 +83,19 @@ dialogue,Text,"Ugh, a ""<color=#808080>Wooden Sword</color>""?\nNot the best...\
 dialogue,Text,"Ugh, a ""<color=#808080>Wooden Sword</color>""?\nNot the best...\nHow about <color=#FCC926>8 Gold</color> f",live:_TmpUntranslated.txt
 dialogue,Text,"Ugh, a ""<color=#808080>Wooden Sword</color>""?\nNot the best...\nHow about <color=#FCC926>8 Gold</color> for ",live:_TmpUntranslated.txt
 dialogue,Text,"Ugh, a ""<color=#808080>Wooden Sword</color>""?\nNot the best...\nHow about <color=#FCC926>8 Gold</color> for it?",live:_TmpUntranslated.txt
+dialogue,Text,Very well.\nPl,live:_TmpUntranslated.txt
+dialogue,Text,Very well.\nPlea,live:_TmpUntranslated.txt
+dialogue,Text,Very well.\nPleasu,live:_TmpUntranslated.txt
+dialogue,Text,Very well.\nPleasur,live:_TmpUntranslated.txt
+dialogue,Text,Very well.\nPleasure ,live:_TmpUntranslated.txt
+dialogue,Text,Very well.\nPleasure ma,live:_TmpUntranslated.txt
+dialogue,Text,Very well.\nPleasure maki,live:_TmpUntranslated.txt
+dialogue,Text,Very well.\nPleasure makin,live:_TmpUntranslated.txt
+dialogue,Text,Very well.\nPleasure making b,live:_TmpUntranslated.txt
+dialogue,Text,Very well.\nPleasure making bu,live:_TmpUntranslated.txt
+dialogue,Text,Very well.\nPleasure making busi,live:_TmpUntranslated.txt
+dialogue,Text,Very well.\nPleasure making busine,live:_TmpUntranslated.txt
+dialogue,Text,Very well.\nPleasure making business,live:_TmpUntranslated.txt
 dialogue,Text,What are you wa,live:_TmpUntranslated.txt
 dialogue,Text,What are you waitin,live:_TmpUntranslated.txt
 dialogue,Text,What are you waiting f,live:_TmpUntranslated.txt
@@ -114,6 +127,7 @@ exact,Description Text,"Buy <color=#A61FFF>Potions</color>\nfor <color=#FCC926>G
 exact,Description Text,"Buy Items\nfor <color=#5ECCE3>Souls</color><sprite name=""Soul"">.",live:_TmpUntranslated.txt
 exact,Description Text,Contains a\n<color=#26B0FF>Magic</color> <color=#A61FFF>Weapon</color>.,live:_TmpUntranslated.txt
 exact,Description Text,Contains a\n<color=#26FF66>Ranged</color> <color=#A61FFF>Weapon</color>.,live:_TmpUntranslated.txt
+exact,Description Text,Contains\n<color=#FFDB59><color=#FFDB59>rare</color></color>\nweapons.,live:_TmpUntranslated.txt
 exact,Description Text,Contains\nEquipment.,live:_TmpUntranslated.txt
 exact,Description Text,"Totems:\n<sprite name=""SubArrow"">Count as your Attacks.\n<sprite name=""SubArrow"">Last <color=#00E317>8</color> seconds.\n<sprite name=""SubArrow"">Vanish on Weapon Swap.\n<sprite name=""SubArrow"">Limit: <color=#00E61A>2</color>",live:_TmpUntranslated.txt
 exact,Dialog Text,Delete Save Data in Slot 2?,live:_TmpUntranslated.txt
@@ -138,6 +152,7 @@ exact,Main Header,<color=#4CC2FF>Nunchaku +1</color>,live:_TmpUntranslated.txt
 exact,Main Header,<color=#4CC2FF>Reinforced Club +4</color>,live:_TmpUntranslated.txt
 exact,Main Header,<size=72%><color=#00B824>Cat Ears</color></size>,live:_TmpUntranslated.txt
 exact,Main Header,<size=72%><color=#00B824>Maid Costume</color></size>,live:_TmpUntranslated.txt
+exact,Main Header,Cigarette,live:_TmpUntranslated.txt
 exact,Main Header,Flask Charge,live:_TmpUntranslated.txt
 exact,Main Header,Green Blossom,live:_TmpUntranslated.txt
 exact,Main Header,Illegal Gun Parts,live:_TmpUntranslated.txt
@@ -202,6 +217,7 @@ exact,Text,Hello!\nY,live:_TmpUntranslated.txt
 exact,Text,Hello!\nYou ,live:_TmpUntranslated.txt
 exact,Text,Hello!\nYou look,live:_TmpUntranslated.txt
 exact,Text,Howdy!\n,live:_TmpUntranslated.txt
+exact,Text,Jewellery Merchant,live:_TmpUntranslated.txt
 exact,Text,Need a ,live:_TmpUntranslated.txt
 exact,Text,Nye-he-he-he!\nWel,live:_TmpUntranslated.txt
 exact,Text,Nye-he-he-he!\nWelcom,live:_TmpUntranslated.txt
@@ -220,6 +236,7 @@ exact,Text,Set Stash,live:_TmpUntranslated.txt
 exact,Text,Sleeping Bear,live:_TmpUntranslated.txt
 exact,Text,Smuggler,live:_TmpUntranslated.txt
 exact,Text,Undead Merchant,live:_TmpUntranslated.txt
+exact,Text,Very well.\nPleasure making business.,live:_TmpUntranslated.txt
 exact,Text,Viking,live:_TmpUntranslated.txt
 exact,Text,Witch Doctor,live:_TmpUntranslated.txt
 exact,Text,Would you like to stay\n,live:_TmpUntranslated.txt
@@ -294,6 +311,7 @@ exact,Trait Title,Best Friends Forever,live:_TmpUntranslated.txt
 exact,Trait Title,Exploitative Explosives,live:_TmpUntranslated.txt
 exact,Trait Title,Explosive Force,live:_TmpUntranslated.txt
 exact,Trait Title,Forethought,live:_TmpUntranslated.txt
+exact,Trait Title,Grenadier,live:_TmpUntranslated.txt
 exact,Trait Title,Intuition,live:_TmpUntranslated.txt
 exact,Trait Title,Keen Mind,live:_TmpUntranslated.txt
 exact,Trait Title,Pushing Through,live:_TmpUntranslated.txt
@@ -305,6 +323,7 @@ exact,Trait Title,Spinning Blades,live:_TmpUntranslated.txt
 exact,Trait Title,Steady Strikes,live:_TmpUntranslated.txt
 exact,Trait Title,Step of the Wind,live:_TmpUntranslated.txt
 exact,Trait Title,Threat Reckoning,live:_TmpUntranslated.txt
+exact,Trait Title,Transcendence,live:_TmpUntranslated.txt
 exact,Trait Title,Two Steps Ahead,live:_TmpUntranslated.txt
 exact,Value,<color=#4CC2FF>Uncommon</color>,live:_TmpUntranslated.txt
 general_fragments,Choice 2 (TMP),"  <color=#808080><color=#008E05>Champagne</color> [<color=#FCC926><color=#FFFFFF>10</color> Gold<sprite name=""Gold""></color>]</color>",live:_TmpUntranslated.txt
@@ -326,6 +345,7 @@ regex,Description Text,"+1 <color=#3B3B7A>CHAOTIC</color><sprite name=""Chaos"">
 regex,Description Text,"+1 <color=#5ECCE3>LAWFUL</color><sprite name=""Lawful"">",live:_TmpUntranslated.txt
 regex,Description Text,"+1 <color=#FCC926>GOOD</color> <sprite name=""Good"">",live:_TmpUntranslated.txt
 regex,Description Text,"+1 <color=#FF0000>EVIL</color> <sprite name=""Evil"">",live:_TmpUntranslated.txt
+regex,Description Text,"+1 <color=#FF0000>EVIL</color><sprite name=""Evil""> <color=grey>[once per run]</color>",live:_TmpUntranslated.txt
 regex,Description Text,"+1 <color=#FF0000>EVIL</color><sprite name=""Evil"">\n<color=grey>[once per run]</color>",live:_TmpUntranslated.txt
 regex,Description Text,<color=#6BBD30>Stam. Rec. Time</color>: <color=#00E317>4 seconds</color>,live:_TmpUntranslated.txt
 regex,Description Text,<color=#A61FFF>Weapons</color> gain <color=#00E317>x1.10</color>\nDamage per <color=#A61FFF>Upgrade Level</color>.,live:_TmpUntranslated.txt
@@ -342,6 +362,11 @@ regex,Description Text,Sell weapons\nand equipment.,live:_TmpUntranslated.txt
 regex,Description Text,"Upgrade Weapons\nand repair\n<color=#406E7D>Armor</color><sprite name=""Armor"">.",live:_TmpUntranslated.txt
 regex,Description Text,"Your Power: <color=#00E317>0</color>\n<sprite name=""SubArrow""><color=#00E317>+0%</color> Damage\n<sprite name=""SubArrow""><color=#00E317>+0%</color> Area Radius",live:_TmpUntranslated.txt
 regex,Input Alias,"E<sprite name=""Arrow_Right"">Use <color=#FCC926><color=#FCC926>Key</color><sprite name=""Key""></color>\nto open.",live:_TmpUntranslated.txt
+regex,Main Header,<color=#FFDB59>The Separator +1</color>,live:_TmpUntranslated.txt
+regex,Main Header,<size=72%><color=#FFDB59>Demon King Blade +1</color></size>,live:_TmpUntranslated.txt
+regex,Main Header,<size=72%><color=#FFDB59>Rapier +1</color></size>,live:_TmpUntranslated.txt
+regex,Main Header,<size=72%><color=#FFDB59>The Separator +1</color></size>,live:_TmpUntranslated.txt
+regex,Main Header,<size=72%><color=#FFDB59>Thunderstorm Scroll +1</color></size>,live:_TmpUntranslated.txt
 regex,Splash Text,Vampire Count: 1,live:_TmpUntranslated.txt
 regex,Text,+1 <color=#5ECCE3>LAWFUL</color>,live:_TmpUntranslated.txt
 regex,Text,+1 <color=#FF0000>EVIL</color>,live:_TmpUntranslated.txt
@@ -362,6 +387,8 @@ regex,Text,"<color=#FCC926>Price:</color> <color=#FFFFFF>9</color> <color=#FCC92
 regex,Text,<color=#FF00FF><color=#FF00FF>Icy</color>: </color><color=#00E61A>+20</color> <color=#00E317>to</color> <color=#00E61A>30</color> <color=#639CFF>Cold Damage</color>,live:_TmpUntranslated.txt
 regex,Text,Refills <color=#00E317>1</color> Flask.,live:_TmpUntranslated.txt
 regex,Text,To open locked things!,live:_TmpUntranslated.txt
+regex,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI mean if you really\nwant to get rid of it...\nI offer <color=#FCC926>3 Gold</color> for it, deal?",live:_TmpUntranslated.txt
+regex,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI mean if you really\nwant to get rid of it...\nI offer <color=#FCC926>3 Gold</color> for it, deal?",live:_TmpUntranslated.txt
 technical_ignored,Ability Description,asdasd\nasdasd\nasdasd,live:_TmpUntranslated.txt
 technical_ignored,Ability Title,My Ability,live:_TmpUntranslated.txt
 technical_ignored,Choice 1 (TMP),> Choice 1,live:_TmpUntranslated.txt
@@ -390,6 +417,25 @@ typing_prefix,Text,If ,live:_TmpUntranslated.txt
 typing_prefix,Text,It ,live:_TmpUntranslated.txt
 typing_prefix,Text,Ne,live:_TmpUntranslated.txt
 typing_prefix,Text,Nee,live:_TmpUntranslated.txt
+typing_prefix,Text,Need something?\nI,live:_TmpUntranslated.txt
+typing_prefix,Text,Need something?\nI'm n,live:_TmpUntranslated.txt
+typing_prefix,Text,Need something?\nI'm not ,live:_TmpUntranslated.txt
+typing_prefix,Text,Need something?\nI'm not here,live:_TmpUntranslated.txt
+typing_prefix,Text,Need something?\nI'm not here for,live:_TmpUntranslated.txt
+typing_prefix,Text,Need something?\nI'm not here for chi,live:_TmpUntranslated.txt
+typing_prefix,Text,Need something?\nI'm not here for chit c,live:_TmpUntranslated.txt
+typing_prefix,Text,"Need something?\nI'm not here for chit chat,",live:_TmpUntranslated.txt
+typing_prefix,Text,"Need something?\nI'm not here for chit chat,\nwe ",live:_TmpUntranslated.txt
+typing_prefix,Text,"Need something?\nI'm not here for chit chat,\nwe talk",live:_TmpUntranslated.txt
+typing_prefix,Text,"Need something?\nI'm not here for chit chat,\nwe talk bu",live:_TmpUntranslated.txt
+typing_prefix,Text,"Need something?\nI'm not here for chit chat,\nwe talk busine",live:_TmpUntranslated.txt
+typing_prefix,Text,"Need something?\nI'm not here for chit chat,\nwe talk business o",live:_TmpUntranslated.txt
+typing_prefix,Text,"Need something?\nI'm not here for chit chat,\nwe talk business or\nwe",live:_TmpUntranslated.txt
+typing_prefix,Text,"Need something?\nI'm not here for chit chat,\nwe talk business or\nwe ta",live:_TmpUntranslated.txt
+typing_prefix,Text,"Need something?\nI'm not here for chit chat,\nwe talk business or\nwe talk n",live:_TmpUntranslated.txt
+typing_prefix,Text,"Need something?\nI'm not here for chit chat,\nwe talk business or\nwe talk nothi",live:_TmpUntranslated.txt
+typing_prefix,Text,"Need something?\nI'm not here for chit chat,\nwe talk business or\nwe talk nothing a",live:_TmpUntranslated.txt
+typing_prefix,Text,"Need something?\nI'm not here for chit chat,\nwe talk business or\nwe talk nothing at al",live:_TmpUntranslated.txt
 typing_prefix,Text,Nye-he-he-he!\nWelc,live:_TmpUntranslated.txt
 typing_prefix,Text,Nye-he-he-he!\nWelcome,live:_TmpUntranslated.txt
 typing_prefix,Text,"Nye-he-he-he!\nWelcome, tr",live:_TmpUntranslated.txt
@@ -403,6 +449,52 @@ typing_prefix,Text,Thank you\n,live:_TmpUntranslated.txt
 typing_prefix,Text,"Ugh,",live:_TmpUntranslated.txt
 typing_prefix,Text,"Ugh, a",live:_TmpUntranslated.txt
 typing_prefix,Text,"Ugh, a """,live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knig</color>",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight H</color>",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helm</color>",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI m",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI mean",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI mean if ",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI mean if you",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI mean if you rea",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI mean if you really\n",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI mean if you really\nwan",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI mean if you really\nwant to",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI mean if you really\nwant to get",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI mean if you really\nwant to get rid",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI mean if you really\nwant to get rid of",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI mean if you really\nwant to get rid of it.",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI mean if you really\nwant to get rid of it...\nI",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI mean if you really\nwant to get rid of it...\nI of",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI mean if you really\nwant to get rid of it...\nI offer ",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI mean if you really\nwant to get rid of it...\nI offer <color=#FCC926>3 Go</color>",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI mean if you really\nwant to get rid of it...\nI offer <color=#FCC926>3 Gold</color> ",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI mean if you really\nwant to get rid of it...\nI offer <color=#FCC926>3 Gold</color> for ",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI mean if you really\nwant to get rid of it...\nI offer <color=#FCC926>3 Gold</color> for it, ",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Roun</color>",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Sh</color>",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\n",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI me",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI mean ",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI mean if y",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI mean if you r",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI mean if you reall",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI mean if you really\nw",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI mean if you really\nwant ",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI mean if you really\nwant to g",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI mean if you really\nwant to get ",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI mean if you really\nwant to get rid ",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI mean if you really\nwant to get rid of i",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI mean if you really\nwant to get rid of it..",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI mean if you really\nwant to get rid of it...\nI",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI mean if you really\nwant to get rid of it...\nI off",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI mean if you really\nwant to get rid of it...\nI offer <color=#FCC926>3 Gol</color>",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI mean if you really\nwant to get rid of it...\nI offer <color=#FCC926>3 Gold</color> f",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI mean if you really\nwant to get rid of it...\nI offer <color=#FCC926>3 Gold</color> for i",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI mean if you really\nwant to get rid of it...\nI offer <color=#FCC926>3 Gold</color> for it, ",live:_TmpUntranslated.txt
+typing_prefix,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI mean if you really\nwant to get rid of it...\nI offer <color=#FCC926>3</color>",live:_TmpUntranslated.txt
 typing_prefix,Text,We ,live:_TmpUntranslated.txt
 typing_prefix,Text,What are you\n,live:_TmpUntranslated.txt
 typing_prefix,Text,Who,live:_TmpUntranslated.txt
@@ -437,11 +529,18 @@ typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will rer
 typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will reroll tavern visitors</color>,live:_TmpUntranslated.txt
 typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will reroll</color>,live:_TmpUntranslated.txt
 typing_prefix,Text,Would you like to stay\nfor the night?\n<color=grey>[Will</color>,live:_TmpUntranslated.txt
+typing_prefix,Text,You disrupt nature's peace...\nI,live:_TmpUntranslated.txt
+typing_prefix,Text,You disrupt nature's peace...\nI wi,live:_TmpUntranslated.txt
+typing_prefix,Text,You disrupt nature's peace...\nI will s,live:_TmpUntranslated.txt
 typing_prefix,Text,You know it!\nTh,live:_TmpUntranslated.txt
 typing_prefix,Text,You know it!\nThat',live:_TmpUntranslated.txt
 typing_prefix,Text,You know it!\nThat's th,live:_TmpUntranslated.txt
 typing_prefix,Text,You know it!\nThat's the g,live:_TmpUntranslated.txt
 typing_prefix,Text,You know it!\nThat's the good ,live:_TmpUntranslated.txt
+uncovered,Text,<color=#FF00FF><color=#FF00FF>Fierce</color>: </color><color=#00E61A>+10%</color> Damage,live:_TmpUntranslated.txt
+uncovered,Text,"<color=#FF00FF><color=#FF00FF>Illegal</color>: </color><color=#00E61A>+15%</color> <color=#FF3326>Critical Hit Chance</color><sprite name=""Critical_Hit"">",live:_TmpUntranslated.txt
+uncovered,Text,"Ugh, a ""<color=#808080>Knight Helmet</color>""?\nI mean if you really\nwant to get rid of it...\nI offer <color=#FCC926>3 Gold</color> for it, dea",live:_TmpUntranslated.txt
+uncovered,Text,"Ugh, a ""<color=#808080>Round Shield</color>""?\nI mean if you really\nwant to get rid of it...\nI offer <color=#FCC926>3 Gold</color> for it, deal",live:_TmpUntranslated.txt
 visible_exact,Choice 1 (TMP),  <color=#808080>Red</color>,live:_TmpUntranslated.txt
 visible_exact,Main Header,<color=#00B824>Bomber Garb</color>,live:_TmpUntranslated.txt
 visible_exact,Main Header,<color=#00B824>Cat Ears</color>,live:_TmpUntranslated.txt
@@ -470,12 +569,14 @@ visible_exact,Main Header,<color=#FFDB59>Paper Sheet</color>,live:_TmpUntranslat
 visible_exact,Main Header,<color=#FFDB59>Sea Urchin Orb</color>,live:_TmpUntranslated.txt
 visible_exact,Main Header,<color=#FFDB59>War Fans</color>,live:_TmpUntranslated.txt
 visible_exact,Main Header,<size=72%><color=#4CC2FF>Bear Claw Necklace</color></size>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<size=72%><color=#4CC2FF>Brick</color></size>,live:_TmpUntranslated.txt
 visible_exact,Main Header,<size=72%><color=#808080>Bandana</color></size>,live:_TmpUntranslated.txt
 visible_exact,Main Header,<size=72%><color=#808080>Ninja Headband</color></size>,live:_TmpUntranslated.txt
 visible_exact,Main Header,<size=72%><color=#808080>Quartz Bracelet</color></size>,live:_TmpUntranslated.txt
 visible_exact,Main Header,<size=72%><color=#808080>Wooden Cross Pendant</color></size>,live:_TmpUntranslated.txt
 visible_exact,Main Header,<size=72%><color=#A61FFF>Hidden Blades</color></size>,live:_TmpUntranslated.txt
 visible_exact,Main Header,<size=72%><color=#FFDB59>Bascinet</color></size>,live:_TmpUntranslated.txt
+visible_exact,Main Header,<size=72%><color=#FFDB59>Moonstone</color></size>,live:_TmpUntranslated.txt
 visible_exact,Tooltip Text (TMP),"An aquarium is added to\nevery Tavern, at which\nyou may catch up to <color=#00E317>2</color> Fish.",live:_TmpUntranslated.txt
 visible_exact,Tooltip Text (TMP),Dice Rewards grant <color=#00E317>+1 to +2</color> Ethereal Dice.,live:_TmpUntranslated.txt
 visible_exact,Tooltip Text (TMP),"Enchanting <color=#A61FFF>Weapons</color> at the Enchantress costs <color=#00E317>20</color> <color=#FCC926>Gold</color><sprite name=""Gold""> instead of 30.",live:_TmpUntranslated.txt

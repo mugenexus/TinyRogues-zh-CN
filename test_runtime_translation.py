@@ -1,10 +1,31 @@
 import unittest
 
-from audit_runtime_coverage import ROOT, flatten_decorated_ascii_runs, load_pairs
+from audit_runtime_coverage import ROOT, flatten_decorated_ascii_runs, is_structured, load_pairs
 from audit_runtime_residuals import apply_fragments, load_exact, load_regex_pairs, translate
 
 
 class RuntimeTranslationTest(unittest.TestCase):
+    def test_grenadier_preserves_interval_and_damage(self):
+        source = (
+            "<color=#00E61A>Every 4 seconds </color> <color=#A61FFF>trigger</color> "
+            "a <color=#E03D00>Grenade\u00a0Throw</color> that deals "
+            "<color=#00E61A>565\u00a0to\u00a0717</color>\u00a0"
+            "<color=#E03D00>Explosion Damage</color>. <color=#808080>[<color=#A61FFF>Tick</color>]</color>"
+        )
+        result = translate("Trait Description", source, {}, {}, load_regex_pairs(), [], [])
+        self.assertIn("每 4 秒", result)
+        self.assertIn("565 至 717", result)
+        self.assertIn("投掷手榴弹", result)
+        self.assertNotIn("Grenade", result)
+
+    def test_status_details_use_structured_translation(self):
+        source = "<color=#FF2666>Berserk</color>\n•Duration: 8 seconds\n•Max Stacks: 1"
+        self.assertTrue(is_structured("Effect Details", source))
+        fragments = load_pairs(ROOT / "runtime_fragments_zh.txt")
+        fragments.sort(key=lambda pair: len(pair[0]), reverse=True)
+        result = translate("Effect Details", source, {}, {}, [], [], fragments)
+        self.assertEqual(result, "<color=#FF2666>狂暴</color>\n•持续时间： 8 秒\n•最大层数： 1")
+
     def test_only_explicit_per_level_conditions_are_translated_as_per_level(self):
         fragments = load_pairs(ROOT / "runtime_item_fragments_zh.txt")
         fragments.sort(key=lambda pair: len(pair[0]), reverse=True)
