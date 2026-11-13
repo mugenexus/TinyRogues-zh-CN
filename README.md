@@ -64,7 +64,15 @@ BepInEx\config\AutoTranslatorConfig.ini
 arialuni_sdf_u2019
 ```
 
-## 从源码构建
+## 构建内核汉化
+
+安装 Python 3.11 或更新版本及 `UnityPy`，准备与社区 9.14 补丁匹配的原版 Steam 游戏目录、社区 ZIP 和已解码的补丁目录。最后一个参数是尚不存在的独立测试输出目录。
+
+```powershell
+python .\build_kernel_preview.py "<原版游戏目录>" "<社区补丁 ZIP>" "<已解码补丁目录>" ".\dist\kernel-preview"
+```
+
+## 构建动态汉化发行包
 
 要求：
 

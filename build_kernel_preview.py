@@ -16,6 +16,8 @@ RESOURCE = Path("Tiny Rogues_Data/resources.assets")
 METADATA = Path("Tiny Rogues_Data/il2cpp_data/Metadata/global-metadata.dat")
 METADATA_BASE_HASH = "2b25d17ec7d67e50ad441c0b5d45c206ac27b812692d28123a50455b0cff419f"
 LITERAL_EDITS = {
+    17984: ("+1 <color=#FF008CFF>魔法寻获</color><Magic_Find>",
+            "+1 <color=#FF008CFF>珍品率</color><Magic_Find>"),
     692: ("##<color=#D77BBAFF>护符</color>", "##<color=#D77BBAFF>符咒</color>"),
     6197: ("最高纪录：装备{0}/4个<color=#D77BBAFF>护符</color>", "最高纪录：装备{0}/4个<color=#D77BBAFF>符咒</color>"),
     7395: ("<color=#FF008CFF>魔法寻获</color><Magic_Find>", "<color=#FF008CFF>珍品率</color><Magic_Find>"),
