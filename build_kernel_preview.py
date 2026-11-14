@@ -154,6 +154,10 @@ EDITS = {
         ("每次奔跑中，当你进入第5层之后的楼层时，如果没有<color=#FCC926FF>金币</color><Gold>，则获得[[10]]<color=#FCC926FF>金币</color><Gold>。",
          "每局限一次：进入第5层之后的楼层时，若没有<color=#FCC926FF>金币</color><Gold>，获得[[10]]<color=#FCC926FF>金币</color><Gold>。", 1),
     ),
+    55869: (
+        ("当<color=#6BBD30FF>耐力</color><Stamina>耗尽时，不再((清空))<color=#6BBD30FF>耐力</color>恢复<Stamina>进度，<color=#6BBD30FF>耐力</color>恢复<Stamina>进度变为[[减半]]。",
+         "<color=#6BBD30FF>耐力</color><Stamina>耗尽：恢复进度[[减半]]，不((清空))。", 1),
+    ),
     55864: (
         ("每次奔跑你有[[+10%]]的几率遇到皇家军械库。\n<color=grey>[添加到5%的基础几率上。]</color>",
          "每局遇到皇家军械库的几率[[+10%]]。\n<color=grey>[在5%基础几率上叠加。]</color>", 1),
@@ -328,6 +332,11 @@ def patch_resources(source, target):
         for old, new, count in edits:
             old_tokens = sorted(TOKENS.findall(COLOR_TAG.sub("<color>", old)))
             new_tokens = sorted(TOKENS.findall(COLOR_TAG.sub("<color>", new)))
+            if object_id == 55869:
+                # The original repeats the stamina label and icon three times.
+                for token in ("<color>", "</color>", "<Stamina>"):
+                    old_tokens.remove(token)
+                    old_tokens.remove(token)
             if old_tokens != new_tokens:
                 raise ValueError(f"Control tokens changed: {object_id}")
             if NUMBER.findall(re.sub(r'<[^>]+>', '', old)) != NUMBER.findall(re.sub(r'<[^>]+>', '', new)):

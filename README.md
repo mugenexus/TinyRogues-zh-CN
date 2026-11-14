@@ -4,18 +4,33 @@
 
 能工智人补充说明：纯由gpt生成，改进跟随个人游玩进度，源码构建版本应该是实时更新的，发行版等我想起来再说（）
 
-当前版本：`1.5.32`
+当前内核版：`1.6.0`
 
-## 源码版与发行版
+## 内核汉化
 
-- **源码版：离线内核汉化。** 从仓库自行构建，需匹配对应的 Steam 游戏版本和社区底包。
-- **GitHub Releases：动态汉化。** 继续发布原有 BepInEx 版，按下方安装说明使用，不需要内核底包。
+- **源码和最新发行版均为离线内核汉化。** 不使用 BepInEx；旧动态版仅作为历史发行保留。
+- 从 [最新发行版](https://github.com/mugenexus/TinyRogues-zh-CN/releases/latest) 下载 `TinyRogues_zh_CN_v1.6.0_kernel.zip`。退出游戏；若曾装动态版，请先卸载，确保游戏文件为匹配的原版。
+- 解压到独立目录，在该目录执行 `python .\install.py "<Steam 游戏目录>"`。恢复原版时执行 `python .\install.py "<Steam 游戏目录>" --rollback`。Windows 下需要 Python；版本或文件哈希不匹配时不要强行覆盖。
 
 游戏会在运行时拼接不少物品和技能说明，有些词还来自独立的显示路径，导致运行时翻译反复出现漏译、混排和语序问题。因此，源码版采用离线内核汉化，直接修订游戏资源和文本表。游戏更新后需要重新校验底包；少数动态生成的英文名称仍待处理。
 
 - 术语对齐社区版：Charm 为「符咒」，Talisman 为「护符」，状态效果 Charm 仍为「魅惑」；Luck、Magic Find、Treasure Find 分别为「幸运」「珍品率」「掉宝率」。
 - [内核构建脚本](build_kernel_preview.py) 使用已解码的社区 9.14 离线补丁作为底包，并检查资源与文本表。仓库不附带游戏文件或社区底包。
-- 下方 `1.5.32` 的安装和功能说明仍对应旧版运行时发行包，不适用于内核版。
+## 构建与校验
+
+安装 Python 3.11 或更新版本及 `UnityPy`，准备与社区 9.14 补丁匹配的原版 Steam 游戏目录、社区 ZIP 和已解码的补丁目录。
+
+```powershell
+python .\build_kernel_preview.py "<原版游戏目录>" "<社区补丁 ZIP>" "<已解码补丁目录>" ".\dist\kernel-preview"
+python .\package_kernel_release.py "<原版游戏目录>" "<社区补丁 ZIP>" "<已解码补丁目录>" "<当前已汉化的 Steam 游戏目录>" ".\dist\TinyRogues_zh_CN_v1.6.0_kernel.zip"
+```
+
+两个输出路径均须不存在。发行打包脚本会比较当前 Steam 安装，并在临时目录试装和回滚，不会覆盖游戏目录。
+
+<details>
+<summary>历史动态汉化版（BepInEx）及其维护说明</summary>
+
+下方为旧动态版文档，不适用于内核版。
 
 ## 1.5.32 版本亮点
 
@@ -62,14 +77,6 @@ BepInEx\plugins\TinyRogues.TmpFallback
 BepInEx\Translation\zh
 BepInEx\config\AutoTranslatorConfig.ini
 arialuni_sdf_u2019
-```
-
-## 构建内核汉化
-
-安装 Python 3.11 或更新版本及 `UnityPy`，准备与社区 9.14 补丁匹配的原版 Steam 游戏目录、社区 ZIP 和已解码的补丁目录。最后一个参数是尚不存在的独立测试输出目录。
-
-```powershell
-python .\build_kernel_preview.py "<原版游戏目录>" "<社区补丁 ZIP>" "<已解码补丁目录>" ".\dist\kernel-preview"
 ```
 
 ## 构建动态汉化发行包
@@ -125,6 +132,8 @@ dotnet build .\TinyRogues.TmpFallback\TinyRogues.TmpFallback.csproj `
 翻译时不得改动变量、控制符、颜色代码、换行符、图标标签和占位符。
 
 完整版本记录见 [CHANGELOG.md](CHANGELOG.md)。
+
+</details>
 
 ## 说明
 
